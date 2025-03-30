@@ -1,0 +1,162 @@
+	ID	DESCRIPTION	SHOULD FAIL	IN	IN LB	IN UB	OUT	OUT LB	OUT UB	EQU	EQU LB	EQU UB	CHANGED RXN	CHANGED LB	CHANGED UB	PRINT FLUX	COMMENTS
+#	ER: Energy and redox; IC: Internal conversions; SU: Substrate utilization; BS: Biosynthesis of products; GR: Growth																
+#	Rephosphorylation of nucleoside triphosphates																
+	ER	Aerobic rephosphorylation of atp from glc_D		Oxygen[s];D-Glucose[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] => Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]	1						
+	ER	Aerobic rephosphorylation of gtp		Oxygen[s];D-Glucose[s]			Water[s];Carbon Dioxide[s]			Guanosine-5'-Triphosphate[c] + Water[c] => Guanosine-5'-Diphosphate[c] + Orthophosphate[c] + Proton[c]	1						
+	ER	Aerobic rephosphorylation of ctp		Oxygen[s];D-Glucose[s]			Water[s];Carbon Dioxide[s]			Cytidine-5'-Triphosphate[c] + Water[c] => Cytidine-5'-DIphosphate[c] + Orthophosphate[c] + Proton[c]	1						
+	ER	Aerobic rephosphorylation of utp		Oxygen[s];D-Glucose[s]			Water[s];Carbon Dioxide[s]			Uridine-5'-TrIphosphate[c] + Water[c] => Uridine Diphosphate[c] + Orthophosphate[c] + Proton[c]	1						
+																	
+#	De novo synthesis of nucleotides																
+	BS	atp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Adenosine Triphosphate[c]	1									
+	BS	ctp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Cytidine-5'-Triphosphate[c]	1									
+	BS	gtp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Guanosine-5'-Triphosphate[c]	1									
+	BS	utp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Uridine-5'-TrIphosphate[c]	1									
+	BS	datp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Deoxyadenosine Triphosphate[c]	1									
+	BS	dctp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Deoxycytidine-5'-Triphosphate[c]	1									
+	BS	dgtp de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Deoxyguanosine-5'-Triphosphate[c]	1									
+	BS	dTTP de novo synthesis		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s]			Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Deoxythymidine-5'-Triphosphate[c]	1									
+#	Uptake of essential amino acids																
+	SU	Histidine uptake		L-Histidine[s]	1	1	L-Histidine[c]	1									
+	SU	Isoleucine uptake		L-Isoleucine[s]	1	1	L-Isoleucine[c]	1									
+	SU	Leucine uptake		L-Leucine[s]	1	1	L-Leucine[c]	1									
+	SU	Lysine uptake		L-Lysine[s]	1	1	L-Lysine[c]	1									
+	SU	Methionine uptake		L-Methionine[s]	1	1	L-Methionine[c]	1									
+	SU	Phenylalanine uptake		L-Phenylalanine[s]	1	1	L-Phenylalanine[c]	1									
+	SU	Threonine uptake		L-Threonine[s]	1	1	L-Threonine[c]	1									
+	SU	Tryptophan uptake		L-Tryptophan[s]	1	1	L-Tryptophan[c]	1									
+	SU	Valine uptake		L-Valine[s]	1	1	L-Valine[c]	1									
+																	
+#	De novo synthesis of key intermediates																
+	IC	Glycerate 3-phosphate  de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			3-Phospho-D-Glycerate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Mitochondrial acetyl-CoA de novo synthesis		Oxygen[s];D-Glucose[s]			Carbon Dioxide[s];Water[s]			Acetyl Coenzyme A[m] => Coenzyme A[m]	1						
+	IC	Mitochondrial AKG de novo synthesis		Oxygen[s];D-Glucose[s]			2-Oxoglutarate[m]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Erythrose 4-phosphate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			D-Erythrose 4-Phosphate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Fructose 6-phosphate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			D-Fructose 6-Phosphate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Glyceraldehyde 3-phosphate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			Glyceraldehyde 3-Phosphate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Glucose 6-phosphate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			D-Glucose 6-Phosphate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Mitochondrial oxaloacetate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			Oxaloacetate[m]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Phosphoenolpyruvate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			Phosphoenolpyruvate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Pyruvate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			Pyruvate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Ribose 5-phosphate de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			Alpha-D-Ribose 5-Phosphate[c]	1									
+							Carbon Dioxide[s];Water[s]										
+	IC	Mitochondrial succinyl-CoA de novo synthesis		Oxygen[s];D-Glucose[s];Orthophosphate[s]			Carbon Dioxide[s];Water[s]			Succinyl Coenzyme A[m] => Coenzyme A[m]	1						
+																	
+#	De novo synthesis of other compounds																
+	BS	Cholesterol de novo synthesis		Oxygen[s];D-Glucose[s]			Cholesterol[c]	1									
+							Carbon Dioxide[s];Water[s]										
+																	
+#	Protein turnover																
+	BS	Protein synthesis from AAs		Oxygen[s];D-Glucose[s];Ammonium[s];Water[s]			Albumin[c]	0.0001									
+				L-Arginine[s];L-Histidine[s];L-Lysine[s];L-Methionine[s];L-Phenylalanine[s];L-Tryptophan[s];L-Tyrosine[s];L-Alanine[s];Glycine[s];L-Serine[s];L-Threonine[s];L-Aspartate[s];L-Glutamate[s];L-Asparagine[s];L-Glutamine[s];L-Isoleucine[s];L-Leucine[s];L-Proline[s];L-Valine[s];L-Cysteine[s]			Carbon Dioxide[s];Water[s];Hydrosulfide[s];Urate[s]										
+																	
+#	Electron transport chain and TCA																
+	ER	Oxidative phosphorylation		Succinate[m];Nicotinamide Adenine Dinucleotide - Reduced[m];Proton[m]	1	1	Fumarate[m];Nicotinamide Adenine Dinucleotide[m]	1	1	Adenosine Triphosphate[m] + Water[m] => Adenosine Diphosphate[m] + Orthophosphate[m] + Proton[m]	1						
+				Oxygen[s]			Water[s]										
+	ER	Oxidative decarboxylation		Pyruvate[m];Nicotinamide Adenine Dinucleotide[m];Coenzyme A[m]	1	1	Acetyl Coenzyme A[m];Nicotinamide Adenine Dinucleotide - Reduced[m];Carbon Dioxide[s]	1	1								
+							Proton[m]										
+	ER	Krebs cycle NADH		Acetyl Coenzyme A[m];Guanosine-5'-Diphosphate[m];Ubiquinone-10[m]	1	1	Coenzyme A[m];Ubiquinol-10[m];Guanosine-5'-Triphosphate[m]	1	1								
+				Nicotinamide Adenine Dinucleotide[m]	3	3	Nicotinamide Adenine Dinucleotide - Reduced[m]	3	3								
+				Orthophosphate[m];Water[s]			Carbon Dioxide[s];Proton[c];Proton[m]										
+	ER	Ubiquinol-to-proton		Ubiquinol-10[m]	1	1	Ubiquinone-10[m]	1	1								
+				Oxygen[s];Proton[m]			Water[s]										
+							Proton[c]	6									
+	ER	Ubiquinol-to-atp		Ubiquinol-10[m]	1	1	Ubiquinone-10[m]	1	1	Adenosine Triphosphate[m] + Water[m] => Adenosine Diphosphate[m] + Orthophosphate[m] + Proton[m]	1						
+				Oxygen[s];Proton[m]			Water[s];Proton[m];Proton[c]										
+																	
+#	Beta oxidation of fatty acids																
+	SU	Beta oxidation of saturated FA		Octadecanoate (N-C18:0)[s]	1	1	Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] => Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+				Oxygen[s]													
+	SU	Beta oxidation of long-chain FA		12Z,15Z,18Z,21Z-Tetracosatetraenoic Acid[s]	1	1	Water[s];Carbon Dioxide[s]										
+				Oxygen[s]													
+	SU	Beta oxidation of odd-chain FA		Margaric Acid[s]	1	1	Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] => Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+				Oxygen[s]													
+	SU	Beta oxidation of unsaturated fatty acid (n-9) 		17Z-Hexacosenoic Acid[s]	1	1	Water[s];Carbon Dioxide[s]										
+				Oxygen[s]													
+	SU	Beta oxidation of unsaturated fatty acid (n-6) 		Linoleate[s]	1	1	Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] => Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+				Oxygen[s]													
+	SU	Uptake and beta oxidation of all NEFAs		Nefa-Blood-Pool-In[s]	1	1	Water[s];Carbon Dioxide[s]			Adenosine Triphosphate[c] + Water[c] => Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+				Oxygen[s]													
+																	
+#	De novo synthesis of phospholipids																
+	SU	Choline uptake		Choline[s]	1	1	Choline[c]	1	1								
+	SU	Inositol uptake		Myo-Inositol[s]	1	1	Myo-Inositol[c]	1	1								
+	BS	Phosphatidylcholine de novo synthesis		Choline[s];D-Glucose[s];Oxygen[s];Nefa-Blood-Pool-In[s];Orthophosphate[s]			Phosphatidylcholine[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s];Carbon Dioxide[s]										
+	BS	Phosphatidylethanolamine de novo synthesis		Ethanolamine[s];D-Glucose[s];Oxygen[s];Nefa-Blood-Pool-In[s];Orthophosphate[s]			Phosphatidylethanolamine[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s];Carbon Dioxide[s]										
+	BS	Phosphatidylserine de novo synthesis		L-Serine[s];D-Glucose[s];Oxygen[s];Nefa-Blood-Pool-In[s];Orthophosphate[s]			Phosphatidylserine[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s];Carbon Dioxide[s]										
+	BS	Phosphatidylinositol de novo synthesis		Myo-Inositol[s];D-Glucose[s];Oxygen[s];Nefa-Blood-Pool-In[s];Orthophosphate[s]			1-Phosphatidyl-1D-Myo-Inositol[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s];Carbon Dioxide[s]										
+																	
+#	Vitamins and co-factors																
+	BS	Thiamin phosphorylation to TPP		Thiamin[s];Orthophosphate[s];Oxygen[s];Water[s]			Thiamine Diphosphate[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s]										
+	BS	Coenzyme A synthesis from pantothenate		(R)-Pantothenate[s];L-Cysteine[s];D-Glucose[s];Oxygen[s];Water[s];Orthophosphate[s];Ammonium[s]			Coenzyme A[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s];Carbon Dioxide[s]										
+	BS	FAD synthesis from riboflavin		Oxygen[s];D-Glucose[s];Ammonium[s];Orthophosphate[s];Riboflavin[s]			Flavin Adenine Dinucleotide Oxidized[c]	1									
+							Water[s];Carbon Dioxide[s]										
+	BS	Heme biosynthesis		Oxygen[s];Ammonium[s];D-Glucose[s];Iron (Fe2+)[s]			Protoheme[c]	1		Adenosine Triphosphate[c] + Water[c] <=> Adenosine Diphosphate[c] + Orthophosphate[c] + Proton[c]							
+							Water[s];Carbon Dioxide[s]										
+#	Growth																
+	GR	Growth on Ham's media		L-Arginine[s]			ALLMETSIN[s]										
+				L-Histidine[s]			Biomass[c]	1									
+				L-Lysine[s]													
+				L-Methionine[s]													
+				L-Phenylalanine[s]													
+				L-Tryptophan[s]													
+				L-Tyrosine[s]													
+				L-Alanine[s]													
+				Glycine[s]													
+				L-Serine[s]													
+				L-Threonine[s]													
+				L-Aspartate[s]													
+				L-Glutamate[s]													
+				L-Asparagine[s]													
+				L-Glutamine[s]													
+				L-Isoleucine[s]													
+				L-Leucine[s]													
+				L-Proline[s]													
+				L-Valine[s]													
+				L-Cysteine[s]													
+				Thiamin[s]													
+				Hypoxanthine[s]													
+				Folate[s]													
+				Biotin[s]													
+				(R)-Pantothenate[s]													
+				Choline[s]													
+				Myo-Inositol[s]													
+				Nicotinamide[s]													
+				Pyridoxine[s]													
+				Riboflavin[s]													
+				Thymidine[s]													
+				Aquacob(III)Alamin[s]													
+				Lipoate[s]													
+				D-Glucose[s]													
+				Sulfate[s]													
+				Linoleate[s]													
+				Alpha-Linolenate[s]													
+				Oxygen[s]													
+				Water[s]													
+				All-Trans-Retinoate[s]													
+				Iron (Fe2+)[s]													
+				Orthophosphate[s]													
+				(+)-Alpha-Tocopherol[s]													
+				(+)-Gama-Tocopherol[s]													

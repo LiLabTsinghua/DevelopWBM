@@ -32,9 +32,8 @@ current      = pwd;
 %Assign specific color code for the different cell-lines
 [cellLines, colorS] = assignNamesAndColors;
 %Open exchange fluxes data file
-fID     = fopen('../Data/exchangeFluxes_NCI60.txt');
-expData = textscan(fID,'%s %s %f %f %f %f %f %f %f %f %f %f %f',...
-                   'Delimiter','\t','HeaderLines',1);
+fID     = fopen('../data/NCI60_exchangeFluxes/exchangeFluxes_NCI60.txt');
+expData = textscan(fID,'%s %s %f %f %f %f %f %f %f %f %f %f %f','Delimiter','\t','HeaderLines',1);
 %%Save experimental data 
 expIDs = expData{1};expMets = expData{2};expData = expData(3:end);
 %Initialize variables
@@ -171,8 +170,8 @@ plot(x1,x1)
 legend(legendStr)
 hold on
 %Write output files
-mkdir ../Results/11_cellLines_NCI60
-cd ../Results/11_cellLines_NCI60
+mkdir ../results/11_cellLines_NCI60
+cd ../results/11_cellLines_NCI60
 
 %%write file with different error metrics for all cell lines
 %variables = {'cell_Line' 'pearson' 'MAE' 'RMSE'};

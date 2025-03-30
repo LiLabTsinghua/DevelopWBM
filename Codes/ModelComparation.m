@@ -1,7 +1,7 @@
 %% Comparation of organ-specific GEMs
 
 % load AdultMale
-modelPath = '../Models/models_AdultMale.mat';
+modelPath = '../models/AdultMale_models.mat';
 load(modelPath);
 AdultMale = models;
 
@@ -10,12 +10,15 @@ for i=1:length(AdultMale)
     model = AdultMale{i,1};
     if contains(model.id, 'RBC')
         AdultMale(i) = [];
+    else
+        model.id = ['AdultMale_', model.id];
+        AdultMale{i,1} = model;
     end
 end
 AdultMale = RemoveSexOrgans(AdultMale,'Male');
 
 % load ElderlyMale
-modelPath = '../Models/models_ElderlyMale.mat';
+modelPath = '../models/ElderlyMale_models.mat';
 load(modelPath);
 ElderlyMale = models;
 
@@ -24,12 +27,15 @@ for i=1:length(ElderlyMale)
     model = ElderlyMale{i,1};
     if contains(model.id, 'RBC')
         ElderlyMale(i) = [];
+    else
+        model.id = ['ElderlyMale_', model.id];
+        ElderlyMale{i,1} = model;
     end
 end
 ElderlyMale = RemoveSexOrgans(ElderlyMale,'Male');
 
 % load AdultFemale
-modelPath = '../Models/models_AdultFemale.mat';
+modelPath = '../models/AdultFemale_models.mat';
 load(modelPath);
 AdultFemale = models;
 
@@ -38,12 +44,15 @@ for i=1:length(AdultFemale)
     model = AdultFemale{i,1};
     if contains(model.id, 'RBC')
         AdultFemale(i) = [];
+    else
+        model.id = ['AdultFemale_', model.id];
+        AdultFemale{i,1} = model;
     end
 end
 AdultFemale = RemoveSexOrgans(AdultFemale,'Female');
 
 % load ElderlyFemale
-modelPath = '../Models/models_ElderlyFemale.mat';
+modelPath = '../models/ElderlyFemale_models.mat';
 load(modelPath);
 ElderlyFemale = models;
 
@@ -52,6 +61,9 @@ for i=1:length(ElderlyFemale)
     model = ElderlyFemale{i,1};
     if contains(model.id, 'RBC')
         ElderlyFemale(i) = [];
+    else
+        model.id = ['ElderlyFemale_', model.id];
+        ElderlyFemale{i,1} = model;
     end
 end
 ElderlyFemale = RemoveSexOrgans(ElderlyFemale,'Female');
@@ -84,7 +96,6 @@ clustergram(compStruct.structComp, 'Symmetric', false, 'Colormap', 'bone',...
     'RowLabels', compStruct.modelIDs, 'ColumnLabels', compStruct.modelIDs);
 
 
-
 % tsne of similarity of models
 rxn2Dmap = tsne(compStruct.reactions.matrix', 'Distance', 'hamming',...
     'NumDimensions', 2, 'Perplexity', 5);
@@ -93,9 +104,18 @@ scatter(rxn2Dmap(:,1), rxn2Dmap(:,2));
 hold on
 text(rxn2Dmap(:,1), rxn2Dmap(:,2), compStruct.modelIDs);
 
+tSNE_result = {};
+tSNE_result(:,1) = compStruct.modelIDs;
+tSNE_result(:,2) = num2cell(rxn2Dmap(:,1));
+tSNE_result(:,3) = num2cell(rxn2Dmap(:,2));
+
+tbl = array2table(tSNE_result, 'VariableNames', {'ModelNames', 'X', 'Y'});
+%tbl.Properties.RowNames = Rows;
+outputFileName = '../results/OrganModels_tsne.tsv';
+writetable(tbl, outputFileName, 'Delimiter', '\t', 'WriteRowNames', true, 'FileType', 'text');
 
 
-% Subsystems coverage
+%% Subsystems coverage
 useModels = compStruct.modelIDs;
 keep = ismember(compStruct.modelIDs, useModels);
 subMat = compStruct.subsystems.matrix(:, keep);
@@ -107,7 +127,7 @@ subNames = compStruct.subsystems.ID(inclSub);
 % generate clustergram
 cg = clustergram(subCoverage(inclSub,:), 'Colormap', redbluecmap,...
     'DisplayRange', 100, 'rowLabels', subNames, 'columnLabels',...
-    useModels, 'ShowDendrogram', 'OFF');
+    useModels, 'Cluster', 'Column', 'ShowDendrogram', 'ON');
 
 % Output the subsystems coverage result to "./Data"
 SubOutput = subCoverage(inclSub,:);
@@ -117,23 +137,23 @@ Rows = subNames;
 
 tbl = array2table(SubOutput, 'VariableNames', Columns);
 tbl.Properties.RowNames = Rows;
-outputFileName = '../Data/SubCoverage.tsv';
+outputFileName = '../results/SubCoverage.tsv';
 writetable(tbl, outputFileName, 'Delimiter', '\t', 'WriteRowNames', true, 'FileType', 'text');
 
 %% Comparation of metabolic function using full metabolic tasks
 % check the metabolic tasks file whether in "./Data" folder.
-MetaTasksPath = '../Data/metabolicTasks_Full.txt';
+MetaTasksPath = '../data/metabolicTasks/metabolicTasks_Full.txt';
 % MetaTasks = readtable(DataPath, 'Delimiter', '\t', 'FileType', 'text');
 
 % add boundary metabolites to each model for task checking.
-for i=1:length(All_models)
-    model = All_models{i,1};
+for i=1:length(RankModels)
+    model = RankModels{i,1};
     model = addBoundaryMets(model); % A function from RAVEN.
-    All_models{i,1} = model;
+    RankModels{i,1} = model;
 end
 
 % Check the full metabolic tasks. It will take a while.
-res_func = compareMultipleModels(All_models, false, false, [], true, MetaTasksPath);
+res_func = compareMultipleModels(RankModels, false, false, [], true, MetaTasksPath);
 
 res_func.funcComp
 
@@ -157,5 +177,5 @@ Rows = diffTasks;
 
 tbl = array2table(FunctionOutput, 'VariableNames', Columns);
 tbl.Properties.RowNames = Rows;
-outputFileName = '../Data/FullTasks_Results.tsv';
+outputFileName = '../results/FullTasks_Results.tsv';
 writetable(tbl, outputFileName, 'Delimiter', '\t', 'WriteRowNames', true, 'FileType', 'text');

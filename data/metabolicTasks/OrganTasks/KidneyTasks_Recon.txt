@@ -1,0 +1,324 @@
+Unnamed: 0	ID	DESCRIPTION	SHOULD FAIL	IN	IN LB	IN UB	OUT	OUT LB	OUT UB	EQU	EQU LB	EQU UB	CHANGED RXN	CHANGED LB	CHANGED UB	PRINT FLUX	COMMENTS
+	1	Gluconeogenesis from Fructose		Oxygen[e];Water[e];D-Fructose[e]			Water[e];Carbon dioxide[e]										Make sure things that transport goes through specific transporter 
+							D-Glucose[e]	1.0									
+	2	Fructose degradation		D-Fructose[e]	1.0	1.0	Water[e];Carbon dioxide[e]										
+				Oxygen[e]													
+	3	Palmitate de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e]			Carbon dioxide[e];Water[e]										
+							Palmitic acid[c]	1.0									
+	4	Conversion of phenylalanine to tyrosine		Oxygen[e];L-Phenylalanine[c];Tetrahydrobiopterin[c]			Water[c];4a-Carbinolamine tetrahydrobiopterin[c]										
+							L-Tyrosine[c]	1.0									
+	5	Ammoniagenesis		L-Glutamine[e]			Ammonia[e]										
+							Hydrogen carbonate[e]										
+	6	Conversion of oxaloacetate to phosphoenolpyruvate		Oxalacetic acid[m]			Phosphoenolpyruvic acid[m]										
+				Guanosine triphosphate[m]			Carbon dioxide[m];Guanosine diphosphate[m]										
+	7	glutaminase activity		L-Glutamine[c];Water[e]			L-Glutamic acid[c]	0.5									
+	                          						Ammonia[c];Hydrogen Ion[c]										
+	8	glutamate degredation		L-Glutamic acid[e]	1.0		Water[e];Carbon dioxide[e];Urea[e]										
+				Oxygen[e]													
+	9	glutatmate to alpha-ketoglutarate 		L-Glutamic acid[c];Pyruvic acid[c]			L-Alanine[c]										
+							Oxoglutaric acid[c]	0.5									
+	10	urea synthesis from arginine		L-Arginine[e];Water[e]			Urea[e]	1.0									
+							ornithine[e]										
+	11	creatinine synthesis  (cytosol only)		Guanidoacetic acid[c]			Creatinine[c]										
+				S-Adenosylmethionine[c]													
+				Adenosine triphosphate[c]			Phosphate[c]										
+	12	agmatine synthesis		L-Arginine[m];Hydrogen Ion[m]			Agmatine[m]	0.5									
+							Carbon dioxide[m]										
+	13	Citrulline to Argininosuccinate		D-Aspartate[c];Adenosine triphosphate[c]			Argininosuccinic acid[c]	0.9									
+				Citrulline[c]			Adenosine monophosphate[c];Hydrogen Ion[c]										
+							Pyrophosphate[c]										
+	14	arginine synthesis		Argininosuccinic acid[c]			L-Arginine[e]	1.0									
+							Fumaric acid[c]										
+	15	Nitric Oxide Synthesis		L-Arginine[e]		10.0	ALLMETS										
+				Water[e];Oxygen[e];Chloride ion[e];Ammonia[e];Calcium[e];iodide[e];zn2[e];sulfate[e];Fe2+[e];Sodium[e];Potassium[e];Phosphate[e]			Nitric oxide[c]	1.0									
+	16	Serine release		NAD[c]			Carbon dioxide[c];NADH[c];Hydrogen Ion[c]										
+				Glycine[c]			L-Serine[c]	1.0									
+				Water[c];Hydrogen Ion[c]			Ammonia[c]	1.0									
+	17	Glutithione reduction		Oxidized glutathione[c]			Glutathione[c]	2.0									
+				NADPH[c];Hydrogen Ion[c]			NADP[c]										
+	18	Gluconeogenesis from lactate		Oxygen[e];Water[e];Palmitic acid[e];L-Lactic acid[e]			Water[e];Carbon dioxide[e]										
+							D-Glucose[e]	1.0									
+	19	ATP regeneration from glucose (oxidative phosphorylation) 		D-Glucose[e]	1.0	1.0	ALLMETS			Adenosine triphosphate[c] + Water[c] => ADP[c] + Phosphate[e]	2.0						
+				Water[e];Oxygen[e];Chloride ion[e];Ammonia[e];Calcium[e];iodide[e];zn2[e];sulfate[e];Fe2+[e];Sodium[e];Potassium[e];Phosphate[e]													
+	20	ATP regeneration from glycolysis (absence of O2)		D-Glucose[e]	1.0	1.0	ALLMETS			Adenosine triphosphate[c] + Water[c] => ADP[c] + Phosphate[e]	2.0						
+				Water[e];Chloride ion[e];Ammonia[e];Calcium[e];iodide[e];zn2[e];sulfate[e];Fe2+[e];Sodium[e];Potassium[e];Phosphate[e]													
+	21	Gluconeogenesis from alanine		Oxygen[e];Water[e];L-Alanine[e]			Carbon dioxide[e];Water[e];Urea[e];Ammonia[e]										
+							D-Glucose[e]	1.0									
+	22	Gluconeogenesis from glutamine		Oxygen[e];Water[e]			Carbon dioxide[e];Water[e]										
+				L-Glutamine[e]			Ammonia[e]										
+							D-Glucose[e]	1.0									
+	23	Gluconeogenesis from glycerol		Oxygen[e];Water[e];Glycerol[e]			Carbon dioxide[e];Water[e]										
+							D-Glucose[e]	1.0									
+	24	ATP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Adenosine triphosphate[c]	1.0									
+	25	CTP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Cytidine triphosphate[c]	1.0									
+	26	GTP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Guanosine triphosphate[c]	1.0									
+	27	UTP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Uridine triphosphate[c]	1.0									
+	28	dATP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Deoxyadenosine triphosphate[c]	1.0									
+	29	dCTP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							dCTP[c]	1.0									
+	30	dGTP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							dGTP[c]	1.0									
+	31	dTTP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Thymidine 5'-triphosphate[c]	1.0									
+	32	Krebs cycle NADH		Acetyl-CoA[m];Guanosine diphosphate[m];Ubiquinone-1[m]	1.0	1.0	Coenzyme A[m];QH2[m];Guanosine triphosphate[m]	1.0	1.0								
+				NAD[m]	3.0	3.0	NADH[m]	3.0	3.0								
+				Phosphate[m];Water[e]			Carbon dioxide[e];Hydrogen Ion[c];Hydrogen Ion[m]										
+	33	Alanine de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Alanine[e]	1.0									
+	34	Asparagine de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Asparagine[e]	1.0									
+	35	Aspartate de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							D-Aspartate[c]	1.0									
+	36	Glutamate de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Glutamic acid[e]	1.0									
+	37	Glycine de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Glycine[e]	1.0									
+	38	Glutamine de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Glutamine[e]	1.0									
+	39	Proline de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Proline[e]	1.0									
+	40	Serine de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Serine[e]	1.0									
+	41	Histidine de novo synthesis (minimal substrates, minimal excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+	42	CoA de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];L-Methionine[e];Pantothenic acid[e]			Coenzyme A[c]	1.0									
+							Carbon dioxide[e];Uric acid[e];Water[e]										
+	43	NAD de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Niacinamide[e]			NADH[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	44	NADP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Niacinamide[e]			NADPH[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	45	FAD de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Riboflavin[e]			FAD[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	46	Thioredoxin de novo synthesis (physiological substrates, physiological excretion)		Oxygen[e];D-Glucose[e];L-Histidine[e];L-Isoleucine[e];L-Leucine[e];L-Lysine[e];L-Methionine[e];L-Phenylalanine[e];L-Threonine[e];L-Tryptophan[e];L-Valine[e]			Water[e];Carbon dioxide[e];Uric acid[e];Hydrogen sulfide[e]										
+							Reduced Thioredoxin[c]	1.0									
+	47	Acetoacetate de novo synthesis and excretion		Oxygen[e];D-Glucose[e]			Water[e];Carbon dioxide[e]										
+							Acetoacetic acid[e]	1.0									
+	48	(R)-3-Hydroxybutanoate de novo synthesis		Oxygen[e];D-Glucose[e]			Water[e];Carbon dioxide[e]										
+							(R)-3-Hydroxybutyric acid[c]	1.0									
+	49	Farnesyl-PP de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];L-Phenylalanine[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Farnesyl pyrophosphate[c]	1.0									
+	50	Lauric acid de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e]			Carbon dioxide[e];Water[e]										
+							Dodecanoic acid[c]	1.0									
+	51	Tridecylic acid de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];L-Isoleucine[c]			Carbon dioxide[e];Water[e];Uric acid[e]										
+							Tridecanoic acid[c]	1.0									
+	52	Myristic acid de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e]			Carbon dioxide[e];Water[e]										
+							Myristic acid[c]	1.0									
+	53	Creatine de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							creatine[e]	1.0									
+	54	Lauric acid (complete oxidation)		Dodecanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	55	Tridecylic acid (complete oxidation)		Tridecanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	56	Myristic acid (complete oxidation)		Myristic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	57	9E-tetradecenoic acid (complete oxidation)		9E-Tetradecenoic Acid (N-C14:1)[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	58	7Z-tetradecenoic acid (complete oxidation)		7Z-tetradecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	59	Physeteric acid (complete oxidation)		5Z-Tetradecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	60	Pentadecylic acid (complete oxidation)		Pentadecanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	61	Palmitate (complete oxidation)		Palmitic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	62	Palmitolate (complete oxidation)		Palmitoleic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	63	7-palmitoleic acid (complete oxidation)		(E)-6-Hexadecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	64	Margaric acid (complete oxidation)		Heptadecanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	65	10Z-heptadecenoic acid (complete oxidation)		10Z-Heptadecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	66	9-heptadecylenic acid (complete oxidation)		(Z)-9-Heptadecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	67	Stearate (complete oxidation)		Stearic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	68	13Z-octadecenoic acid (complete oxidation)		(Z)-13-Octadecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	69	cis-vaccenic acid (complete oxidation)		Vaccenic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	70	Oleate (complete oxidation)		Oleic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	71	Elaidate (complete oxidation)		Elaidic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	72	7Z-octadecenoic acid (complete oxidation)		7Z-octadecenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	73	6Z,9Z-octadecadienoic acid (complete oxidation)		Linoelaidic Acid (All Trans C18:2)[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	74	Nonadecylic acid (complete oxidation)		Nonadecanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	75	Eicosanoate (complete oxidation)		Arachidic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	76	13Z-Eicosenoic acid (complete oxidation)		Paullinic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	77	cis-gondoic acid (complete oxidation)		Eicosenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	78	9-Eicosenoic acid (complete oxidation)		9Z-eicosenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	79	8,11-Eicosadienoic acid (complete oxidation)		8Z,11Z-Eicosadienoic Acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	80	Mead acid (complete oxidation)		5,8,11-Eicosatrienoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	81	Heneicosanoic acid (complete oxidation)		Heneicosanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	82	Behenic acid (complete oxidation)		Behenic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	83	cis-erucic acid (complete oxidation)		Erucic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	84	cis-cetoleic acid (complete oxidation)		Cetoleic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	85	Tricosanoic acid (complete oxidation)		Tricosanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	86	Lignocerate (complete oxidation)		Tetracosanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	87	Nervonic acid (complete oxidation)		Nervonic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	88	Cerotic acid (complete oxidation)		Hexacosanoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	89	Ximenic acid (complete oxidation)		17Z-hexacosenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	90	Linolenate (complete oxidation)		Alpha-Linolenic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	91	Stearidonic acid (complete oxidation)		Stearidonic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	92	omega-3-Arachidonic acid (complete oxidation)		"""Cis-8,11,14,17-Eicosatetraenoic acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	93	EPA (complete oxidation)		Eicosapentaenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	94	DPA (complete oxidation)		Docosapentaenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	95	9Z,12Z,15Z,18Z,21Z-TPA (complete oxidation)		"""9Z,12Z,15Z,18Z,21Z-Tetracosapentaenoic Acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	96	6Z,9Z,12Z,15Z,18Z,21Z-THA (complete oxidation)		"""6,9,12,15,18,21-Tetracosahexaenoic acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	97	DHA (complete oxidation)		Docosahexaenoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	98	11Z,14Z,17Z-eicosatrienoic acid (complete oxidation)		11,14,17-Eicosatrienoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	99	13,16,19-docosatrienoic acid (complete oxidation)		Docosatrienoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	100	10,13,16,19-docosatetraenoic acid (complete oxidation)		10Z,13Z,16Z,19Z-Docosatetraenoic Acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	101	12,15,18,21-tetracosatetraenoic acid (complete oxidation)		12Z,15Z,18Z,21Z-Tetracosatetraenoic Acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	102	Linoleate (complete oxidation)		Linoleic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	103	gamma-Linolenate (complete oxidation)		Gamma-Linolenic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	104	Dihomo-gamma-linolenate (complete oxidation)		"""8,11,14-Eicosatrienoic acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	105	Arachidonate (complete oxidation)		Arachidonic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	106	Adrenic acid (complete oxidation)		Adrenic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	107	9Z,12Z,15Z,18Z-TTA (complete oxidation)		"""9Z,12Z,15Z,18Z-Tetracosatetraenoic Acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	108	6Z,9Z,12Z,15Z,18Z-TPA (complete oxidation)		"""6Z,9Z,12Z,15Z,18Z-Tetracosapentaenoic Acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	109	4Z,7Z,10Z,13Z,16Z-DPA (complete oxidation)		"""(4Z,7Z,10Z,13Z,16Z)-Docosa-4,7,10,13,16-Pentaenoic Acid""[e]"	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	110	11Z,14Z-eicosadienoic acid (complete oxidation)		Eicosadienoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	111	13Z,16Z-docosadienoic acid (complete oxidation)		13Z,16Z-docosadienoic acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	112	10,13,16-docosatriynoic acid (complete oxidation)		10Z,13Z,16Z-Docosatriynoic Acid[e]	1.0	1.0	Carbon dioxide[e];Water[e]										
+				Oxygen[e]													
+	113	Oxidative phosphorylation		Succinic acid[m]	1.0	1.0	Fumaric acid[m]	1.0	1.0	Adenosine triphosphate[m] + Water[m] => ADP[m] + Phosphate[m]	1.0						
+				NADH[m];Hydrogen Ion[m]	1.0	1.0	NAD[m]	1.0	1.0								
+				Oxygen[e]			Water[e]										
+	114	Oxidative decarboxylation		Pyruvic acid[m];NAD[m];Coenzyme A[m]	1.0	1.0	Acetyl-CoA[m];NADH[m];Hydrogen Ion[m];Carbon dioxide[e]	1.0	1.0								
+	115	Ubiquinol-to-proton		QH2[m]	1.0	1.0	Ubiquinone-1[m]	1.0	1.0								
+				Oxygen[e];Hydrogen Ion[m]			Water[e]										
+							Hydrogen Ion[c]	6.0									
+	116	Ubiquinol-to-ATP		QH2[m]		10.0	ALLMETS			Adenosine triphosphate[m] + Water[m] => ADP[m] + Phosphate[m]	1.0						
+				Water[e];Oxygen[e];Chloride ion[e];Ammonia[e];Calcium[e];iodide[e];zn2[e];sulfate[e];Fe2+[e];Sodium[e];Potassium[e];Phosphate[e]			Ubiquinone-1[m]	1.0	1.0								
+	117	Phosphate dependent glutaminase 		L-Glutamine[e]			L-Glutamic acid[e]										
+				Water[e]			Ammonia[e]										
+	118	aspartate aminotransferase		D-Aspartate[c]	1.0		Oxalacetic acid[c]										
+				Oxoglutaric acid[c]			L-Glutamic acid[c]										
+	119	alanine aminotransferase 		L-Alanine[e]			Pyruvic acid[e]										
+		D-alanine[p] + O2[p] + H2O[p] => pyruvate[p] + NH3[p] + H2O2[p] 		Oxoglutaric acid[e]			L-Glutamic acid[e]										
+	120	D-amino acid oxidase (Alanine)		D-alanine[c]			Pyruvic acid[c]										
+				Water[c]			Hydrogen peroxide[c]										
+				Oxygen[c]			Ammonia[c]										
+	121	L-hydroxyacid oxidase		Glycolic acid[c];Oxygen[c]			Glyoxylic acid[c];Hydrogen peroxide[c]										
+	122	choline oxidase		choline[c]			Betaine aldehyde[c]										
+				NAD[c]			NADH[c]										
+							Hydrogen Ion[c]										
+	123	25(OH) Vitamin D3-Hydroxylases		Calcidiol[e]	1.0		calcitriol[c];Water[e]										
+				NADPH[c];Hydrogen Ion[e];Oxygen[e]			NADP[c]	0.5									
+	124	NADPH dependent glutathione reductase 		Glutathione[c]	2.0		Oxidized glutathione[c]										
+				NADP[c]	1.0		NADPH[c];Hydrogen Ion[c]										
+	125	Creatine Synthesis 		L-Arginine[c]			Creatine[c]										
+				Glycine[c]				1.0									
+				S-Adenosylmethionine[c]			Cervonyl Coenzyme A[c]										
+	126	ADMA conversion		Asymmetric dimethylarginine[c]	1.0		dimethylamine[c];citrulline[e]										
+				Water[e]													
+	127	Glycine Production 		Glutathione[e]			L-Cysteine[e]										
+				Water[e]			Glycine[e]										
+	128	NaCl reabsorption 		Sodium[e]	1.0		Sodium[c]	1.0									
+				ATP[e];Water[e];Potassium[c]			ADP[e];Phosphate[e];Potassium[e]										
+	129	AMP degredation to adenosine		Adenosine monophosphate[e]			Adenosine[e]	1.0									
+				Water[e]			Phosphate[e]										
+	130	Nitric Oxide synthesis from arginine		L-Arginine[e];NADPH[c]			Nitric oxide[e]										
+							citrulline[e]										
+	131	ATP degredation to AMP		Adenosine triphosphate[m]			Adenosine monophosphate[m]										
+							Pyrophosphate[m]										
+	132	Hydroxyproline oxidase		4-Hydroxyproline[c]			Pyrroline hydroxycarboxylic acid[c]										
+				Oxygen[c]			Water[c]	2.0									
+				Hydrogen Ion[c]	2.0												
+	133	pyrroline-5-carboxylate dehydrogenase		Pyrroline hydroxycarboxylic acid[m]			Erythro-4-Hydroxy-L-Glutamate[m]										
+				NAD[m]			NADH[m]										
+				H2O[m]	2.0		Hydrogen Ion[m]										
+	134	aspartate aminotransferase		Erythro-4-Hydroxy-L-Glutamate[m]			4-Hydroxy-2-oxoglutaric acid[m]										glycine precursors
+				Oxalacetic acid[c]			D-Aspartate[c]	1.0									
+	135	hydroxyoxoglutarate aidolase		4-Hydroxy-2-oxoglutaric acid[m]	1.0		Glyoxylic acid[m]										glycine precursors
+							Pyruvic acid[m]	0.5									
+	136	alaninie-glyoxalate transaminase 		Glyoxylic acid[c]	1.0		glycine[e]										amino acid reabsorption 
+				L-Alanine[e]	1.0		Pyruvic acid[e]										
+	137	glycine cleavage complex		Glycine[c]			Carbon dioxide[c];Ammonia[c];NADH[c];Hydrogen Ion[c]										glycine extraction from blood 
+				"""5,10-Methylene-THF""[c];NAD[c]"			Tetrahydrofolic acid[c]										
+	138	serine hydroxymethyltransferase		"""5,10-Methylene-THF""[c]"	1.0		L-Serine[e]										glycine extraction from blood 
+				Glycine[e];Water[e]			Tetrahydrofolic acid[e]										
+	139	Methionine conversion to S-Adenosylmethionine		L-Methionine[c]	1.0		Phosphate[c];Pyrophosphate[c]										
+				Adenosine triphosphate[c];Water[e]			S-Adenosylmethionine[c]										
+	140	S-Adenosylhomocysteine hydrolosis		S-Adenosylhomocysteine[c]	1.0		Homocysteine[c]										
+				Water[c]			adenosine[c]										
+	141	homocysteine methylation to methionine		Homocysteine[c]	1.0		L-Methionine[e]										
+				5-Methyltetrahydrofolic acid[e]			Tetrahydrofolic acid[e];Hydrogen Ion[c]										
+	142	homocysteine methylation to methionine		Homocysteine[c]	1.0		dimethylglycine[c]										
+				Betaine[c]			L-Methionine[c]										
+	143	homocysteine transsulfuration to cystathionine		Homocysteine[c]	1.0		L-cystathionine[c]										
+				L-Serine[e]			Water[e]										
+	144	cystathione degredation		L-Cystathionine[c]	1.0		2-Ketobutyric acid[c];Hydrogen Ion[c]										
+				Water[e]			L-Cysteine[e];Ammonia[e]										
+	145	Methylenetetrahydrofolate reduction 		"""5,10-Methylene-THF""[c]"			5-Methyltetrahydrofolic acid[c]										
+				NADPH[c]			NADP[c]										
+				Hydrogen Ion[c]													
+	146	Glycine-N-methyltransferase		S-Adenosylmethionine[c]			S-Adenosylhomocysteine[c];Hydrogen Ion[c]										
+				Glycine[e]	1.0		sarcosine[e]										
+	147	serine hydroxymethyltransferase (reverse)		Tetrahydrofolic acid[e]			Glycine[e];Water[e]										
+				L-Serine[e]	1.0		"""5,10-Methylene-THF""[c]"	1.0									
+	148	alpha-ketoglutarate oxidation (alpha-ketoglutarate dehydrogenase)		Oxoglutaric acid[m]			Succinyl-CoA[m]										
+				Coenzyme A[m]			Carbon dioxide[m]										
+				NAD[m]			NADH[m]										
+							Hydrogen Ion[m]										
+	149	Bicarbonate reabsorption		Hydrogen carbonate[c];Hydrogen Ion[c]	1.0		carbonate[c]										
+	150	Bicarbonate reabsorption		nitrosoperoxycarbonate[c]	1.0		Carbon dioxide[e];Water[e]										
+	151	Fructose 1,6-biphosphatase		"""Fructose 1,6-bisphosphate""[c]"	1.0		Fructose 6-phosphate[c]										
+				Water[e]			Phosphate[e]										
+	152	Calcium reabosrption		Calcium[c]	2.0		Calcium[e]	2.0									
+				Adenosine triphosphate[c]			ADP[c]										
+				Water[c]			Phosphate[c]										
+	153	Potassium reabsorption		Potassium[e]	1.0		Potassium[c]										
+				Adenosine triphosphate[c];Water[c];Sodium[c]			ADP[c];Phosphate[c];Sodium[e]										
+	154	Tryptophan to Serotonin		L-Tryptophan[c]			serotonin[c]										
+				Tetrahydrobiopterin[c]			Carbon dioxide[c]										
+				Oxygen[c]													
+	155	Serotonin degradation 		Serotonin[c]			5-Hydroxyindoleacetic acid[c]										
+				Water[c]			Hydrogen peroxide[c]										
+				Oxygen[c]													

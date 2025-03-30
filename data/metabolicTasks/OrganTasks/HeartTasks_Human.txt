@@ -1,0 +1,161 @@
+Unnamed: 0	ID	DESCRIPTION	SHOULD FAIL	IN	IN LB	IN UB	OUT	OUT LB	OUT UB	EQU	EQU LB	EQU UB	CHANGED RXN	CHANGED LB	CHANGED UB	PRINT FLUX	COMMENTS
+	1.0	ATP synthesis from glucose degradation		O2[e];glucose[e]			H2O[e];CO2[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	2.0	ATP synthesis from oleate oxidation		oleate[e];O2[e]			CO2[e];H2O[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	3.0	ATP synthesis from acetoacetate oxidation		O2[e];acetoacetate[e]			H2O[e];CO2[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	4.0	Urate synthesis		O2[e];glucose[e];NH3[e]			CO2[e];H2O[e]										
+							urate[e]	1.0									
+	5.0	Alanine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							alanine[c]	1.0									
+	6.0	Arginine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							arginine[c]	1.0									
+	7.0	Asparagine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							asparagine[c]	1.0									
+	8.0	Aspartate synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							aspartate[c]	1.0									
+	9.0	Cysteine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e];sulfate[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e]										
+							cysteine[c]	1.0									
+	10.0	Glutamate synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glutamate[c]	1.0									
+	11.0	Glycine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glycine[c]	1.0									
+	12.0	Histidine uptake		histidine[e]	1.0	1.0	histidine[c]	1.0									
+	13.0	Isoleucine uptake		isoleucine[e]	1.0	1.0	isoleucine[c]	1.0									
+	14.0	Glutamine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glutamine[c]	1.0									
+	15.0	Leucine uptake		leucine[e]	1.0	1.0	leucine[c]	1.0									
+	16.0	Lysine uptake		lysine[e]	1.0	1.0	lysine[c]	1.0									
+	17.0	Phenylalanine uptake		phenylalanine[e]	1.0	1.0	phenylalanine[c]	1.0									
+	18.0	Proline synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							proline[c]	1.0									
+	19.0	Serine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							serine[c]	1.0									
+	20.0	Threonine uptake		threonine[e]	1.0	1.0	threonine[c]	1.0									
+	21.0	Tryptophan uptake		tryptophan[e]	1.0	1.0	tryptophan[c]	1.0									
+	22.0	Tyrosine synthesis, maintenance in cytosol	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							tyrosine[c]	1.0									
+	23.0	Valine uptake		valine[e]	1.0	1.0	valine[c]	1.0									
+	24.0	Homocysteine synthesis, maintenance in cytosol		O2[e];glucose[e];NH3[e];Pi[e];cysteine[c];H2O[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e]										
+							homocysteine[c]	1.0									
+	25.0	Alanine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							alanine[m]	1.0									
+	26.0	Arginine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							arginine[m]	1.0									
+	27.0	Asparagine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							asparagine[m]	1.0									
+	28.0	Aspartate synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							aspartate[m]	1.0									
+	29.0	Cysteine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e];sulfate[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e]										
+							cysteine[m]	1.0									
+	30.0	Glutamate synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glutamate[m]	1.0									
+	31.0	Glycine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glycine[m]	1.0									
+	32.0	Histidine transport, mitochondrion		histidine[c]	1.0	1.0	histidine[m]	1.0									
+	33.0	Isoleucine transport, mitochondrion		isoleucine[c]	1.0	1.0	isoleucine[m]	1.0									
+	34.0	Glutamine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glutamine[m]	1.0									
+	35.0	Leucine transport, mitochondrion		leucine[c]	1.0	1.0	leucine[m]	1.0									
+	36.0	Lysine transport, mitochondrion		lysine[m]	1.0	1.0	lysine[c]	1.0									
+	37.0	Phenylalanine transport, mitochondrion		phenylalanine[c]	1.0	1.0	phenylalanine[m]	1.0									
+	38.0	Proline synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							proline[m]	1.0									
+	39.0	Serine synthesis, maintenance in mitochondrion		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							serine[m]	1.0									
+	40.0	Threonine transport, mitochondrion		threonine[c]	1.0	1.0	threonine[m]	1.0									
+	41.0	Tyrosine synthesis, maintenance in mitochondrion	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							tyrosine[m]	1.0									
+	42.0	Valine transport, mitochondrion		valine[c]	1.0	1.0	valine[m]	1.0									
+	43.0	Cholesterol synthesis, cytosol		O2[e];glucose[e];H2O[e]			H2O[e];CO2[e]										
+							cholesterol[c]	1.0									
+	44.0	Carnitine synthesis, cytosol		O2[e];glucose[e];H2O[e];NH3[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e];urea[e]										
+							L-carnitine[c]	1.0									
+	45.0	Carnitine synthesis, mitochondrion		O2[e];glucose[e];H2O[e];NH3[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e];urea[e]										
+							L-carnitine[m]	1.0									
+	46.0	Palmitate synthesis		O2[e];glucose[e]			CO2[e];H2O[e]										
+							palmitate[c]	1.0									
+	47.0	Stearate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							stearate[c]	1.0									
+	48.0	Oleate synthesis		O2[e];glucose[e]			CO2[e];H2O[e]										
+							oleate[c]	1.0									
+	49.0	Sphinganine synthesis, cytosol		O2[e];glucose[e];H2O[e];NH3[e]			H2O[e];CO2[e]										
+							sphinganine[c]	1.0									
+	50.0	UDP degradation, cytosol		UDP[c];O2[e]			H2O[e];CO2[e];NH3[e];Pi[e]										
+	51.0	H2O2 degradation, cytosol		H2O2[c]			H2O[e];O2[e]										
+	52.0	Lysine degradation		lysine[e];O2[e]		1.0	H2O[e];CO2[e];urea[e]										
+	53.0	ITP degradation, cytosol		ITP[c];O2[e]			H2O[e];CO2[e];NH3[e];Pi[e]										
+	54.0	Glucose-1P degradation, cytosol		glucose-1-phosphate[c];O2[e]			H2O[e];CO2[e];Pi[e]										
+	55.0	IDP degradation, cytosol		IDP[c];O2[e]			H2O[e];CO2[e];NH3[e];Pi[e]										
+	56.0	UMP degradation, cytosol		UMP[c];O2[e]			H2O[e];CO2[e];NH3[e];Pi[e]										
+	57.0	DHAP degradation, cytosol		DHAP[c];O2[e]			H2O[e];CO2[e];Pi[e]										
+	58.0	PRPP degradation, cytosol		PRPP[c];O2[e]			H2O[e];CO2[e];Pi[e]										
+	59.0	GSH synthesis, cytosol		O2[e];NH3[e];glucose[e];methionine[e]			H2O[e];CO2[e];urea[e]										
+							GSH[c]	1.0									
+	60.0	Putrescine synthesis		O2[e];NH3[e];glucose[e]			H2O[e];CO2[e];urea[e]										
+							Putrescine[c]	1.0									
+	61.0	NADH synthesis from glucose degradation		O2[e];glucose[e];NH3[e];Pi[e];nicotinamide[e]			NADH[c]	1.0									
+							H2O[e];CO2[e]										
+	62.0	NADPH synthesis from glucose degradation		O2[e];glucose[e];NH3[e];Pi[e];nicotinamide[e]			NADPH[c]	1.0									
+							H2O[e];CO2[e]										
+	63.0	NADH synthesis from glucose degradation		O2[e];glucose[e];NH3[e];Pi[e];nicotinamide[e]			NADH[c]	1.0									
+							H2O[e];CO2[e]										
+	64.0	NADPH synthesis from glucose degradation		O2[e];glucose[e];NH3[e];Pi[e];nicotinamide[e]			NADPH[c]	1.0									
+							H2O[e];CO2[e]										
+	65.0	Anaerobic glycolysis		glucose-6-phosphate[c]			pyruvate[c];H2O[e];CO2[e]										
+	66.0	Aerobic glycolysis		glucose-6-phosphate[c];O2[e]			pyruvate[c];H2O[e];CO2[e]										
+	67.0	Glycogen synthesis		glucose[e]	11.0	11.0	H2O[e];CO2[e]			ATP[c] + H2O[c] <=> ADP[c] + Pi[c]							
+				glycogenin[c]	1.0	1.0	glycogenin G11[c]	1.0		NADH[c] <=> NAD+[c]							
+				O2[e]													
+	68.0	Thioredoxin oxidation		thioredoxin[c];glucose[e];O2[e]			H2O[e];CO2[e]										
+							oxidized thioredoxin[c]	1.0									
+	69.0	Thioredoxin_oxidation_negativetest		thioredoxin[c];glucose[e];O2[e]			H2O[e];CO2[e]										
+							oxidized thioredoxin[c]	1.0									
+	70.0	Thioredoxin reduction		oxidized thioredoxin[c];glucose[e];O2[e]			H2O[e];CO2[e]										
+							thioredoxin[c]	1.0									
+	71.0	Thioredoxin_reduction_negativetest		oxidized thioredoxin[c];glucose[e];O2[e]			H2O[e];CO2[e]										
+							thioredoxin[c]	1.0									
+	72.0	Adenine synthesis		glucose[e];O2[e];NH3[e]			H2O[e];CO2[e];urea[e]										
+							adenine[c]	1.0									
+	73.0	ADP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							ADP[c]	1.0									
+	74.0	AMP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							AMP[c]	1.0									
+	75.0	IMP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							IMP[c]	1.0									
+	76.0	Xanthosine-5P synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							xanthosine-5-phosphate[c]	1.0									
+	77.0	GMP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							GMP[c]	1.0									
+	78.0	GTP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							GTP[c]	1.0									
+	79.0	Uracil synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							uracil[c]	1.0									
+	80.0	Uridine synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							uridine[c]	1.0									
+	81.0	UMP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							UMP[c]	1.0									
+	82.0	UDP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							UDP[c]	1.0									
+	83.0	Cytidine synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							cytidine[c]	1.0									
+	84.0	CMP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							CMP[c]	1.0									
+	85.0	CDP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							CDP[c]	1.0									
+	86.0	dCDP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							dCDP[c]	1.0									
+	87.0	Guanine synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							guanine[c]	1.0									
+	88.0	Deoxyguanosine synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							deoxyguanosine[c]	1.0									
+	89.0	dGMP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							dGMP[c]	1.0									
+	90.0	dGDP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							dGDP[c]	1.0									
+	91.0	PRPP synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							PRPP[c]	1.0									
+	92.0	AIR synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							AIR[c]	1.0									
+	93.0	AICAR synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							AICAR[c]	1.0									
+	94.0	FAICAR synthesis, cytosol		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e];urea[e]										
+							FAICAR[c]	1.0									

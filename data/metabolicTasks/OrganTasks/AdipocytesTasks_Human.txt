@@ -1,0 +1,449 @@
+Unnamed: 0	ID	DESCRIPTION	SHOULD FAIL	IN	IN LB	IN UB	OUT	OUT LB	OUT UB	EQU	EQU LB	EQU UB	CHANGED RXN	CHANGED LB	CHANGED UB	PRINT FLUX	COMMENTS
+	1.0	Aerobic rephosphorylation of ATP from glucose		O2[e];glucose[e]			H2O[e];CO2[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	2.0	Aerobic rephosphorylation of ATP from a fatty acid		O2[e];palmitate[e]			H2O[e];CO2[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	3.0	Aerobic rephosphorylation of GTP		O2[e];glucose[e]			H2O[e];CO2[e]			GTP[c] + H2O[c] => GDP[c] + Pi[c]	1.0						
+	4.0	Aerobic rephosphorylation of CTP		O2[e];glucose[e]			H2O[e];CO2[e]			CTP[c] + H2O[c] => CDP[c] + Pi[c]	1.0						
+	5.0	Aerobic rephosphorylation of UTP		O2[e];glucose[e]			H2O[e];CO2[e]			UTP[c] + H2O[c] => UDP[c] + Pi[c]	1.0						
+	6.0	Anaerobic rephosphorylation of ATP		glucose[e]			H2O[e];L-lactate[c];CO2[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	7.0	Anaerobic rephosphorylation of GTP		glucose[e]			H2O[e];L-lactate[c];CO2[e]			GTP[c] + H2O[c] => GDP[c] + Pi[c]	1.0						
+	8.0	Anaerobic rephosphorylation of CTP		glucose[e]			H2O[e];L-lactate[c];CO2[e]			CTP[c] + H2O[c] => CDP[c] + Pi[c]	1.0						
+	9.0	Anaerobic rephosphorylation of UTP		glucose[e]			H2O[e];L-lactate[c];CO2[e]			UTP[c] + H2O[c] => UDP[c] + Pi[c]	1.0						
+	10.0	ATP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							ATP[c]	1.0									
+	11.0	CTP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							CTP[c]	1.0									
+	12.0	GTP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							GTP[c]	1.0									
+	13.0	UTP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							UTP[c]	1.0									
+	14.0	dATP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							dATP[c]	1.0									
+	15.0	dCTP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							dCTP[c]	1.0									
+	16.0	dGTP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							dGTP[c]	1.0									
+	17.0	dTTP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							dTTP[c]	1.0									
+	18.0	ATP salvage from Adenosine		Pi[e]			H2O[e]			ATP[c] + H2O[c] <=> ADP[c] + Pi[c]							
+				adenosine[e]	1.0	1.0	ATP[e]	1.0									
+	19.0	ATP salvage from Hypoxanthine		Pi[e];O2[e];NH3[e];H2O[e];H+[c]			H2O[e];PPi[e];H+[c]			ATP[c] + H2O[c] <=> ADP[c] + Pi[c]							
+				hypoxanthine[e]	1.0	1.0	ATP[e]	1.0									
+				PRPP[c]	1.0	1.0											
+	20.0	dTTP salvage from Thymine		Pi[e];O2[e];NH3[e];H2O[e];H+[c]			H2O[e];PPi[e];H+[c]			ATP[c] + H2O[c] <=> ADP[c] + Pi[c]							
+				thymine[e]	1.0	1.0	dTTP[c]	1.0									
+				2-deoxy-D-ribose-1-phosphate[c]	1.0	1.0											
+	21.0	Aerobic reduction of NAD+		glucose[e];O2[e]			H2O[e];CO2[e]			NADH[c] => NAD+[c]	1.0						This is not a proof since there can be net synthesis of NADH. However, if you look at the solution it's fine
+	22.0	Aerobic reduction of NADP+		glucose[e];O2[e]			H2O[e];CO2[e]			NADPH[c] => NADP+[c]	1.0						This is not a proof since there can be net synthesis of NADPH. However, if you look at the solution it's fine
+	23.0	Gluconeogenesis from Lactate		O2[e];H2O[e];L-lactate[e]			H2O[e];CO2[e]										
+							glucose[e]	1.0									
+	24.0	Storage of glucose in Glycogen		glucose[e]	11.0	11.0	H2O[e];CO2[e]			ATP[c] + H2O[c] <=> ADP[c] + Pi[c]							
+				glycogenin[c]	1.0	1.0	glycogenin G11[c]	1.0		NADH[c] <=> NAD+[c]							
+				O2[e]						NADPH[c] <=> NADP+[c]							
+	25.0	Release of glucose from Glycogen		glycogenin G11[c]	1.0	1.0	glucose[e]	11.0	11.0	glucose-1-phosphate[c] + H2O[c] => glucose[c] + Pi[c]							
+				H2O[e]			glycogenin[c]	1.0	1.0								
+	26.0	Fructose degradation		fructose[e];O2[e]		1.0	H2O[e];CO2[e]										
+	27.0	Galactose degradation		galactose[e];O2[e]		1.0	H2O[e];CO2[e]										
+	28.0	UDP-glucose de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							UDP-glucose[c]	1.0									
+	29.0	UDP-galactose de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							UDP-galactose[c]	1.0									
+	30.0	UDP-glucuronate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							UDP-glucuronate[c]	1.0									
+	31.0	GDP-L-fucose de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							GDP-L-fucose[c]	1.0									
+	32.0	GDP-mannose de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							GDP-mannose[c]	1.0									
+	33.0	UDP-N-acetyl D-galactosamine de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							UDP-N-acetyl-D-galactosamine[c]	1.0									
+	34.0	CMP-N-acetylneuraminate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							CMP-N-acetylneuraminate[c]	1.0									
+	35.0	N-Acetylglucosamine de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							N-acetylglucosamine[c]	1.0									
+	36.0	Glucuronate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glucuronate[c]	1.0									
+	37.0	Alanine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							alanine[e]	1.0									
+	38.0	Arginine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							arginine[e]	1.0									
+	39.0	Asparagine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							asparagine[e]	1.0									
+	40.0	Aspartate de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							aspartate[c]	1.0									
+	41.0	Glutamate de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glutamate[e]	1.0									
+	42.0	Glycine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glycine[e]	1.0									
+	43.0	Glutamine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							glutamine[e]	1.0									
+	44.0	Proline de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							proline[e]	1.0									
+	45.0	Serine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							serine[e]	1.0									
+	46.0	Histidine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							histidine[c]	1.0									
+	47.0	Histidine uptake		histidine[e]	1.0	1.0	histidine[c]	1.0									
+	48.0	Isoleucine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							isoleucine[c]	1.0									
+	49.0	Isoleucine uptake		isoleucine[e]	1.0	1.0	isoleucine[c]	1.0									
+	50.0	Leucine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							leucine[c]	1.0									
+	51.0	Leucine uptake		leucine[e]	1.0	1.0	leucine[c]	1.0									
+	52.0	Lysine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							lysine[c]	1.0									
+	53.0	Lysine uptake		lysine[e]	1.0	1.0	lysine[c]	1.0									
+	54.0	Methionine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							methionine[c]	1.0									
+	55.0	Methionine uptake		methionine[e]	1.0	1.0	methionine[c]	1.0									
+	56.0	Phenylalanine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							phenylalanine[c]	1.0									
+	57.0	Phenylalanine uptake		phenylalanine[e]	1.0	1.0	phenylalanine[c]	1.0									
+	58.0	Threonine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							threonine[c]	1.0									
+	59.0	Threonine uptake		threonine[e]	1.0	1.0	threonine[c]	1.0									
+	60.0	Tryptophan de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							tryptophan[c]	1.0									
+	61.0	Tryptophan uptake		tryptophan[e]	1.0	1.0	tryptophan[c]	1.0									
+	62.0	Valine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							valine[c]	1.0									
+	63.0	Valine uptake		valine[e]	1.0	1.0	valine[c]	1.0									
+	64.0	Cysteine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e];sulfate[e]			H2O[e];CO2[e]										
+							cysteine[e]	1.0									
+	65.0	Cysteine de novo synthesis (minimal substrates and AA, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e];sulfate[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e]										
+							cysteine[e]	1.0									
+	66.0	Cystine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e];sulfite[e]			H2O[e];CO2[e]										
+							cystine[e]	1.0									
+	67.0	Tyrosine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							tyrosine[e]	1.0									
+	68.0	Tyrosine de novo synthesis (minimal substrates with AA, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e];sulfate[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e]										
+							tyrosine[e]	1.0									
+	69.0	Homocysteine de novo synthesis (minimal substrates, minimal excretion)	1.0	O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							homocysteine[c]	1.0									
+	70.0	Homocysteine de novo synthesis (minimal substrates with AA, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e];sulfate[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e]			H2O[e];CO2[e]										
+							homocysteine[c]	1.0									
+	71.0	beta-Alanine de novo synthesis (minimal substrates, minimal excretion)		O2[e];glucose[e];NH3[e];Pi[e]			H2O[e];CO2[e]										
+							beta-alanine[e]	1.0									
+	72.0	Alanine degradation		alanine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	73.0	Arginine degradation		arginine[e];O2[e]		1.0	H2O[e];CO2[e];NH3[e]										
+	74.0	Asparagine degradation		asparagine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	75.0	Aspartate degradation		aspartate[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	76.0	Cysteine degradation		cysteine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e];H2S[e]										
+	77.0	Glutamate degradation		glutamate[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	78.0	Glycine degradation		glycine[e];O2[e]		1.0	H2O[e];CO2[e];NH3[e]										
+	79.0	Histidine degradation		histidine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	80.0	Isoleucine degradation		isoleucine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	81.0	Glutamine degradation		glutamine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	82.0	Leucine degradation		leucine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	83.0	Lysine degradation		lysine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	84.0	Methionine degradation		methionine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e];H2S[e]										
+	85.0	Phenylalanine degradation		phenylalanine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	86.0	Proline degradation		proline[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	87.0	Serine degradation		serine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	88.0	Threonine degradation		threonine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	89.0	Tryptophan degradation		tryptophan[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	90.0	Tyrosine degradation		tyrosine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	91.0	Valine degradation		valine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	92.0	Homocysteine degradation		homocysteine[c];O2[e]		1.0	H2O[e];CO2[e];urate[e];H2S[e]										
+	93.0	Ornithine degradation		ornithine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	94.0	beta-Alanine degradation		beta-alanine[e];O2[e]		1.0	H2O[e];CO2[e];urate[e]										
+	95.0	Heme de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e];Fe2+[e]			H2O[e];CO2[e]										
+							heme[e]	1.0									
+	96.0	PC de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e];isoleucine[c]			H2O[e];CO2[e];urate[e]										
+							PC-LD pool[c]	1.0									
+	97.0	PE de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];ethanolamine[c]			H2O[e];CO2[e]										
+							PE-LD pool[c]	1.0									
+	98.0	PS de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e]			H2O[e];CO2[e]										
+							PS-LD pool[c]	1.0									
+	99.0	PI de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e]			H2O[e];CO2[e]										
+							PI pool[c]	1.0									
+	100.0	Cardiolipin de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e]			H2O[e];CO2[e]										
+							CL pool[c]	1.0									
+	101.0	SM de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e]			H2O[e];CO2[e]										
+							SM pool[c]	1.0									
+	102.0	Ceramide de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e]			H2O[e];CO2[e]										
+							ceramide pool[c]	1.0									
+	103.0	Lactosylceramide de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];Pi[e];linoleate[e];linolenate[e];choline[e]			H2O[e];CO2[e]										
+							LacCer pool[c]	1.0									
+	104.0	CoA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e];methionine[e];pantothenate[e]			CoA[c]	1.0									
+							CO2[e];urate[e];H2O[e]										
+	105.0	NAD de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e];nicotinamide[e]			NAD+[c]	1.0									
+							H2O[e];CO2[e]										
+	106.0	NADP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e];nicotinamide[e]			NADP+[c]	1.0									
+							H2O[e];CO2[e]										
+	107.0	FAD de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];NH3[e];Pi[e];riboflavin[e]			FAD[c]	1.0									
+							H2O[e];CO2[e]										
+	108.0	Thioredoxin de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];histidine[e];isoleucine[e];leucine[e];lysine[e];methionine[e];phenylalanine[e];threonine[e];tryptophan[e];valine[e]			H2O[e];CO2[e];urate[e];H2S[e]										
+							thioredoxin[c]	1.0									
+	109.0	THF de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];folate[e]			H2O[e];CO2[e]										
+							THF[c]	1.0									
+	110.0	Pyridoxal-P de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];Pi[e];pyridoxine[e]			H2O[e];CO2[e]										
+							pyridoxal-phosphate[c]	1.0									
+	111.0	Acetoacetate de novo synthesis and excretion		O2[e];glucose[e]			H2O[e];CO2[e]										
+							acetoacetate[e]	1.0									
+	112.0	(R)-3-Hydroxybutanoate de novo synthesis		O2[e];glucose[e]			H2O[e];CO2[e]										
+							(R)-3-hydroxybutanoate[c]	1.0									
+	113.0	Farnesyl-PP de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];phenylalanine[e];Pi[e]			H2O[e];CO2[e]										
+							farnesyl-PP[c]	1.0									
+	114.0	Lauric acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							lauric acid[c]	1.0									
+	115.0	Tridecylic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							tridecylic acid[c]	1.0									
+	116.0	Myristic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							myristic acid[c]	1.0									
+	117.0	9E-tetradecenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							(9E)-tetradecenoic acid[c]	1.0									
+	118.0	7Z-tetradecenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							(7Z)-tetradecenoic acid[c]	1.0									
+	119.0	Physeteric acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							physeteric acid[c]	1.0									
+	120.0	Pentadecylic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							pentadecylic acid[c]	1.0									
+	121.0	Palmitate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							palmitate[c]	1.0									
+	122.0	Palmitolate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							palmitolate[c]	1.0									
+	123.0	7-palmitoleic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							7-palmitoleic acid[c]	1.0									
+	124.0	Margaric acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							margaric acid[c]	1.0									
+	125.0	10Z-heptadecenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							(10Z)-heptadecenoic acid[c]	1.0									
+	126.0	9-heptadecylenic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							9-heptadecylenic acid[c]	1.0									
+	127.0	Stearate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							stearate[c]	1.0									
+	128.0	13Z-octadecenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							(13Z)-octadecenoic acid[c]	1.0									
+	129.0	cis-vaccenic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							cis-vaccenic acid[c]	1.0									
+	130.0	Oleate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							oleate[c]	1.0									
+	131.0	Elaidate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							elaidate[c]	1.0									
+	132.0	7Z-octadecenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							(7Z)-octadecenoic acid[c]	1.0									
+	133.0	6Z,9Z-octadecadienoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							(6Z,9Z)-octadecadienoic acid[c]	1.0									
+	134.0	Nonadecylic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							nonadecylic acid[c]	1.0									
+	135.0	Eicosanoate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							eicosanoate[c]	1.0									
+	136.0	13Z-Eicosenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							(13Z)-eicosenoic acid[c]	1.0									
+	137.0	cis-gondoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							cis-gondoic acid[c]	1.0									
+	138.0	9-Eicosenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							9-eicosenoic acid[c]	1.0									
+	139.0	8,11-Eicosadienoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							8,11-eicosadienoic acid[c]	1.0									
+	140.0	Mead acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							mead acid[c]	1.0									
+	141.0	Heneicosanoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							heneicosanoic acid[c]	1.0									
+	142.0	Behenic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							behenic acid[c]	1.0									
+	143.0	cis-erucic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							cis-erucic acid[c]	1.0									
+	144.0	cis-cetoleic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							cis-cetoleic acid[c]	1.0									
+	145.0	Tricosanoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];isoleucine[c]			CO2[e];H2O[e];urate[e]										
+							tricosanoic acid[c]	1.0									
+	146.0	Lignocerate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							lignocerate[c]	1.0									
+	147.0	Nervonic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							nervonic acid[c]	1.0									
+	148.0	Cerotic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							cerotic acid[c]	1.0									
+	149.0	Ximenic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e]			CO2[e];H2O[e]										
+							ximenic acid[c]	1.0									
+	150.0	Linolenate de novo synthesis (minimal substrates, physiological excretion)	1.0	O2[e];glucose[e]			CO2[e];H2O[e]										
+							linolenate[c]	1.0									
+	151.0	Stearidonic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							stearidonic acid[c]	1.0									
+	152.0	omega-3-Arachidonic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							omega-3-arachidonic acid[c]	1.0									
+	153.0	EPA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							EPA[c]	1.0									
+	154.0	DPA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							DPA[c]	1.0									
+	155.0	9Z,12Z,15Z,18Z,21Z-TPA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							(9Z,12Z,15Z,18Z,21Z)-TPA[c]	1.0									
+	156.0	6Z,9Z,12Z,15Z,18Z,21Z-THA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							(6Z,9Z,12Z,15Z,18Z,21Z)-THA[c]	1.0									
+	157.0	DHA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							DHA[c]	1.0									
+	158.0	11Z,14Z,17Z-eicosatrienoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							(11Z,14Z,17Z)-eicosatrienoic acid[c]	1.0									
+	159.0	13,16,19-docosatrienoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							13,16,19-docosatrienoic acid[c]	1.0									
+	160.0	10,13,16,19-docosatetraenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							10,13,16,19-docosatetraenoic acid[c]	1.0									
+	161.0	12,15,18,21-tetracosatetraenoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linolenate[e]			CO2[e];H2O[e]										
+							12,15,18,21-tetracosatetraenoic acid[c]	1.0									
+	162.0	Linoleate de novo synthesis (minimal substrates, physiological excretion)	1.0	O2[e];glucose[e]			CO2[e];H2O[e]										
+							linoleate[c]	1.0									
+	163.0	gamma-Linolenate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							gamma-linolenate[c]	1.0									
+	164.0	Dihomo-gamma-linolenate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							dihomo-gamma-linolenate[c]	1.0									
+	165.0	Arachidonate de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							arachidonate[c]	1.0									
+	166.0	Adrenic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							adrenic acid[c]	1.0									
+	167.0	9Z,12Z,15Z,18Z-TTA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							(9Z,12Z,15Z,18Z)-TTA[c]	1.0									
+	168.0	6Z,9Z,12Z,15Z,18Z-TPA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							(6Z,9Z,12Z,15Z,18Z)-TPA[c]	1.0									
+	169.0	4Z,7Z,10Z,13Z,16Z-DPA de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							(4Z,7Z,10Z,13Z,16Z)-DPA[c]	1.0									
+	170.0	11Z,14Z-eicosadienoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							(11Z,14Z)-eicosadienoic acid[c]	1.0									
+	171.0	13Z,16Z-docosadienoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							(13Z,16Z)-docosadienoic acid[c]	1.0									
+	172.0	10,13,16-docosatriynoic acid de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];linoleate[e]			CO2[e];H2O[e]										
+							10,13,16-docosatriynoic acid[c]	1.0									
+	173.0	Lauric acid (complete oxidation)		lauric acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	174.0	Tridecylic acid (complete oxidation)		tridecylic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	175.0	Myristic acid (complete oxidation)		myristic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	176.0	9E-tetradecenoic acid (complete oxidation)		(9E)-tetradecenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	177.0	7Z-tetradecenoic acid (complete oxidation)		(7Z)-tetradecenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	178.0	Physeteric acid (complete oxidation)		physeteric acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	179.0	Pentadecylic acid (complete oxidation)		pentadecylic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	180.0	Palmitate (complete oxidation)		palmitate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	181.0	Palmitolate (complete oxidation)		palmitolate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	182.0	7-palmitoleic acid (complete oxidation)		7-palmitoleic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	183.0	Margaric acid (complete oxidation)		margaric acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	184.0	10Z-heptadecenoic acid (complete oxidation)		(10Z)-heptadecenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	185.0	9-heptadecylenic acid (complete oxidation)		9-heptadecylenic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	186.0	Stearate (complete oxidation)		stearate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	187.0	13Z-octadecenoic acid (complete oxidation)		(13Z)-octadecenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	188.0	cis-vaccenic acid (complete oxidation)		cis-vaccenic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	189.0	Oleate (complete oxidation)		oleate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	190.0	Elaidate (complete oxidation)		elaidate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	191.0	7Z-octadecenoic acid (complete oxidation)		(7Z)-octadecenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	192.0	6Z,9Z-octadecadienoic acid (complete oxidation)		(6Z,9Z)-octadecadienoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	193.0	Nonadecylic acid (complete oxidation)		nonadecylic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	194.0	Eicosanoate (complete oxidation)		eicosanoate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	195.0	13Z-Eicosenoic acid (complete oxidation)		(13Z)-eicosenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	196.0	cis-gondoic acid (complete oxidation)		cis-gondoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	197.0	9-Eicosenoic acid (complete oxidation)		9-eicosenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	198.0	8,11-Eicosadienoic acid (complete oxidation)		8,11-eicosadienoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	199.0	Mead acid (complete oxidation)		mead acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	200.0	Heneicosanoic acid (complete oxidation)		Heneicosanoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	201.0	Behenic acid (complete oxidation)		behenic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	202.0	cis-erucic acid (complete oxidation)		cis-erucic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	203.0	cis-cetoleic acid (complete oxidation)		cis-cetoleic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	204.0	Tricosanoic acid (complete oxidation)		tricosanoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	205.0	Lignocerate (complete oxidation)		lignocerate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	206.0	Nervonic acid (complete oxidation)		nervonic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	207.0	Cerotic acid (complete oxidation)		cerotic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	208.0	Ximenic acid (complete oxidation)		ximenic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	209.0	Linolenate (complete oxidation)		linolenate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	210.0	Stearidonic acid (complete oxidation)		stearidonic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	211.0	omega-3-Arachidonic acid (complete oxidation)		omega-3-arachidonic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	212.0	EPA (complete oxidation)		EPA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	213.0	DPA (complete oxidation)		DPA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	214.0	9Z,12Z,15Z,18Z,21Z-TPA (complete oxidation)		(9Z,12Z,15Z,18Z,21Z)-TPA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	215.0	6Z,9Z,12Z,15Z,18Z,21Z-THA (complete oxidation)		(6Z,9Z,12Z,15Z,18Z,21Z)-THA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	216.0	DHA (complete oxidation)		DHA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	217.0	11Z,14Z,17Z-eicosatrienoic acid (complete oxidation)		(11Z,14Z,17Z)-eicosatrienoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	218.0	13,16,19-docosatrienoic acid (complete oxidation)		13,16,19-docosatrienoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	219.0	10,13,16,19-docosatetraenoic acid (complete oxidation)		10,13,16,19-docosatetraenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	220.0	12,15,18,21-tetracosatetraenoic acid (complete oxidation)		12,15,18,21-tetracosatetraenoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	221.0	Linoleate (complete oxidation)		linoleate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	222.0	gamma-Linolenate (complete oxidation)		gamma-linolenate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	223.0	Dihomo-gamma-linolenate (complete oxidation)		dihomo-gamma-linolenate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	224.0	Arachidonate (complete oxidation)		arachidonate[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	225.0	Adrenic acid (complete oxidation)		adrenic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	226.0	9Z,12Z,15Z,18Z-TTA (complete oxidation)		(9Z,12Z,15Z,18Z)-TTA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	227.0	6Z,9Z,12Z,15Z,18Z-TPA (complete oxidation)		(6Z,9Z,12Z,15Z,18Z)-TPA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	228.0	4Z,7Z,10Z,13Z,16Z-DPA (complete oxidation)		(4Z,7Z,10Z,13Z,16Z)-DPA[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	229.0	11Z,14Z-eicosadienoic acid (complete oxidation)		(11Z,14Z)-eicosadienoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	230.0	13Z,16Z-docosadienoic acid (complete oxidation)		(13Z,16Z)-docosadienoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	231.0	10,13,16-docosatriynoic acid (complete oxidation)		10,13,16-docosatriynoic acid[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	232.0	Triacylglycerol de novo synthesis (physiological substrates, physiological excretion)		O2[e];glucose[e];linoleate[e];linolenate[e]			H2O[e];CO2[e]										
+							TAG-LD pool[c]	1.0									
+	233.0	PAPS de novo synthesis (minimal substrates, physiological excretion)		O2[e];glucose[e];Pi[e];NH3[e];sulfate[e];histidine[e];valine[e]			H2O[e];CO2[e];urate[e]										
+							PAPS[c]	1.0									
+	234.0	PAP degradation		PAPS[c]			CO2[e];H2O[e];urate[e];Pi[e];H2S[e]										
+				O2[e]													
+	235.0	SAM de novo synthesis (minimal substrates, physiological excretion)		O2[e];NH3[e];glucose[e];methionine[e]			H2O[e];CO2[e];urate[e]										
+							SAM[c]	1.0									
+	236.0	GSH de novo synthesis (minimal substrates, physiological excretion)		O2[e];NH3[e];glucose[e];methionine[e]			H2O[e];CO2[e];urate[e]										
+							GSH[c]	1.0									
+	237.0	Bilirubin conjugation (minimal substrates, physiological excretion)		O2[e];glucose[e];Pi[e];bilirubin[e]			H2O[e];CO2[e]										
+							bilirubin-bisglucuronoside[e]	1.0									
+	238.0	NH3 import and degradation		NH3[e];O2[e];glucose[e]			CO2[e];H2O[e]										
+							urate[e]	1.0									
+	239.0	Ethanol import and degradation (minimal substrates, minimalexcretion)		ethanol[e]	1.0	1.0	CO2[e];H2O[e]										
+				O2[e]													
+	240.0	Oxidative phosphorylation		succinate[m]	1.0	1.0	fumarate[m]	1.0	1.0	ATP[m] + H2O[m] => ADP[m] + Pi[m]	1.0						
+				NADH[m];H+[m]	1.0	1.0	NAD+[m]	1.0	1.0								
+				O2[e]			H2O[e]										
+	241.0	Oxidative decarboxylation		pyruvate[m];NAD+[m];CoA[m]	1.0	1.0	acetyl-CoA[m];NADH[m];H+[m];CO2[e]	1.0	1.0								
+	242.0	Krebs cycle NADH		acetyl-CoA[m];GDP[m];ubiquinone[m]	1.0	1.0	CoA[m];ubiquinol[m];GTP[m]	1.0	1.0								
+				NAD+[m]	3.0	3.0	NADH[m]	3.0	3.0								
+				Pi[m];H2O[e]			CO2[e];H+[c];H+[m]										
+	243.0	Ubiquinol-to-proton		ubiquinol[m]	1.0	1.0	ubiquinone[m]	1.0	1.0								
+				O2[e];H+[m]			H2O[e]										
+							H+[c]	6.0									
+	244.0	Ubiquinol-to-ATP		ubiquinol[m]	1.0	1.0	ubiquinone[m]	1.0	1.0	ATP[m] + H2O[m] => ADP[m] + Pi[m]	1.0						
+				O2[e];H+[m]			H2O[e];H+[m];H+[c]										

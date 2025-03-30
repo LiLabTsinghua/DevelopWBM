@@ -5,7 +5,7 @@
 
 Age = 'Adult';
 Sex = 'Male';
-modelPath = ['../Models/models', '_', Age, Sex];
+modelPath = ['../models/', Age, Sex, '_models.mat'];
 load(modelPath);
 % models = load(modelPath);
 
@@ -62,44 +62,143 @@ cMergeModel = MergeModel;
 [selExc, ~] = findExcRxns(cMergeModel);
 [cMergeModel, ~, ~] = removeRxns(cMergeModel, cMergeModel.rxns(selExc), 'metFlag', false);
 
+% update comp of mets
+new_comp = cell(size(cMergeModel.mets));
+for i = 1:numel(cMergeModel.mets)
+    currentString = cMergeModel.mets{i};
+    lastChar = currentString(end);
+    new_comp{i} = lastChar;
+end
+
+new_comp_num = [];
+for i=1:length(new_comp)
+    new_comp_char = new_comp{i,1};
+    for j=1:length(cMergeModel.comps)
+        model_comp = cMergeModel.comps{j,1};
+        if strcmp(new_comp_char, model_comp)
+            new_comp_num(end+1) = j;
+        end
+    end
+end
+
+cMergeModel.metComps = new_comp_num.';
+        
+
 
 
 % 6. Remove tasks that cannot be completed in human body.
 removeTask = 'No_tasks.tsv'; % Some metabolic tasks should not be included in WBM.
-removeData = readtable(['../Data/', removeTask], 'Delimiter', '\t', 'FileType', 'text');
+removeData = readtable(['../data/metabolicTasks/', removeTask], 'Delimiter', '\t', 'FileType', 'text');
 removeRxns_id = removeData.WBMID;
 removeRxns_id = intersect(removeRxns_id, cMergeModel.rxns);
 [cMergeModel, ~, ~] = removeRxns(cMergeModel, removeRxns_id, 'metFlag', false);
+
+if strcmp(Sex, 'Male')
+    AddMetsData = readtable('../data/metabolicTasks/Male_PresentTasks_Mets.tsv', 'Delimiter', '\t', 'FileType', 'text');
+    AddRxnsData = readtable('../data/metabolicTasks/Male_PresentTasks_Rxns.tsv', 'Delimiter', '\t', 'FileType', 'text');
+elseif strcmp(Sex, 'Female')
+    AddMetsData = readtable('../data/metabolicTasks/Female_PresentTasks_Mets.tsv', 'Delimiter', '\t', 'FileType', 'text');
+    AddRxnsData = readtable('../data/metabolicTasks/Female_PresentTasks_Rxns.tsv', 'Delimiter', '\t', 'FileType', 'text');
+end
+
+Met_index = [];
+All_need_mets = AddMetsData.Met_id;
+All_need_met_names = AddMetsData.Met_name;
+for i=1:length(All_need_mets)
+    met_id = All_need_mets{i,1};
+    met_name = All_need_met_names{i,1};
+    met_logical = 0;
+    for j=1:length(CoreOrgans)
+        organ = CoreOrgans{j,1};
+        if startsWith(met_id, organ)
+            if ~ismember(met_id, cMergeModel.mets)
+%                 if ~ismember(met_name, cMergeModel.metNames)
+                met_logical = 1;
+%                 end
+            end
+        end
+    end
+    Met_index(end+1) = met_logical;
+end
+Met_index = find(Met_index.');
+
+
+metsToAdd_task = struct();
+metsToAdd_task.mets = AddMetsData.Met_id(Met_index);
+metsToAdd_task.metNames = AddMetsData.Met_name(Met_index);
+metsToAdd_task.compartments = AddMetsData.Met_compartment(Met_index);
+metsToAdd_task.metFormulas = AddMetsData.Met_formula(Met_index);
+metsToAdd_task.metCharges = AddMetsData.Met_charge(Met_index);
+
+cMergeModel=addMets(cMergeModel,metsToAdd_task); % A function in RAVEN.
+
+
+
+Rxn_index = [];
+All_need_rxns = AddRxnsData.Rxn_id;
+All_need_Rxn_names = AddRxnsData.Rxn_name;
+for i=1:length(All_need_rxns)
+    rxn_id = All_need_rxns{i,1};
+    rxn_name = All_need_Rxn_names{i,1};
+    rxn_logical = 0;
+    for j=1:length(CoreOrgans)
+        organ = CoreOrgans{j,1};
+        if startsWith(rxn_id, organ)
+            if ~ismember(rxn_id, cMergeModel.rxns)
+%                 if ~ismember(met_name, cMergeModel.metNames)
+                rxn_logical = 1;
+%                 end
+            end
+        end
+    end
+    Rxn_index(end+1) = rxn_logical;
+end
+Rxn_index = find(Rxn_index.');
+
+rxnsToAdd_task = struct();
+rxnsToAdd_task.rxns = AddRxnsData.Rxn_id(Rxn_index);
+rxnsToAdd_task.equations = AddRxnsData.Rxn_eq(Rxn_index);
+rxnsToAdd_task.mets = AddRxnsData.Mets_id(Rxn_index);
+rxnsToAdd_task.stoichCoeffs = AddRxnsData.Mets_coff(Rxn_index);
+rxnsToAdd_task.lb = AddRxnsData.Lb(Rxn_index);
+rxnsToAdd_task.ub = AddRxnsData.Ub(Rxn_index);
+rxnsToAdd_task.subSystems = AddRxnsData.Rxn_sub(Rxn_index);
+
+cMergeModel = addRxns(cMergeModel,rxnsToAdd_task); % A function in RAVEN.
 
 cMergeModel_1 = cMergeModel;
 cMergeModel = cMergeModel_1;
 
 
 % 7. Add metabolites for for transfer in various organs.
-AddMetsData = readtable(['../Data/', 'CoreTrans_Mets.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+AddMetsData = readtable(['../data/metabolicTasks/', 'CoreTrans_Mets.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+[isCommon, idx] = ismember(AddMetsData.ID, cMergeModel.mets);
+
 metsToAdd = struct();
-metsToAdd.mets = AddMetsData.ID;
-metsToAdd.metNames = AddMetsData.Name;
-metsToAdd.compartments = AddMetsData.Compartment;
-metsToAdd.metFormulas = AddMetsData.Formula;
-metsToAdd.metCharges = AddMetsData.Charge;
+metsToAdd.mets = AddMetsData.ID(~isCommon);
+metsToAdd.metNames = AddMetsData.Name(~isCommon);
+metsToAdd.compartments = AddMetsData.Compartment(~isCommon);
+metsToAdd.metFormulas = AddMetsData.Formula(~isCommon);
+metsToAdd.metCharges = AddMetsData.Charge(~isCommon);
 
 newModel=addMets(cMergeModel,metsToAdd); % A function in RAVEN.
 
 % 8. Add reactions for for transfer in various organs.
-AddRxnsData = readtable(['../Data/', 'CoreTrans_Rxns.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+AddRxnsData = readtable(['../data/metabolicTasks/', 'CoreTrans_Rxns.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+[isCommon, idx] = ismember(AddRxnsData.ID, newModel.rxns);
+
 rxnsToAdd = struct();
-rxnsToAdd.rxns = AddRxnsData.ID;
-rxnsToAdd.equations = AddRxnsData.Reaction;
-rxnsToAdd.mets = AddRxnsData.Metabolites;
-rxnsToAdd.stoichCoeffs = AddRxnsData.Coefficient;
-rxnsToAdd.lb = AddRxnsData.Lb;
-rxnsToAdd.ub = AddRxnsData.Ub;
-rxnsToAdd.subSystems = AddRxnsData.Subsystem;
+rxnsToAdd.rxns = AddRxnsData.ID(~isCommon);
+rxnsToAdd.equations = AddRxnsData.Reaction(~isCommon);
+rxnsToAdd.mets = AddRxnsData.Metabolites(~isCommon);
+rxnsToAdd.stoichCoeffs = AddRxnsData.Coefficient(~isCommon);
+rxnsToAdd.lb = AddRxnsData.Lb(~isCommon);
+rxnsToAdd.ub = AddRxnsData.Ub(~isCommon);
+rxnsToAdd.subSystems = AddRxnsData.Subsystem(~isCommon);
 
 newModel1 = addRxns(newModel,rxnsToAdd); % A function in RAVEN.
 
-save('AdultMale_coreWBM.mat', 'newModel1')
+save('../models/AdultMale_coreWBM_0324.mat', 'newModel1')
 
 % 9. 
 % The uptake reactions were classified.
@@ -199,17 +298,6 @@ for i=1:length(Pseudo_Mets)
     end
 end
 
-% Construct equation of rxn
-% metabolites = Pseudo_Mets(:, 1);
-% coefficients = cell2mat(cellfun(@str2double, Pseudo_Mets(:, 2), 'UniformOutput', false));
-% reactionEquation = '';
-% for i = 1:length(metabolites)
-%     if coefficients(i) == 1
-%         reactionEquation = [reactionEquation metabolites{i} ' + '];
-%     else
-%         reactionEquation = [reactionEquation num2str(coefficients(i)) metabolites{i} ' + '];
-%     end
-% end
 
 rxnsToAdd = struct();
 rxnsToAdd.rxns = 'WBM-ATPM';
@@ -243,17 +331,17 @@ coreWBM.lb(findIndex(coreWBM.rxns, ProteinRxns)) = -10;
 coreWBM = changeObjective(coreWBM, 'WBM-ATPM');
 sol = optimizeCbModel(coreWBM, 'max', 'one');
 
-save('../Models/AdultMale_coreWBM.mat', 'coreWBM')
+save('../models/AdultMale_coreWBM.mat', 'coreWBM')
 
 %% Simulation for food uptake
 
 % You can load the model directly without running the above code.
 Age = 'Adult';
 Sex = 'Male';
-modelPath = ['../Models/', Age, Sex, '_coreWBM.mat'];
+modelPath = ['../models/', Age, Sex, '_coreWBM.mat'];
 load(modelPath);
 
-FoodData = readtable(['../Data/', 'FNDDS_Food_Data.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+FoodData = readtable(['../data/Food_data/', 'FNDDS_Food_Data.tsv'], 'Delimiter', '\t', 'FileType', 'text');
 ProteinData = FoodData.Protein;
 LipidData = FoodData.Lipid;
 CarbohydrateData = FoodData.Carbohydrate;
@@ -285,19 +373,9 @@ coreWBM.lb(findIndex(coreWBM.rxns, 'Muscle_Exchange_Lac')) = 0;
 coreWBM.ub(findIndex(coreWBM.rxns, 'Muscle_Exchange_Lac')) = 1000;
 
 
-
-[coreWBM, ~] = addReaction(coreWBM, 'Brain_Lac_trans_2', 'Brain_MAM02403c <=> Brain_MAM02403e');
-[coreWBM, ~] = addReaction(coreWBM, 'Heart_Lac_trans_2', 'Heart_MAM02403c <=> Heart_MAM02403e');
-[coreWBM, ~] = addReaction(coreWBM, 'Lung_Lac_trans_2', 'Lung_MAM02403c <=> Lung_MAM02403e');
-[coreWBM, ~] = addReaction(coreWBM, 'Liver_Lac_trans_2', 'Liver_MAM02403c <=> Liver_MAM02403e');
-[coreWBM, ~] = addReaction(coreWBM, 'Kidney_Lac_trans_2', 'Kidney_MAM02403c <=> Kidney_MAM02403e');
-[coreWBM, ~] = addReaction(coreWBM, 'Muscle_Lac_trans_2', 'Muscle_MAM02403c <=> Muscle_MAM02403e');
-[coreWBM, ~] = addReaction(coreWBM, 'Skin_Lac_trans_2', 'Skin_MAM02403c <=> Skin_MAM02403e');
-
-
 PrdictEnergy = zeros(length(EnergyData), 1);
 % It will take a while.
-for i=1:length(ProteinData)
+parfor i=1:length(ProteinData)
     coreWBMc = coreWBM;
     
     cab = -CarbohydrateData(i,1);
@@ -310,8 +388,8 @@ for i=1:length(ProteinData)
     coreWBMc.lb(findIndex(coreWBMc.rxns, ProteinRxns)) = pro*0.2;
 
     coreWBMc = changeObjective(coreWBMc, 'WBM-ATPM');
-    sol = optimizeCbModel(coreWBMc, 'max', 'one');
-    % sol = solveLP(coreWBMc, '1');
+    %sol = optimizeCbModel(coreWBMc, 'max', 'one');
+    sol = solveLP(coreWBMc, '1');
     
     if sol.stat == 1
         PrdictEnergy(i,1) = sol.f;
@@ -321,5 +399,5 @@ end
 %% output results
 FoodData = addvars(FoodData, PrdictEnergy);
 FoodData.Properties.VariableNames{end} = 'PrdictEnergy';
-outputFileName = '../Results/Result_FoodEnergy_Prediction.tsv';
+outputFileName = '../results/Result_FoodEnergy_Prediction.tsv';
 writetable(FoodData, outputFileName, 'Delimiter', '\t', 'FileType', 'text');

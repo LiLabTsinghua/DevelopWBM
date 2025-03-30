@@ -62,15 +62,11 @@ def effected_rxns(gene_list, model):
         dict_original_rxn_lb[r.id] = r.lower_bound
         dict_original_rxn_ub[r.id] = r.upper_bound
 
+    effected_rxns_list = []
     for g in gene_list:
         if g in model.genes:
-            model.genes.get_by_id(g).knock_out()
-            
-    
-    effected_rxns_list = []
-    for r in model.reactions:
-        if r.lower_bound != dict_original_rxn_lb[r.id] or r.upper_bound != dict_original_rxn_ub[r.id]:
-            effected_rxns_list.append(r.id)
+            for r in model.genes.get_by_id(g).reactions:
+                effected_rxns_list.append(r.id)
     
     return effected_rxns_list
 
@@ -103,6 +99,13 @@ def Met_in_model(m, model, model_name):
         return model_m_e
     else:
         return 'Not_In_Model'
+        
+    # if model_m_e in model.metabolites:
+    #     return model_m_e
+    # elif model_m_c in model.metabolites and model_m_e not in model.metabolites:
+    #     return model_m_c
+    # else:
+    #     return 'Not_In_Model'
     
 
 def Gene_del_in_model(g, model):
@@ -262,7 +265,7 @@ def disease_model_define(gene_list, model):
 
 def main():
 
-    folder = '../Models/'
+    folder = '../models/'
     print('Please put your model in '+ folder)
 
     model_id = input('Please input model name: ')
@@ -277,15 +280,18 @@ def main():
         # check model type: "ecModel" or "Model"
         if 'prot_pool_exchange' in ihuman.reactions:
             model_type = 'ecModel'
+            model_prefix = 'ec_'
         else:
             model_type = 'Model'
+            model_prefix = ''
 
         # set Ham's media
-        df_media = pd.read_csv('../Data/'+'Hams_media.tsv', sep = '\t')
+        df_media = pd.read_csv('../data/'+'Hams_media.tsv', sep = '\t')
         ihuman = Hams_media(df_media, ihuman, model_name, model_type)
 
         if model_type == 'ecModel':
-            ihuman.reactions.get_by_id('prot_pool_exchange').lower_bound = -200
+            ihuman.reactions.get_by_id('prot_pool_exchange').lower_bound = -500
+            # ihuman.reactions.get_by_id('prot_pool_exchange').lower_bound = -200
         elif model_type == 'Model':
             if model_name == 'Human2' or model_name == 'Human-GEM':
                 ihuman.reactions.get_by_id('MAR13082').bounds = (1,1)
@@ -297,7 +303,7 @@ def main():
                 pass
 
         # load IEM data
-        df = pd.read_csv('../Data/'+'IEM_data.tsv', sep = '\t')
+        df = pd.read_csv('../data/'+'IEM_data.tsv', sep = '\t')
 
         if 'Human' in model_name:
             met_col_name = 'met_'+model_name
@@ -353,11 +359,11 @@ def main():
                 df_result.loc[i, 'Simulation'] = 'Gene or met not in model!'
                 df_result.loc[i, 'Comparation'] = 'Gene or met not in model!'
         
-        df_result.to_csv('../Results/IEM/'+model_name+'_IEM.tsv', sep = '\t', index = False)
+        df_result.to_csv('../results/IEM/'+model_prefix+model_name+'_IEM.tsv', sep = '\t', index = False)
 
         count_ones = (df_result['Comparation'] == 1).sum()
-        proportion = round(count_ones / len(df_result['Comparation']), 4)
-        print("The accuracy of "+model_name+" is: ", proportion)
+        proportion = round(count_ones / len(df_result.index), 4)
+        print("The accuracy of "+model_prefix+model_name+" is: ", proportion)
     
     else:
         print(model_name + " is not in " + folder)

@@ -1,0 +1,346 @@
+ID	Name	source	PMID
+MAM00039	(2E)-decenoyl-CoA	ReducedModel	PMID: 31699973
+MAM00042	(2E)-dodecenoyl-CoA	ReducedModel	PMID: 31699973
+MAM00051	(2E)-hexadecenoyl-CoA	ReducedModel	PMID: 31699973
+MAM00053	(2E)-hexenoyl-CoA	ReducedModel	PMID: 31699973
+MAM00059	(2E)-octenoyl-CoA	ReducedModel	PMID: 31699973
+MAM00066	(2E)-tetradecenoyl-CoA	ReducedModel	PMID: 31699973
+MAM00173	(S)-3-hydroxybutyryl-CoA	ReducedModel	PMID: 31699973
+MAM00174	(S)-3-hydroxydodecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00175	(S)-3-hydroxyhexadecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00178	(S)-3-hydroxytetradecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00181	(S)-hydroxydecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00182	(S)-hydroxyhexanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00183	(S)-hydroxyoctanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00247	"1,3-bisphospho-D-glycerate"	ReducedModel	PMID: 31699973
+MAM00674	2-phospho-D-glycerate	ReducedModel	PMID: 31699973
+MAM00858	3-oxodecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00868	3-oxododecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00882	3-oxohexanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00892	3-oxooctanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00895	3-oxopalmitoyl-CoA	ReducedModel	PMID: 31699973
+MAM00906	3-oxotetradecanoyl-CoA	ReducedModel	PMID: 31699973
+MAM00913	3-phospho-D-glycerate	ReducedModel	PMID: 31699973
+MAM01255	acetoacetyl-CoA	ReducedModel	PMID: 31699973
+MAM01261	acetyl-CoA	ReducedModel	PMID: 31699973
+MAM01285	ADP	ReducedModel	PMID: 31699973
+MAM01306	AKG	ReducedModel	PMID: 31699973
+MAM01334	AMP	ReducedModel	PMID: 31699973
+MAM01370	aspartate	ReducedModel	PMID: 31699973
+MAM01371	ATP	ReducedModel	PMID: 31699973
+MAM01412	butyryl-CoA	ReducedModel	PMID: 31699973
+MAM01587	citrate	ReducedModel	PMID: 31699973
+MAM01596	CO2	ReducedModel	PMID: 31699973
+MAM01597	CoA	ReducedModel	PMID: 31699973
+MAM01622	crotonyl-CoA	ReducedModel	PMID: 31699973
+MAM01650	decanoyl-CoA	ReducedModel	PMID: 31699973
+MAM01690	DHAP	ReducedModel	PMID: 31699973
+MAM01802	FAD	ReducedModel	PMID: 31699973
+MAM01803	FADH2	ReducedModel	PMID: 31699973
+MAM01824	ferricytochrome C	ReducedModel	PMID: 31699973
+MAM01826	ferrocytochrome C	ReducedModel	PMID: 31699973
+MAM01841	"fructose-1,6-bisphosphate"	ReducedModel	PMID: 31699973
+MAM01845	fructose-6-phosphate	ReducedModel	PMID: 31699973
+MAM01862	fumarate	ReducedModel	PMID: 31699973
+MAM01939	D-glyceraldehyde 3-phosphate	ReducedModel	PMID: 31699973
+MAM01967	glucose-1-phosphate	ReducedModel	PMID: 31699973
+MAM01968	glucose-6-phosphate	ReducedModel	PMID: 31699973
+MAM01974	glutamate	ReducedModel	PMID: 31699973
+MAM02039	H+	ReducedModel	PMID: 31699973
+MAM02040	H2O	ReducedModel	PMID: 31699973
+MAM02122	hexanoyl-CoA	ReducedModel	PMID: 31699973
+MAM02183	isocitrate	ReducedModel	PMID: 31699973
+MAM02345	lauroyl-CoA	ReducedModel	PMID: 31699973
+MAM02348	L-carnitine	ReducedModel	PMID: 31699973
+MAM02403	L-lactate	ReducedModel	PMID: 31699973
+MAM02409	L-octanoylcarnitine	ReducedModel	PMID: 31699973
+MAM02411	L-palmitoylcarnitine	ReducedModel	PMID: 31699973
+MAM02439	malate	ReducedModel	PMID: 31699973
+MAM02495	myristoyl-CoA	ReducedModel	PMID: 31699973
+MAM02552	NAD+	ReducedModel	PMID: 31699973
+MAM02553	NADH	ReducedModel	PMID: 31699973
+MAM02630	O2	ReducedModel	PMID: 31699973
+MAM02633	OAA	ReducedModel	PMID: 31699973
+MAM02642	octanoic acid	ReducedModel	PMID: 31699973
+MAM02644	octanoyl-CoA	ReducedModel	PMID: 31699973
+MAM02674	palmitate	ReducedModel	PMID: 31699973
+MAM02678	palmitoyl-CoA	ReducedModel	PMID: 31699973
+MAM02696	PEP	ReducedModel	PMID: 31699973
+MAM02751	Pi	ReducedModel	PMID: 31699973
+MAM02759	PPi	ReducedModel	PMID: 31699973
+MAM02819	pyruvate	ReducedModel	PMID: 31699973
+MAM02914	sn-glycerol-3-phosphate	ReducedModel	PMID: 31699973
+MAM02943	succinate	ReducedModel	PMID: 31699973
+MAM02944	succinyl-CoA	ReducedModel	PMID: 31699973
+MAM03102	ubiquinol	ReducedModel	PMID: 31699973
+MAM03103	ubiquinone	ReducedModel	PMID: 31699973
+MAM03161	glycogen	ReducedModel	PMID: 31699973
+MAM02984	-	ReducedModel	PMID: 31699973
+MAM00765	-	ReducedModel	PMID: 31699973
+MAM00157	-	ReducedModel	PMID: 31699973
+MAM02393	-	ReducedModel	PMID: 31699973
+MAM01701	-	ReducedModel	PMID: 31699973
+MAM02869	-	ReducedModel	PMID: 31699973
+MAM02934	-	ReducedModel	PMID: 31699973
+MAM00561	-	ReducedModel	PMID: 31699973
+MAM02041	-	ReducedModel	PMID: 31699973
+MAM02131	-	ReducedModel	PMID: 31699973
+MAM01256	-	ReducedModel	PMID: 31699973
+MAM02040	H2O	HMDB_Blood	-
+MAM02519	Na+	HMDB_Blood	-
+MAM01442	chloride	HMDB_Blood	-
+MAM02046	HCO3-	HMDB_Blood	-
+MAM01596	CO2	HMDB_Blood	-
+MAM01821	Fe2+	HMDB_Blood	-
+MAM02630	O2	HMDB_Blood	-
+MAM01965	glucose	HMDB_Blood	-
+MAM03758	Melanin	HMDB_Blood	-
+MAM01450	cholesterol	HMDB_Blood	-
+MAM02200	K+	HMDB_Blood	-
+MAM03121	urea	HMDB_Blood	-
+MAM01413	Ca2+	HMDB_Blood	-
+MAM01758	D-xylose	HMDB_Blood	-
+MAM01981	glyceraldehyde	HMDB_Blood	-
+MAM02403	L-lactate	HMDB_Blood	-
+MAM01371	ATP	HMDB_Blood	-
+MAM02482	Mg2+	HMDB_Blood	-
+MAM02751	Pi	HMDB_Blood	-
+MAM01975	glutamine	HMDB_Blood	-
+MAM03686	ibuprofen-R	HMDB_Blood	-
+MAM02456	margaric acid	HMDB_Blood	-
+MAM01307	alanine	HMDB_Blood	-
+MAM02946	sulfate	HMDB_Blood	-
+MAM03120	urate	HMDB_Blood	-
+MAM01986	glycine	HMDB_Blood	-
+MAM03114	UMP	HMDB_Blood	-
+MAM02387	linoleate	HMDB_Blood	-
+MAM03135	valine	HMDB_Blood	-
+MAM03108	UDP-glucose	HMDB_Blood	-
+MAM02770	proline	HMDB_Blood	-
+MAM02938	stearate	HMDB_Blood	-
+MAM02646	oleate	HMDB_Blood	-
+MAM02426	lysine	HMDB_Blood	-
+MAM01833	formate	HMDB_Blood	-
+MAM01628	cysteine	HMDB_Blood	-
+MAM02589	nitrogen	HMDB_Urine	-
+MAM03121	urea	HMDB_Urine	-
+MAM01621	creatinine	HMDB_Urine	-
+MAM02519	Na+	HMDB_Urine	-
+MAM01442	chloride	HMDB_Urine	-
+MAM02200	K+	HMDB_Urine	-
+MAM02579	NH4+	HMDB_Urine	-
+MAM02946	sulfate	HMDB_Urine	-
+MAM02751	Pi	HMDB_Urine	-
+MAM00336	13(S)-HODE	HMDB_Urine	-
+MAM02482	Mg2+	HMDB_Urine	-
+MAM03120	urate	HMDB_Urine	-
+MAM01413	Ca2+	HMDB_Urine	-
+MAM01716	D-lactate	HMDB_Urine	-
+MAM01619	creatine	HMDB_Urine	-
+MAM01587	citrate	HMDB_Urine	-
+MAM01986	glycine	HMDB_Urine	-
+MAM02123	hippurate	HMDB_Urine	-
+MAM02961	taurine	HMDB_Urine	-
+MAM01982	glycerate	HMDB_Urine	-
+MAM01840	fructose	HMDB_Urine	-
+MAM01975	glutamine	HMDB_Urine	-
+MAM02581	nicotinamide D-ribonucleotide	HMDB_Urine	-
+MAM02125	histidine	HMDB_Urine	-
+MAM01182	7alpha-hydroxycholest-4-en-3-one	HMDB_Urine	-
+MAM02036	guanidinoacetate	HMDB_Urine	-
+MAM01638	D-alanine	HMDB_Urine	-
+MAM02383	L-iditol	HMDB_Urine	-
+MAM01998	glycolate	HMDB_Urine	-
+MAM01981	glyceraldehyde	HMDB_Urine	-
+MAM02896	serine	HMDB_Urine	-
+MAM00784	3-hydroxyisobutyrate	HMDB_Urine	-
+MAM02723	phenylacetylglycine	HMDB_Urine	-
+MAM01307	alanine	HMDB_Urine	-
+MAM00295	11-deoxycortisol	HMDB_Urine	-
+MAM01620	creatine-phosphate	HMDB_Urine	-
+MAM02722	phenylacetylglutamine	HMDB_Urine	-
+MAM02470	methanol	HMDB_Urine	-
+MAM03836	P-Cresol	HMDB_Urine	-
+MAM02183	isocitrate	HMDB_Urine	-
+MAM02338	L-arabitol	HMDB_Urine	-
+MAM01306	AKG	HMDB_Urine	-
+MAM01393	betaine	HMDB_Urine	-
+MAM01797	ethanolamine	HMDB_Urine	-
+MAM01965	glucose	HMDB_Urine	-
+MAM01580	cis-aconitate	HMDB_Urine	-
+MAM01983	glycerol	HMDB_Urine	-
+MAM02426	lysine	HMDB_Urine	-
+MAM01833	formate	HMDB_Urine	-
+MAM03396	D-Arabitol	HMDB_Urine	-
+MAM02403	L-lactate	HMDB_Urine	-
+MAM03703	Indoxyl Sulfate	HMDB_Urine	-
+MAM01683	D-gluconic acid	HMDB_Urine	-
+MAM01758	D-xylose	HMDB_Urine	-
+MAM01368	ascorbate	HMDB_Urine	-
+MAM02993	threonine	HMDB_Urine	-
+MAM02771	"propane-1,2-diol"	HMDB_Urine	-
+MAM02332	lactose	HMDB_Urine	-
+MAM01973	glucuronate	HMDB_Urine	-
+MAM01628	cysteine	HMDB_Urine	-
+MAM01707	dimethylamine	HMDB_Urine	-
+MAM02171	inositol	HMDB_Urine	-
+MAM02992	threonate	HMDB_Urine	-
+MAM03148	xanthine	HMDB_Urine	-
+MAM02325	L-3-amino-isobutanoate	HMDB_Urine	-
+MAM03403	Acetaminophen glucuronide	HMDB_Urine	-
+MAM01513	choline	HMDB_Urine	-
+MAM01003	4-hydroxyphenylacetate	HMDB_Urine	-
+MAM01909	galactitol	HMDB_Urine	-
+MAM03247	3-Methylhistidine	Pig	PMID: 36070684
+MAM00639	2-deoxy-D-ribose-1-phosphate	Pig	PMID: 36070684
+MAM00648	2-hydroxybutyrate	Pig	PMID: 36070684
+MAM03187	2-Hydroxy-Isocaproate	Pig	PMID: 36070684
+MAM03186	2-Hydroxy-Isovalerate	Pig	PMID: 36070684
+MAM00671	2-oxobutyrate	Pig	PMID: 36070684
+MAM00670	2-oxoadipate	Pig	PMID: 36070684
+MAM00775	3-hydroxyanthranilate	Pig	PMID: 36070684
+MAM00784	3-hydroxyisobutyrate	Pig	PMID: 36070684
+MAM00821	3-methoxytyramine	Pig	PMID: 36070684
+MAM01033	4-pyridoxate	Pig	PMID: 36070684
+MAM02381	L-hydroxylysine	Pig	PMID: 36070684
+MAM01722	DNA-5-methylcytosine	Pig	PMID: 36070684
+MAM01252	acetate	Pig	PMID: 36070684
+MAM01253	acetoacetate	Pig	PMID: 36070684
+MAM02634	O-acetylcarnitine	Pig	PMID: 36070684
+MAM01260	acetylcholine	Pig	PMID: 36070684
+MAM02531	N-acetyl-L-asparagine	Pig	PMID: 36070684
+MAM03401	Acetyl-L-Lysine	Pig	PMID: 36070684
+MAM01580	cis-aconitate	Pig	PMID: 36070684
+MAM01280	adenosine	Pig	PMID: 36070684
+MAM01306	AKG	Pig	PMID: 36070684
+MAM01307	alanine	Pig	PMID: 36070684
+MAM01312	allantoate	Pig	PMID: 36070684
+MAM01313	allantoin	Pig	PMID: 36070684
+MAM02322	L-2-aminoadipate	Pig	PMID: 36070684
+MAM01074	5-aminolevulinate	Pig	PMID: 36070684
+MAM01342	anthranilate	Pig	PMID: 36070684
+MAM01365	arginine	Pig	PMID: 36070684
+MAM01368	ascorbate	Pig	PMID: 36070684
+MAM01369	asparagine	Pig	PMID: 36070684
+MAM01370	aspartate	Pig	PMID: 36070684
+MAM01633	D-3-amino-isobutanoate	Pig	PMID: 36070684
+MAM01380	benzoate	Pig	PMID: 36070684
+MAM01401	biotin	Pig	PMID: 36070684
+MAM01410	butyrate	Pig	PMID: 36070684
+MAM01420	carbamoyl-phosphate	Pig	PMID: 36070684
+MAM02348	L-carnitine	Pig	PMID: 36070684
+MAM01423	carnosine	Pig	PMID: 36070684
+MAM01587	citrate	Pig	PMID: 36070684
+MAM01588	citrulline	Pig	PMID: 36070684
+MAM01619	creatine	Pig	PMID: 36070684
+MAM01621	creatinine	Pig	PMID: 36070684
+MAM03836	P-Cresol	Pig	PMID: 36070684
+MAM01629	cystine	Pig	PMID: 36070684
+MAM01630	cytidine	Pig	PMID: 36070684
+MAM03487	Decenoyl Carnitine	Pig	PMID: 36070684
+MAM01655	dehydroascorbic acid	Pig	PMID: 36070684
+MAM00745	"3alpha,12alpha-dihydroxy-5beta-cholanate"	Pig	PMID: 36070684
+MAM01668	deoxycytidine	Pig	PMID: 36070684
+MAM01671	deoxyinosine	Pig	PMID: 36070684
+MAM01673	deoxyuridine	Pig	PMID: 36070684
+MAM01683	D-gluconic acid	Pig	PMID: 36070684
+MAM01052	"5,6-Dihydrouracil"	Pig	PMID: 36070684
+MAM01708	dimethylglycine	Pig	PMID: 36070684
+MAM03541	Dodecenoyl Carnitine	Pig	PMID: 36070684
+MAM01833	formate	Pig	PMID: 36070684
+MAM01862	fumarate	Pig	PMID: 36070684
+MAM01922	gamma-butyrobetaine	Pig	PMID: 36070684
+MAM01962	glucosamine	Pig	PMID: 36070684
+MAM01965	glucose	Pig	PMID: 36070684
+MAM01974	glutamate	Pig	PMID: 36070684
+MAM01975	glutamine	Pig	PMID: 36070684
+MAM01982	glycerate	Pig	PMID: 36070684
+MAM00913	3-phospho-D-glycerate	Pig	PMID: 36070684
+MAM01986	glycine	Pig	PMID: 36070684
+MAM01988	glycocholate	Pig	PMID: 36070684
+MAM01989	glycodeoxycholate	Pig	PMID: 36070684
+MAM03630	Glycylproline	Pig	PMID: 36070684
+MAM02036	guanidinoacetate	Pig	PMID: 36070684
+MAM02037	guanine	Pig	PMID: 36070684
+MAM02038	guanosine	Pig	PMID: 36070684
+MAM02411	L-palmitoylcarnitine	Pig	PMID: 36070684
+MAM03498	Hexanoyl Carnitine	Pig	PMID: 36070684
+MAM02123	hippurate	Pig	PMID: 36070684
+MAM02132	homocarnosine	Pig	PMID: 36070684
+MAM03681	Homocitrulline	Pig	PMID: 36070684
+MAM02133	homocysteine	Pig	PMID: 36070684
+MAM02135	homogentisate	Pig	PMID: 36070684
+MAM01103	5-hydroxyindoleacetate	Pig	PMID: 36070684
+MAM01004	4-hydroxyphenyllactate	Pig	PMID: 36070684
+MAM01005	4-hydroxyphenylpyruvate	Pig	PMID: 36070684
+MAM03037	trans-4-hydroxy-L-proline	Pig	PMID: 36070684
+MAM02157	hypotaurine	Pig	PMID: 36070684
+MAM02159	hypoxanthine	Pig	PMID: 36070684
+MAM02166	imidazole-4-acetate	Pig	PMID: 36070684
+MAM02169	indoleacetate	Pig	PMID: 36070684
+MAM03703	Indoxyl Sulfate	Pig	PMID: 36070684
+MAM02170	inosine	Pig	PMID: 36070684
+MAM02171	inositol	Pig	PMID: 36070684
+MAM02184	isoleucine	Pig	PMID: 36070684
+MAM03706	Isovaleryl Carnitine	Pig	PMID: 36070684
+MAM00990	4-hydroxy-2-quinolinecarboxylic acid	Pig	PMID: 36070684
+MAM02319	kynurenine	Pig	PMID: 36070684
+MAM02403	L-lactate	Pig	PMID: 36070684
+MAM03540		Pig	PMID: 36070684
+MAM02360	leucine	Pig	PMID: 36070684
+MAM01159	6-deoxy-L-galactose	Pig	PMID: 36070684
+MAM01729	dodecanoylcarnitine	Pig	PMID: 36070684
+MAM02402	lithocholate	Pig	PMID: 36070684
+MAM02426	lysine	Pig	PMID: 36070684
+MAM02439	malate	Pig	PMID: 36070684
+MAM02471	methionine	Pig	PMID: 36070684
+MAM02479	methylmalonate	Pig	PMID: 36070684
+MAM02973	tetradecanoylcarnitine	Pig	PMID: 36070684
+MAM02577	"NG,NG-dimethyl-L-arginine"	Pig	PMID: 36070684
+MAM02517	"N6,N6,N6-trimethyl-L-lysine"	Pig	PMID: 36070684
+MAM02532	N-acetyl-L-aspartate	Pig	PMID: 36070684
+MAM02536	N-acetyl-L-glutamate	Pig	PMID: 36070684
+MAM03407	N-Acetyl-Tyrosine	Pig	PMID: 36070684
+MAM02583	nicotinamide	Pig	PMID: 36070684
+MAM03997	Tiglyl Glycine	Pig	PMID: 36070684
+MAM02409	L-octanoylcarnitine	Pig	PMID: 36070684
+MAM01798	ethanolamine-phosphate	Pig	PMID: 36070684
+MAM02658	ornithine	Pig	PMID: 36070684
+MAM02680	pantothenate	Pig	PMID: 36070684
+MAM02720	phenylacetate	Pig	PMID: 36070684
+MAM02723	phenylacetylglycine	Pig	PMID: 36070684
+MAM02724	phenylalanine	Pig	PMID: 36070684
+MAM02725	phenylpyruvate	Pig	PMID: 36070684
+MAM00995	4-hydroxybenzoate	Pig	PMID: 36070684
+MAM02413	L-pipecolate	Pig	PMID: 36070684
+MAM02770	proline	Pig	PMID: 36070684
+MAM02772	propanoate	Pig	PMID: 36070684
+MAM02657	O-propanoylcarnitine	Pig	PMID: 36070684
+MAM03886	Propionyl-Glycine	Pig	PMID: 36070684
+MAM01127	5-oxoproline	Pig	PMID: 36070684
+MAM02819	pyruvate	Pig	PMID: 36070684
+MAM02833	retinoate	Pig	PMID: 36070684
+MAM02842	riboflavin	Pig	PMID: 36070684
+MAM02843	ribose	Pig	PMID: 36070684
+MAM03923	Sebacicacid	Pig	PMID: 36070684
+MAM02896	serine	Pig	PMID: 36070684
+MAM02897	serotonin	Pig	PMID: 36070684
+MAM01116	5-methylthioadenosine	Pig	PMID: 36070684
+MAM01682	D-glucitol	Pig	PMID: 36070684
+MAM02943	succinate	Pig	PMID: 36070684
+MAM02961	taurine	Pig	PMID: 36070684
+MAM02964	taurodeoxycholate	Pig	PMID: 36070684
+MAM02993	threonine	Pig	PMID: 36070684
+MAM02996	thymidine	Pig	PMID: 36070684
+MAM02997	thymine	Pig	PMID: 36070684
+MAM03215	3-Hydroxycinnamic Acid	Pig	PMID: 36070684
+MAM03089	tryptophan	Pig	PMID: 36070684
+MAM03099	tyramine	Pig	PMID: 36070684
+MAM03101	tyrosine	Pig	PMID: 36070684
+MAM03118	uracil	Pig	PMID: 36070684
+MAM03120	urate	Pig	PMID: 36070684
+MAM03123	uridine	Pig	PMID: 36070684
+MAM03135	valine	Pig	PMID: 36070684
+MAM03148	xanthine	Pig	PMID: 36070684
+MAM03149	xanthosine	Pig	PMID: 36070684
+pseudo_ATP	pseudo_ATP	-	-

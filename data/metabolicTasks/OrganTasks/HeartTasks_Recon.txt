@@ -1,0 +1,161 @@
+Unnamed: 0	ID	DESCRIPTION	SHOULD FAIL	IN	IN LB	IN UB	OUT	OUT LB	OUT UB	EQU	EQU LB	EQU UB	CHANGED RXN	CHANGED LB	CHANGED UB	PRINT FLUX	COMMENTS
+	1.0	ATP synthesis from glucose degradation		Oxygen[e];D-Glucose[e]			Water[e];Carbon dioxide[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	2.0	ATP synthesis from oleate oxidation		Oleic acid[e];Oxygen[e]			Carbon dioxide[e];Water[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	3.0	ATP synthesis from acetoacetate oxidation		Oxygen[e];Acetoacetic acid[e]			Water[e];Carbon dioxide[e]			ATP[c] + H2O[c] => ADP[c] + Pi[c]	1.0						
+	4.0	Urate synthesis		Oxygen[e];D-Glucose[e];Ammonia[e]			Carbon dioxide[e];Water[e]										
+							Uric acid[e]	1.0									
+	5.0	Alanine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Alanine[c]	1.0									
+	6.0	Arginine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Arginine[c]	1.0									
+	7.0	Asparagine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Asparagine[c]	1.0									
+	8.0	Aspartate synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							D-Aspartate[c]	1.0									
+	9.0	Cysteine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];sulfate[e];L-Histidine[e];L-Isoleucine[e];L-Leucine[e];L-Lysine[e];L-Methionine[e];L-Phenylalanine[e];L-Threonine[e];L-Tryptophan[e]			Water[e];Carbon dioxide[e]										
+							L-Cysteine[c]	1.0									
+	10.0	Glutamate synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Glutamic acid[e]	1.0									
+	11.0	Glycine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Glycine[c]	1.0									
+	12.0	Histidine uptake		L-Histidine[e]	1.0	1.0	L-Histidine[c]	1.0									
+	13.0	Isoleucine uptake		L-Isoleucine[e]	1.0	1.0	L-Isoleucine[c]	1.0									
+	14.0	Glutamine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Glutamine[c]	1.0									
+	15.0	Leucine uptake		L-Leucine[e]	1.0	1.0	L-Leucine[c]	1.0									
+	16.0	Lysine uptake		L-Lysine[e]	1.0	1.0	L-Lysine[c]	1.0									
+	17.0	Phenylalanine uptake		L-Phenylalanine[e]	1.0	1.0	L-Phenylalanine[c]	1.0									
+	18.0	Proline synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Proline[c]	1.0									
+	19.0	Serine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Serine[c]	1.0									
+	20.0	Threonine uptake		L-Threonine[e]	1.0	1.0	L-Threonine[c]	1.0									
+	21.0	Tryptophan uptake		L-Tryptophan[e]	1.0	1.0	L-Tryptophan[c]	1.0									
+	22.0	Tyrosine synthesis, maintenance in cytosol	1.0	Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Tyrosine[c]	1.0									
+	23.0	Valine uptake		L-Valine[e]	1.0	1.0	L-Valine[c]	1.0									
+	24.0	Homocysteine synthesis, maintenance in cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];L-Cysteine[c];Water[e];L-Histidine[e];L-Isoleucine[e];L-Leucine[e];L-Lysine[e];L-Methionine[e];L-Phenylalanine[e];L-Threonine[e];L-Tryptophan[e]			Water[e];Carbon dioxide[e]										
+							Homocysteine[c]	1.0									
+	25.0	Alanine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Alanine[m]	1.0									
+	26.0	Arginine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Arginine[m]	1.0									
+	27.0	Asparagine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Asparagine[m]	1.0									
+	28.0	Aspartate synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							D-Aspartate[m]	1.0									
+	29.0	Cysteine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];sulfate[e];L-Histidine[e];L-Isoleucine[e];leucine[e];L-Lysine[e];L-Methionine[e];L-Phenylalanine[e];L-Threonine[e];L-Tryptophan[e]			Water[e];Carbon dioxide[e]										
+							L-Cysteine[m]	1.0									
+	30.0	Glutamate synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Glutamic acid[m]	1.0									
+	31.0	Glycine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							Glycine[m]	1.0									
+	32.0	Histidine transport, mitochondrion		L-Histidine[c]	1.0	1.0	L-Histidine[m]	1.0									
+	33.0	Isoleucine transport, mitochondrion		L-Isoleucine[c]	1.0	1.0	L-Isoleucine[m]	1.0									
+	34.0	Glutamine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Glutamine[m]	1.0									
+	35.0	Leucine transport, mitochondrion		L-Leucine[c]	1.0	1.0	L-Leucine[m]	1.0									
+	36.0	Lysine transport, mitochondrion		L-Lysine[m]	1.0	1.0	L-Lysine[c]	1.0									
+	37.0	Phenylalanine transport, mitochondrion		phenylalanine[c]	1.0	1.0	L-Phenylalanine[m]	1.0									
+	38.0	Proline synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Proline[m]	1.0									
+	39.0	Serine synthesis, maintenance in mitochondrion		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Serine[m]	1.0									
+	40.0	Threonine transport, mitochondrion		L-Threonine[c]	1.0	1.0	L-Threonine[m]	1.0									
+	41.0	Tyrosine synthesis, maintenance in mitochondrion	1.0	Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e]										
+							L-Tyrosine[m]	1.0									
+	42.0	Valine transport, mitochondrion		L-Valine[c]	1.0	1.0	L-Valine[m]	1.0									
+	43.0	Cholesterol synthesis, cytosol		Oxygen[e];D-Glucose[e];Water[e]			Water[e];Carbon dioxide[e]										
+							Cholesterol[c]	1.0									
+	44.0	Carnitine synthesis, cytosol		Oxygen[e];D-Glucose[e];Water[e];Ammonia[e];L-Histidine[e];L-Isoleucine[e];L-Leucine[e];L-Lysine[e];L-Methionine[e];L-Phenylalanine[e];L-Threonine[e];L-Tryptophan[e]			Water[e];Carbon dioxide[e];urea[e]										
+							L-Carnitine[c]	1.0									
+	45.0	Carnitine synthesis, mitochondrion		Oxygen[e];D-Glucose[e];Water[e];Ammonia[e];L-Histidine[e];L-Isoleucine[e];leucine[e];L-Lysine[e];L-Methionine[e];L-Phenylalanine[e];L-Threonine[e];L-Tryptophan[e]			Water[e];Carbon dioxide[e];urea[e]										
+							L-Carnitine[m]	1.0									
+	46.0	Palmitate synthesis		Oxygen[e];D-Glucose[e]			Carbon dioxide[e];Water[e]										
+							Palmitic acid[c]	1.0									
+	47.0	Stearate de novo synthesis (minimal substrates, physiological excretion)		Oxygen[e];D-Glucose[e]			Carbon dioxide[e];Water[e]										
+							Stearic acid[c]	1.0									
+	48.0	Oleate synthesis		Oxygen[e];D-Glucose[e]			Carbon dioxide[e];Water[e]										
+							Oleic acid[c]	1.0									
+	49.0	Sphinganine synthesis, cytosol		Oxygen[e];D-Glucose[e];Water[e];Ammonia[e]			Water[e];Carbon dioxide[e]										
+							Sphinganine[c]	1.0									
+	50.0	UDP degradation, cytosol		Uridine 5'-diphosphate[c];Oxygen[e]			Water[e];Carbon dioxide[e];Ammonia[e];Phosphate[e]										
+	51.0	H2O2 degradation, cytosol		Hydrogen peroxide[c]			Water[e];Oxygen[e]										
+	52.0	Lysine degradation		L-Lysine[e];Oxygen[e]		1.0	Water[e];Carbon dioxide[e];urea[e]										
+	53.0	ITP degradation, cytosol		Inosine triphosphate[c];Oxygen[e]			Water[e];Carbon dioxide[e];Ammonia[e];Phosphate[e]										
+	54.0	Glucose-1P degradation, cytosol		Glucose 1-phosphate[c];Oxygen[e]			Water[e];Carbon dioxide[e];Phosphate[e]										
+	55.0	IDP degradation, cytosol		IDP[c];Oxygen[e]			Water[e];Carbon dioxide[e];Ammonia[e];Phosphate[e]										
+	56.0	UMP degradation, cytosol		Uridine 5'-monophosphate[c];Oxygen[e]			Water[e];Carbon dioxide[e];Ammonia[e];Phosphate[e]										
+	57.0	DHAP degradation, cytosol		Dihydroxyacetone phosphate[c];Oxygen[e]			Water[e];Carbon dioxide[e];Phosphate[e]										
+	58.0	PRPP degradation, cytosol		Phosphoribosyl pyrophosphate[c];Oxygen[e]			Water[e];Carbon dioxide[e];Phosphate[e]										
+	59.0	GSH synthesis, cytosol		Oxygen[e];Ammonia[e];D-Glucose[e];L-Methionine[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Glutathione[c]	1.0									
+	60.0	Putrescine synthesis		Oxygen[e];Ammonia[e];D-Glucose[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Putrescine[c]	1.0									
+	61.0	NADH synthesis from glucose degradation		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Niacinamide[e]			NADH[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	62.0	NADPH synthesis from glucose degradation		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Niacinamide[e]			NADPH[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	63.0	NADH synthesis from glucose degradation		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Niacinamide[e]			NADH[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	64.0	NADPH synthesis from glucose degradation		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e];Niacinamide[e]			NADPH[c]	1.0									
+							Water[e];Carbon dioxide[e]										
+	65.0	Anaerobic glycolysis		Glucose 6-phosphate[c]			Pyruvic acid[c];Water[e];Carbon dioxide[e]										
+	66.0	Aerobic glycolysis		Glucose 6-phosphate[c];Oxygen[e]			Pyruvic acid[c];Water[e];Carbon dioxide[e]										
+	67.0	Glycogen synthesis		D-Glucose[e]	11.0	11.0	Water[e];Carbon dioxide[e]			ATP[c] + H2O[c] <=> ADP[c] + Pi[c]							
+				"""Primed Glycogenin (Glycogenin-8[1,4-Glc])""[c]"	1.0	1.0	"""Glycogen, Structure 1 (Glycogenin-11[1,4-Glc])""[c]"	1.0		NADH[c] <=> NAD+[c]							
+				Oxygen[e]													
+	68.0	Thioredoxin oxidation		Reduced Thioredoxin[c];D-Glucose[e];Oxygen[e]			Water[e];Carbon dioxide[e]										
+							Oxidized Thioredoxin[c]	1.0									
+	69.0	Thioredoxin_oxidation_negativetest		Reduced Thioredoxin[c];D-Glucose[e];Oxygen[e]			Water[e];Carbon dioxide[e]										
+							Oxidized Thioredoxin[c]	1.0									
+	70.0	Thioredoxin reduction		Oxidized Thioredoxin[c];D-Glucose[e];Oxygen[e]			Water[e];Carbon dioxide[e]										
+							Oxidized Thioredoxin[c]	1.0									
+	71.0	Thioredoxin_reduction_negativetest		Oxidized Thioredoxin[c];D-Glucose[e];Oxygen[e]			Water[e];Carbon dioxide[e]										
+							Oxidized Thioredoxin[c]	1.0									
+	72.0	Adenine synthesis		D-Glucose[e];Oxygen[e];Ammonia[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Adenine[c]	1.0									
+	73.0	ADP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							ADP[c]	1.0									
+	74.0	AMP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Adenosine monophosphate[c]	1.0									
+	75.0	IMP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Inosinic acid[c]	1.0									
+	76.0	Xanthosine-5P synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Xanthylic acid[c]	1.0									
+	77.0	GMP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Guanosine monophosphate[c]	1.0									
+	78.0	GTP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Guanosine triphosphate[c]	1.0									
+	79.0	Uracil synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							uracil[c]	1.0									
+	80.0	Uridine synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							uridine[c]	1.0									
+	81.0	UMP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Uridine 5'-monophosphate[c]	1.0									
+	82.0	UDP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Uridine 5'-diphosphate[c]	1.0									
+	83.0	Cytidine synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Cytidine[c]	1.0									
+	84.0	CMP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Cytidine monophosphate[c]	1.0									
+	85.0	CDP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							CDP[c]	1.0									
+	86.0	dCDP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							dCDP[c]	1.0									
+	87.0	Guanine synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							guanine[c]	1.0									
+	88.0	Deoxyguanosine synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							deoxyguanosine[c]	1.0									
+	89.0	dGMP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							2-Deoxyguanosine 5-monophosphate[c]	1.0									
+	90.0	dGDP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							dGDP[c]	1.0									
+	91.0	PRPP synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Phosphoribosyl pyrophosphate[c]	1.0									
+	92.0	AIR synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							5-Aminoimidazole ribonucleotide[c]	1.0									
+	93.0	AICAR synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							AICAR[c]	1.0									
+	94.0	FAICAR synthesis, cytosol		Oxygen[e];D-Glucose[e];Ammonia[e];Phosphate[e]			Water[e];Carbon dioxide[e];urea[e]										
+							Phosphoribosyl formamidocarboxamide[c]	1.0									

@@ -3,8 +3,8 @@
 % define those using the variable 'sex' (e.g., sex = 'male').
 
 Age = 'Adult';
-Sex = 'Female';
-modelPath = ['../Models/models', '_', Age, Sex];
+Sex = 'Male';
+modelPath = ['../models/', Age, Sex, '_models.mat'];
 load(modelPath);
 % models = load(modelPath);
 
@@ -43,21 +43,22 @@ while n<=numel(models)-1
     n = n+1;
 end
 
-check_rxns = 0;
-check_mets = 0;
-for i=1:length(models)
-    check_rxns = check_rxns+numel(models{i,1}.rxns);
-    check_mets = check_mets+numel(models{i,1}.mets);
-end
 
-missing_rxns = {};
-for i=1:length(models)
-    model = models{i,1};
-    Diff = setdiff(model.rxns, MergeModel.rxns);
-    missing_rxns{end+1} = Diff;
-end
+% check_rxns = 0;
+% check_mets = 0;
+% for i=1:length(models)
+%     check_rxns = check_rxns+numel(models{i,1}.rxns);
+%     check_mets = check_mets+numel(models{i,1}.mets);
+% end
+
+% missing_rxns = {};
+% for i=1:length(models)
+%     model = models{i,1};
+%     Diff = setdiff(model.rxns, MergeModel.rxns);
+%     missing_rxns{end+1} = Diff;
+% end
     
-    
+
 % 4. Remove exchange reactions 
 cMergeModel = MergeModel;
 [selExc, ~] = findExcRxns(cMergeModel);
@@ -65,11 +66,7 @@ cMergeModel = MergeModel;
 
 
 % 5. Remove tasks that cannot be completed in human body.
-removeTask = 'No_tasks.tsv'; % Some metabolic tasks should not be included in WBM.
-removeData = readtable(['../Data/', removeTask], 'Delimiter', '\t', 'FileType', 'text');
-removeRxns_id = removeData.WBMID;
-removeRxns_id = intersect(removeRxns_id, cMergeModel.rxns);
-[cMergeModel, ~, ~] = removeRxns(cMergeModel, removeRxns_id, 'metFlag', false);
+cMergeModel = WBMTaskRxns(cMergeModel, Sex);
 
 
 % 6. Add biofluid metabolites and reactions.
@@ -97,8 +94,8 @@ removeRxns_id = intersect(removeRxns_id, cMergeModel.rxns);
  WBMUb(WBMUb == 1000) = 1000000;
  cMergeModel.ub = WBMUb;
  
- % Add compartments
- if Sex == 'Male'
+ % Add biofluid compartments
+ if strcmp(Sex, 'Male')
      BiofluidComp = { 'luI'; 'bpI'; 'bp'; 'luSI'; 'bc'; 'luC'; 'bpC'; 'luLI';...
                       'lu'; 'fe'; 'bdL'; 'bpL'; 'bd'; 'luP'; 'bpP'; 'bcK';...
                       'u'; 'bpS'; 'csf'; 'a'; 'd'; 'aL'; 'swS'; 'sw'};
@@ -111,7 +108,7 @@ removeRxns_id = intersect(removeRxns_id, cMergeModel.rxns);
      WBMCompName = [cMergeModel.compNames; BiofluidCompName];
      cMergeModel.comps = WBMComp;
      cMergeModel.compNames = WBMCompName;
- elseif  Sex == 'Female'
+ elseif  strcmp(Sex, 'Female')
      BiofluidComp = { 'luI'; 'bpI'; 'bp'; 'luSI'; 'bc'; 'luC'; 'bpC'; 'luLI';...
                       'lu'; 'fe'; 'bdL'; 'bpL'; 'bd'; 'luP'; 'bpP'; 'bcK';...
                       'u'; 'bpS'; 'csf'; 'a'; 'd'; 'aL'; 'swS'; 'sw'; 'miB'; 'mi'};
@@ -124,37 +121,113 @@ removeRxns_id = intersect(removeRxns_id, cMergeModel.rxns);
      WBMCompName = [cMergeModel.compNames; BiofluidCompName];
      cMergeModel.comps = WBMComp;
      cMergeModel.compNames = WBMCompName;
- 
+ else
+     BiofluidComp = { 'luI'; 'bpI'; 'bp'; 'luSI'; 'bc'; 'luC'; 'bpC'; 'luLI';...
+                      'lu'; 'fe'; 'bdL'; 'bpL'; 'bd'; 'luP'; 'bpP'; 'bcK';...
+                      'u'; 'bpS'; 'csf'; 'a'; 'd'; 'aL'; 'swS'; 'sw'};
+     BiofluidCompName = {'luSI-sIEC'; 'sIEC-bp'; 'Blood, portal vein'; 'Lumen, small intestine';...
+                         'Blood, circulation'; 'luLI-Colon'; 'Colon-bp'; 'Lumen, large intestine';...
+                         'Lumen'; 'Feces'; 'bd-Liver'; 'bp-Liver'; 'Bile duct'; 'lu-Pancreas';...
+                         'Pancreas-bp'; 'Kidney-bc'; 'Urine'; 'Scord-bp'; 'Cerebrospinal fluid';...
+                         'Air'; 'Diet'; 'air-Lung'; 'sw-Skin'; 'Sweat'};
+     WBMComp = [cMergeModel.comps; BiofluidComp];
+     WBMCompName = [cMergeModel.compNames; BiofluidCompName];
+     cMergeModel.comps = WBMComp;
+     cMergeModel.compNames = WBMCompName;
  end
  
  % Add metabolites
- AddMetsData = readtable(['../Data/', Sex, '_Biofluid_mets.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+ if strcmp(Sex, 'Male')
+     AddMetsData = readtable('../data/metabolicTasks/Biofluids/Harvey_biofluid_mets.tsv', 'Delimiter', '\t', 'FileType', 'text');
+ elseif strcmp(Sex, 'Female')
+     AddMetsData = readtable('../data/metabolicTasks/Biofluids/Harvetta_biofluid_mets.tsv', 'Delimiter', '\t', 'FileType', 'text');
+ else
+     AddMetsData = readtable('../data/metabolicTasks/Biofluids/Fetus_biofluid_mets.tsv', 'Delimiter', '\t', 'FileType', 'text');
+ end
+
  metsToAdd = struct();
- metsToAdd.mets = AddMetsData.ID;
- metsToAdd.metNames = AddMetsData.Name;
- metsToAdd.compartments = AddMetsData.Compartment;
- metsToAdd.metFormulas = AddMetsData.Formula;
- metsToAdd.metCharges = AddMetsData.Charge;
+ metsToAdd.mets = AddMetsData.Met_id;
+ metsToAdd.metNames = AddMetsData.Met_name;
+ metsToAdd.compartments = AddMetsData.Met_compartment;
+ metsToAdd.metFormulas = AddMetsData.Met_formula;
+ metsToAdd.metCharges = AddMetsData.Met_charge;
  
  newModel=addMets(cMergeModel,metsToAdd); % A function in RAVEN.
  
  % Add reactions
- AddRxnsData = readtable(['../Data/', Sex, '_Biofluid_rxns.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+ if strcmp(Sex, 'Male')
+     AddRxnsData = readtable('../data/metabolicTasks/Biofluids/Harvey_biofluid_rxns.tsv', 'Delimiter', '\t', 'FileType', 'text');
+ elseif strcmp(Sex, 'Female')
+     AddRxnsData = readtable('../data/metabolicTasks/Biofluids/Harvetta_biofluid_rxns.tsv', 'Delimiter', '\t', 'FileType', 'text');
+ else
+     AddRxnsData = readtable('../data/metabolicTasks/Biofluids/Fetus_biofluid_rxns.tsv', 'Delimiter', '\t', 'FileType', 'text');
+ end
+
+
+ % AddRxnsData = readtable(['../Data/', Sex, '_Biofluid_rxns.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+ % AddRxnsData = readtable(['../Data/', 'Male_Biofluid_rxns_0910.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+ % AddRxnsData = readtable(['../Data/', 'Female_Biofluid_rxns_0924_end.tsv'], 'Delimiter', '\t', 'FileType', 'text');
+ 
  rxnsToAdd = struct();
  rxnsToAdd.rxns = AddRxnsData.ID;
  rxnsToAdd.equations = AddRxnsData.Reaction;
- rxnsToAdd.mets = AddRxnsData.Metabolites;
- rxnsToAdd.stoichCoeffs = AddRxnsData.Coefficient;
+ % rxnsToAdd.mets = AddRxnsData.Metabolites;
+ rxnsToAdd.mets = AddRxnsData.Metabolites_new;
+ % rxnsToAdd.stoichCoeffs = AddRxnsData.Coefficient;
+ rxnsToAdd.stoichCoeffs = AddRxnsData.Mets_Coefficient_new;
  rxnsToAdd.lb = AddRxnsData.Lb;
  rxnsToAdd.ub = AddRxnsData.Ub;
  rxnsToAdd.subSystems = AddRxnsData.Subsystem;
+ rxnsToAdd.grRules = AddRxnsData.GPR;
  
- newModel1 = addRxns(newModel,rxnsToAdd); % A function in RAVEN.
-
+  parfor i=1:length(rxnsToAdd.mets)
+     mets = eval(rxnsToAdd.mets{i,1}).';
+     if all(ismember(mets, newModel.mets))
+         missingMet(i,1) = 1;
+     else
+         missingMet(i,1) = 0;
+     end
+ end
+ 
+ index_of_zeros = find(missingMet == 0);
+ let_go_rxns = rxnsToAdd.rxns(index_of_zeros);
+ 
+ [TF, loc] = ismember(newModel.rxns, rxnsToAdd.rxns);
+ % commonrxnsIdx = find(TF);
+ commonrxnsIdx = findIndex(rxnsToAdd.rxns, newModel.rxns(find(TF)));
+ 
+ index_of_zeros = [index_of_zeros; commonrxnsIdx];
+ 
+ cellLength = length(rxnsToAdd.rxns);
+ keepRows = true(cellLength, 1);
+ keepRows(index_of_zeros) = false;
+ fieldNames = fieldnames(rxnsToAdd);
+for i = 1:length(fieldNames)
+    fieldName = fieldNames{i};
+    if iscell(rxnsToAdd.(fieldName))
+        rxnsToAdd.(fieldName) = rxnsToAdd.(fieldName)(keepRows);
+    elseif isnumeric(rxnsToAdd.(fieldName)) && ismatrix(rxnsToAdd.(fieldName)
+        if isvector(rxnsToAdd.(fieldName))
+            rxnsToAdd.(fieldName) = rxnsToAdd.(fieldName)(:);
+            rxnsToAdd.(fieldName) = rxnsToAdd.(fieldName)(keepRows);
+        else
+            rxnsToAdd.(fieldName) = rxnsToAdd.(fieldName)(keepRows, :);
+        end
+    end
+end
+ 
+ 
+ eqnType=1;
+ compartment = [];
+ allowNewMets=false;
+ allowNewGenes=true;
+ newModel1=addRxns(newModel,rxnsToAdd,eqnType,compartment,allowNewMets,allowNewGenes);
+ 
+ 
 % 7. set physiologically and stoichiometrically constrained modeling (PSCM)
 % and Diet constraints into WBM. There has no physiological data for fetus.
 % Thus, this step is no need to run for WBM of fetus.
-if Age == 'Adult';
+if strcmp(Age, 'Adult')
     sex =  lower(Sex);
     gender = lower(Sex);
     standardPhysiolDefaultParameters;
@@ -179,19 +252,29 @@ if Age == 'Adult';
     WBM.lb(strmatch('BBB_TRP_L[CSF]upt',WBM.rxns)) = -1000000;
     WBM.ub(strmatch('Brain_EX_glc_D(',WBM.rxns)) = -100; 
     
-elseif Age == 'Elderly';
+elseif strcmp(Age, 'Elderly')
     sex =  lower(Sex);
     gender = lower(Sex);
     standardPhysiolDefaultParameters;
     % change some physiological parameter for elderly group.(PMID:15544194)
-    if sex == 'male'
-        IndividualParameters.bodyWight = 78.58;
+    if strcmp(sex, 'male')
+        % IndividualParameters.bodyWeight = 78.58;
+        IndividualParameters.bodyWeight = 65;
+        % IndividualParameters.bodyWeight = 70;
         IndividualParameters.Height = 172.57;
         IndividualParameters.HeartRate = 65;
-    elseif sex == 'female'
-        IndividualParameters.bodyWight = 68.51;
+        
+        IndividualParameters.StrokeVolume = 70;
+        IndividualParameters.Hematocrit = 0.35;
+        
+    elseif strcmp(sex, 'female')
+        % IndividualParameters.bodyWeight = 68.51;
+        IndividualParameters.bodyWeight = 54;
         IndividualParameters.Height = 159.01;
-        IndividualParameters.HeartRate = 68;
+        IndividualParameters.HeartRate = 65;
+        
+        IndividualParameters.StrokeVolume = 70;
+        IndividualParameters.Hematocrit = 0.35;
     else
         EM='Something wrong with the gender!';
         dispEM(EM);
@@ -218,24 +301,18 @@ elseif Age == 'Elderly';
     WBM.lb(strmatch('BBB_TRP_L[CSF]upt',WBM.rxns)) = -1000000;
     WBM.ub(strmatch('Brain_EX_glc_D(',WBM.rxns)) = -100; 
 else
-    EM="Something wrong with the Age group! Only allowed for 'Adult' or 'Elderly'."
+    EM="Something wrong with the Age group! Only allowed for 'Adult' or 'Elderly'.";
     dispEM(EM);
+end
     
 % 8. Simulation for biomass maintain of WBM
 newModel1 = changeObjective(newModel1, 'Whole_body_objective_rxn');
 sol = optimizeCbModel(newModel1, 'max', 'one');
-
-WBM = changeObjective(WBM, 'Whole_body_objective_rxn');
-sol = optimizeCbModel(WBM, 'max', 'one');
+save(['../models/WBMs/',Age,Sex,'_WBM_withoutPSCM.mat'], 'newModel1')
 
 WBM = releaseWBMConstraints(WBM, Sex, Age);
-
-BMR_value = HumanBMR(WBM, sol);
-save('Adult_Male_WBM.mat', 'WBM');
-
-
-WBMc = releaseWBMConstraints(WBMc, Sex, Age);
-WBMc = changeObjective(WBMc, 'Whole_body_objective_rxn');
-[GeneClasses, RxnClasses, modelIrrevFM, MinimizedFlux] = pFBA(WBMc, 'geneoption',0, 'tol',1e-6, 'skipclass', 1);
-BMR_value = HumanBMR(modelIrrevFM, MinimizedFlux);
-    
+WBM = changeObjective(WBM, 'Whole_body_objective_rxn');
+%sol = optimizeCbModel(WBM, 'max', 'one');
+sol = solveLP(WBM);
+sol.f
+save(['../models/WBMs/',Age,Sex,'_WBM_withPSCM.mat'], 'WBM')

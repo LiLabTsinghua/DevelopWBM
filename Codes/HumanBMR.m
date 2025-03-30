@@ -14,5 +14,6 @@ function Energy_kcal = HumanBMR(model, solution)
     % compute the energy release in kJ
     Energy_kJ = Sum_atp/1000 * 64; % (in kJ/day/person)
     % compute the energy release in kcal, where 1 kJ = 0.239006 kcal
-    Energy_kcal = Energy_kJ*0.239006; % (in kcal/day/person)
+    % Energy_kcal = Energy_kJ*0.239006; % (in kcal/day/person)
+    Energy_kcal = Energy_kJ*0.239006*2; % (in kcal/day/person)
 end
