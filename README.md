@@ -14,6 +14,7 @@ For details, please refer to ["./codes/readme.md"](https://github.com/LiLabTsing
 - The generic genome-scale metabolic model of _Homo sapiens_ is [Human2](https://github.com/SysBioChalmers/Human-GEM). If you have any doubts about the Human2, don't hesitate to ask your questions directly in [here](https://github.com/SysBioChalmers/Human-GEM/issues).
 
 - The organ-specific GEMs are stored in ['./models/'](https://github.com/LiLabTsinghua/DevelpWBM/tree/main/models). These organ-specific GEMs included a total of 24 organs and 4 groups (`Adult male`, `Adult Female`, `Elderly male`, `Elderly female`). Overview of these GEMs(genes/reactions/metabolites):
+
 | **Organ**      | **AdultMale**  | **ElderlyMale**| **AdultFemale**| **ElderlyFemale**| **Fetus**    |
 |----------------|----------------|----------------|----------------|----------------|----------------|
 | Adipocytes     | 2259/7992/5718 | 2270/8015/5726 | 2262/7978/5712 | 2265/7997/5728 | 2258/7972/5713 |
@@ -40,7 +41,8 @@ For details, please refer to ["./codes/readme.md"](https://github.com/LiLabTsing
 | Urinarybladder | 2274/8082/5771 | 2236/7756/5588 | 2270/8023/5736 | 2249/7853/5651 | 2267/7990/5726 |
 | Uterus         | NA             | NA             | 2262/7951/5711 | 2268/7923/5681 | NA             |
 
-- The whole-body models of are stored in ['./models/WBMs/'](https://github.com/LiLabTsinghua/DevelpWBM/tree/main/models/WBMs/). Overview of these WBMs(genes/reactions/metabolites):
+- The whole-body models of are stored in ['./models/WBMs/'](https://github.com/LiLabTsinghua/DevelpWBM/tree/main/models/WBMs/). Overview of these WBMs:
+
 |             |  Fetus    | AdultMale   | AdultFemale | ElderlyMale   | ElderlyFemale |
 |-------------|-----------|-------------|-------------|---------------|--------|
 | Genes       | 2506      | 2383        | 2384        | 2386          | 2382   |
