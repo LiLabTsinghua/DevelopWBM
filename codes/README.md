@@ -1,4 +1,5 @@
-# Human2 manuscript data and scriptsThis directory contains the scripts and data files used to perform analyses and generate models and figures that were used in the Human2 manuscript.
+# Human2 manuscript data and scripts
+## This directory contains the scripts and data files used to perform analyses and generate models and figures that were used in the Human2 manuscript.
 
 ### Required Software:
 * A functional Matlab installation (MATLAB 9.6.0 (R2019a) and higher)
