@@ -35,7 +35,7 @@
 
 ## Generation and simulation of CoreWBM
 * Running the `runCoreWBM.m` function will generate coreWBM and different food simualtion results and it could be plotted with running `Fig_5a_Food.py`.
-* Running the `dFBA_Fasting.m`  function will generate the different panels in Figure 6 of the main text.
+* Running the `dFBA.m`  function will generate the different panels in `Figure 6` of the main text.
 
 
 
