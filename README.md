@@ -49,9 +49,8 @@ For details, please refer to ["./codes/readme.md"](https://github.com/LiLabTsing
 | Metabolites | 105829    | 104823      | 113880      | 103615        | 113272 |
 | Reactions   | 133609    | 125360      | 135322      | 123730        | 135139 |
 
-# Citation
-- Please cite the paper ["Human2: Improved reconstruction of human metabolism through combining a community effort with large language models"](links)
+
 
 # Contact
 - Jiahao Luo([@Jiahao](https://github.com/JHL-452b)), Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
-- Feiran Li([@feiran](https://github.com/feiranl)), Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
+- Feiran Li([@feiranl](https://github.com/feiranl)), Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
