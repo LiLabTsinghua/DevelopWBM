@@ -1,5 +1,6 @@
 # Introduction
 The `DevelopWBM` repo contains all data, codes and models analyzed in "Reconstruction of human metabolic models with large language models"
+As for the Human-GEM curations, please refer to  [Human-GEM] repo (https://github.com/SysBioChalmers/Human-GEM)
 
 # Codes
 `./codes/` contains all the codes for calculations and analysis in the article. These codes mainly include:
