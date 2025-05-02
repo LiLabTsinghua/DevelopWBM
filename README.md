@@ -1,5 +1,5 @@
 # Introduction
-The `DevelopWBM` repo contains all data, codes and models analyzed in "Human2: Improved reconstruction of human metabolism through combining a community effort with large language models"
+The `DevelopWBM` repo contains all data, codes and models analyzed in "Reconstruction of human metabolic models with large language models"
 
 # Codes
 `./codes/` contains all the codes for calculations and analysis in the article. These codes mainly include:
