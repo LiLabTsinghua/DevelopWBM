@@ -1,0 +1,54 @@
+# Prompt for checking metabolic gene
+prompt = f"""
+	You are a biological expert.
+
+	Determine whether the gene described below is a metabolic gene.
+
+	A metabolic gene is defined as one whose product:
+	1. Catalyzes a metabolic reaction (enzyme), OR
+	2. Transports metabolic substrates/products, OR
+	3. Regulates metabolic pathways, OR
+	4. Forms part of a metabolic protein complex.
+
+	Gene Function Description:
+	''' {function_text} '''
+
+	Only output one word:
+	- Yes
+	- No
+
+	Do NOT output any explanation.
+"""
+
+# Prompt for checking association between gene's funtion and metabolic reaction
+prompt_1 = f"""
+	Your task is to determine whether the enzyme I gave is capable of catalysing the given reaction.
+    
+    Functional description of the enzyme: '''{gene's function}'''
+    
+    The above is information about the enzyme. You need to decide if the enzyme can catalyse the following reaction based on the information about the enzyme.
+    
+    reaction: {metabolic reaction equation}
+
+    Based on the information above, you should only choose one answer from the following options. If more information is needed to make a judgement, answer that there is a lack of sufficient information to judge whether the enzyme can catalyse the reaction.
+    1: The enzyme can catalyse this reaction.
+    2: The enzyme cannot catalyse a reaction because they are not related to the reaction.
+    3: The enzyme may be associated with the reaction, but there is not enough information to prove that enzymes can catalyse the reaction.
+    You need to briefly analyse and then output the options.
+"""
+
+prompt_2 = f"""
+	The gene is not relevant to the reaction provided, based on the annotation of the gene, analyze the reasons why the gene and the reaction are not related.
+	''' {function_text and metabolic reaction equation} '''
+	Please answer according to the text provided above!
+	Output: No, the gene is not relevant to the reaction provided. Analysis and explanation.
+	Output should strictly follow these examples and please do not line feed the output.
+"""
+
+prompt_3 = f"""
+	The gene is relevant to the reaction provided, based on the annotation of the gene, analyze the relationship between the provided gene and reaction.
+	''' {function_text and metabolic reaction equation} '''
+	Please answer according to the text provided above!
+	Output: Yes, the gene is relevant to the reaction provided. Analysis and explanation.
+	Output should strictly follow these examples and please do not line feed the output.
+"""
