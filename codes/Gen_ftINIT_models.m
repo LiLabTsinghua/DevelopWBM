@@ -20,7 +20,7 @@ if strcmp(GeneExpData, 'Hart2015')
     data_struct;
 
 elseif strcmp(GeneExpData, 'DepMap')
-    GeneExpDataFloder = '../data/eGenesData/Depmap_RNAseq_data.mat';
+    GeneExpDataFloder = '../data/eGenesData/DepMap_RNAseq_data.mat';
     load(GeneExpDataFloder);
 
     data_struct.genes = depmap.genes;
