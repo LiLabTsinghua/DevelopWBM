@@ -79,7 +79,8 @@ if strcmp(datasetName,'Hart2015')
     clear x ind1 ind2 genes celltypes bf_data bf_thresh fitness_mat
     
 elseif strcmp(datasetName,'DepMap')
-    
+
+    % Please download "Achilles_gene_effect_add_ID.csv" from https://zenodo.org/records/15117362 and place it in "../data/eGenesData/"
     x = readtable('../data/eGenesData/Achilles_gene_effect_add_ID.csv');
     
     genes = x.Properties.VariableDescriptions(3:end)';
