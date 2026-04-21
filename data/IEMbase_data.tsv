@@ -1,0 +1,427 @@
+IEM	Gene	Gene_Recon	met_Human-GEM	met_Human2	met_Human1	met_Recon3D_301	In_Vivo
+DDC-related Aromatic L-amino acid decarboxylase deficiency 	ENSG00000132437	1644.1	MAM00830	MAM00830	m00830	CE2176	increase
+DDC-related Aromatic L-amino acid decarboxylase deficiency 	ENSG00000132437	1644.1	MAM01107	MAM01107	m01107	5htrp	increase
+DDC-related Aromatic L-amino acid decarboxylase deficiency 	ENSG00000132437	1644.1	MAM02354	MAM02354	m02354	34dhphe	increase
+DBH-related Dopamine beta-hydroxylase deficiency 	ENSG00000123454	1621.1	MAM03136	MAM03136	m03136	3mox4hoxm	decrease
+MAOA-related Monoamine oxidase A deficiency 	ENSG00000189221	4128.1	MAM00821	MAM00821	m00821	3moxtyr	increase
+MAOA-related Monoamine oxidase A deficiency 	ENSG00000189221	4128.1	MAM01103	MAM01103	m01103	5hoxindoa	decrease
+MAOA-related Monoamine oxidase A deficiency 	ENSG00000189221	4128.1	MAM02137	MAM02137	m02137	homoval	decrease
+MAOA-related Monoamine oxidase A deficiency 	ENSG00000189221	4128.1	MAM02622	MAM02622	m02622	normete_L	increase
+MAOA-related Monoamine oxidase A deficiency 	ENSG00000189221	4128.1	MAM03136	MAM03136	m03136	3mox4hoxm	decrease
+SLC6A3-related Dopamine transporter deficiency 	ENSG00000142319	6531.1	MAM02137	MAM02137	m02137	homoval	decrease
+SLC27A4-related Fatty acid transport protein 4 deficiency 	ENSG00000167114	10999.1	MAM02817	MAM02817	m02817	pydxn	increase
+GATM-related Arginine:glycine amidinotransferase deficiency 	ENSG00000171766	2628.1	MAM01619	MAM01619	m01619	creat	decrease
+PIK3CA-related Catalytic phosphatidylinositol 3-kinase subunit superactivity 	ENSG00000121879	5290.1	MAM01965	MAM01965	m01965	glc_D	decrease
+PIK3CD-related Catalytic phosphatidylinositol 3-kinase subunit superactivity 	ENSG00000171608	5293.1	MAM00248	MAM00248	m00248	13dampp	decrease
+PPOX-related Protoporphyrinogen oxidase deficiency 	ENSG00000143224	5498.1	MAM01604	MAM01604	m01604	C05770	increase
+PPOX-related Protoporphyrinogen oxidase deficiency 	ENSG00000143224	5498.1	MAM01074	MAM01074	m01074	5aop	increase
+PPOX-related Protoporphyrinogen oxidase deficiency 	ENSG00000143224	5498.1	MAM02756	MAM02756	m02756	ppbng	increase
+HMOX1-related Heme oxygenase 1 deficiency 	ENSG00000100292	3162.1	MAM01396	MAM01396	m01396	bilirub	increase
+CPS1-related Carbamoyl phosphate synthetase I deficiency 	ENSG00000021826	"1373.1, 1373.2"	MAM02579	MAM02579	m02579	nh4	increase
+EHHADH-related L-Bifunctional protein deficiency 	ENSG00000113790	1962.1	MAM01965	MAM01965	m01965	glc_D	increase
+PAPSS2-related Phosphoadenosine 5'-phosphosulfate synthetase 2 deficiency (CDG) 	ENSG00000198682	9060.1	MAM01659	MAM01659	m01659	dheas	decrease
+PAPSS2-related Phosphoadenosine 5'-phosphosulfate synthetase 2 deficiency (CDG) 	ENSG00000198682	9060.1	MAM02969	MAM02969	m02969	tststerone	increase
+KMO-related Kynurenine-3-hydroxylase deficiency 	ENSG00000117009	8564.1	MAM00990	MAM00990	m00990	kynate	increase
+HSD3B2-related 3-beta-Hydroxysteroid dehydrogenase deficiency 	ENSG00000203859	3284.1	MAM01309	MAM01309	m01309	aldstrn	decrease
+SORD-related Sorbitol dehydrogenase deficiency 	ENSG00000140263	6652.1	MAM03155	MAM03155	m03155	xylt	increase
+SORD-related Sorbitol dehydrogenase deficiency 	ENSG00000140263	6652.1	MAM01682	MAM01682	m01682	sbt_D	increase
+PCK2-related Mitochondrial phosphoenolpyruvate carboxykinase deficiency 	ENSG00000100889	5106.1	MAM01965	MAM01965	m01965	glc_D	decrease
+GOT2-related Mitochondrial aspartate aminotransferase deficiency 	ENSG00000125166	2806.1	MAM02896	MAM02896	m02896	ser_L	increase
+CYP21A2-related 21-Hydroxylase deficiency 	ENSG00000231852	1589.1	MAM02969	MAM02969	m02969	tststerone	increase
+NAGS-related N-Acetylglutamate synthase deficiency 	ENSG00000161653	162417.1	MAM02579	MAM02579	m02579	nh4	increase
+CYP11B1-related 11-beta-Hydroxylase type 1 deficiency 	ENSG00000160882	1584.1	MAM00295	MAM00295	m00295	11docrtsl	increase
+CYP11B1-related 11-beta-Hydroxylase superactivity 	ENSG00000160882	1584.1	MAM01309	MAM01309	m01309	aldstrn	increase
+GATM-related Arginine:glycine amidinotransferase aggregation syndrome 	ENSG00000171766	2628.1	MAM01628	MAM01628	m01628	cys_L	increase
+GATM-related Arginine:glycine amidinotransferase aggregation syndrome 	ENSG00000171766	2628.1	MAM01965	MAM01965	m01965	glc_D	increase
+SLC7A9-related Cystinuria type B 	ENSG00000021488	11136.1	MAM01629	MAM01629	m01629	Lcystin	increase
+PCCB-related Propionic acidemia due to propionyl-CoA carboxylase subunit beta deficiency 	ENSG00000114054	5096.1	MAM01986	MAM01986	m01986	gly	increase
+PCCB-related Propionic acidemia due to propionyl-CoA carboxylase subunit beta deficiency 	ENSG00000114054	5096.1	MAM00665	MAM00665	m00665	2mcit	increase
+AMT-related Nonketotic hyperglycinemia due to aminomethyltransferase deficiency 	ENSG00000145020	275.1	MAM01986	MAM01986	m01986	gly	increase
+GCSH-related Glycine encephalopathy due to H protein deficiency 	ENSG00000140905	2653.1	MAM01986	MAM01986	m01986	gly	increase
+ETFB-related Electron transfer flavoprotein subunit deficiency 	ENSG00000105379	"2109.2, 2109.1"	MAM03923	MAM03923	sebacid	sebacid	increase
+HSD17B3-related 17-beta-Hydroxysteroid dehydrogenase deficiency 	ENSG00000130948	3293.1	MAM02969	MAM02969	m02969	tststerone	decrease
+"SDHA-related Succinate dehydrogenase subunit A deficiency, tumoral phenotype "	ENSG00000073578	6389.1	MAM02617	MAM02617	m02617	nrpphr	increase
+"SDHA-related Succinate dehydrogenase subunit A deficiency, tumoral phenotype "	ENSG00000073578	6389.1	MAM02622	MAM02622	m02622	normete_L	increase
+SRD5A2-related Steroid 5-alpha-reductase type 2 deficiency 	ENSG00000277893	6716.1	MAM01069	MAM01069	m01069	5adtststerone	decrease
+CYP11B2-related Steroid 18-hydroxylase deficiency 	ENSG00000179142	1585.1	MAM01309	MAM01309	m01309	aldstrn	increase
+HADHB-related Trifunctional protein subunit deficiency 	ENSG00000138029	3032.1	MAM03923	MAM03923	sebacid	sebacid	increase
+MCCC2-related 3-Methylcrotonyl-CoA carboxylase 2 deficiency 	ENSG00000131844	64087.1	MAM02348	MAM02348	m02348	crn	increase
+MCCC2-related 3-Methylcrotonyl-CoA carboxylase 2 deficiency 	ENSG00000131844	64087.1	MAM02579	MAM02579	m02579	nh4	increase
+ABCC8-related ATP-sensitive potassium channel regulatory subunit superactivity 	ENSG00000006071	6833.1	MAM01965	MAM01965	m01965	glc_D	increase
+KCNJ11-related ATP-sensitive potassium channel pore-forming subunit superactivity 	ENSG00000187486	3767.1	MAM01965	MAM01965	m01965	glc_D	increase
+GCK-related Glucokinase deficiency 	ENSG00000106633	"2645.1, 2645.2, 2645.3"	MAM01965	MAM01965	m01965	glc_D	increase
+GNE-related UDP-GlcNAc epimerase/kinase superactivity (CDG) 	ENSG00000159921	10020.1	MAM02543	MAM02543	m02543	acnam	increase
+OTC-related Ornithine transcarbamylase deficiency 	ENSG00000036473	5009.1	MAM02579	MAM02579	m02579	nh4	increase
+HS6ST1-related Heparan sulfate 6-O-sulfate transferase 1 deficiency (CDG) 	ENSG00000136720	9394.1	MAM02969	MAM02969	m02969	tststerone	decrease
+ODC1-related Ornithine decarboxylase 1 superactivity 	ENSG00000115758	4953.1	MAM02547	MAM02547	m02547	aprut	increase
+ODC1-related Ornithine decarboxylase 1 superactivity 	ENSG00000115758	4953.1	MAM02812	MAM02812	m02812	ptrc	increase
+BCAT2-related Branched-chain aminotransferase 2 deficiency 	ENSG00000105552	587.1	MAM01986	MAM01986	m01986	gly	increase
+MPST-related Mercaptopyruvate sulfurtransferase deficiency 	ENSG00000128309	4357.1	MAM00816	MAM00816	m00816	mercplaccys	increase
+ACAD8-related Isobutyryl-CoA dehydrogenase deficiency 	ENSG00000151498	27034.1	MAM02348	MAM02348	m02348	crn	increase
+SLC25A21-related Mitochondrial oxodicarboxylate carrier deficiency 	ENSG00000183032	89874.1	MAM02822	MAM02822	m02822	quln	increase
+SLC17A5-related Sialin deficiency (milder) 	ENSG00000119899	26503.1	MAM02543	MAM02543	m02543	acnam	increase
+LTC4S-related Leukotriene C4 synthase deficiency 	ENSG00000213316	"4056.1, 4056.2"	MAM02366	MAM02366	m02366	leuktrC4	decrease
+LTC4S-related Leukotriene C4 synthase deficiency 	ENSG00000213316	"4056.1, 4056.2"	MAM02369	MAM02369	m02369	leuktrE4	decrease
+DPEP1-related Dipeptidase deficiency 	ENSG00000015413	1800.1	MAM01628	MAM01628	m01628	cys_L	increase
+SLC28A1-related Pyrimidine nucleoside transporter deficiency 	ENSG00000156222	"9154.2, 9154.1"	MAM01630	MAM01630	m01630	cytd	increase
+SLC28A1-related Pyrimidine nucleoside transporter deficiency 	ENSG00000156222	"9154.2, 9154.1"	MAM03123	MAM03123	m03123	uri	increase
+MMACHC; PRDX1-related Epi-cblC deficiency 	ENSG00000117450	"5052.3, 5052.2, 5052.1"	MAM02133	MAM02133	m02133	hcys_L	increase
+MMACHC; PRDX1-related Epi-cblC deficiency 	ENSG00000117450	"5052.3, 5052.2, 5052.1"	MAM02657	MAM02657	m02657	pcrn	increase
+MMACHC; PRDX1-related Epi-cblC deficiency 	ENSG00000117450	"5052.3, 5052.2, 5052.1"	MAM00665	MAM00665	m00665	2mcit	increase
+ASS1-related Argininosuccinate synthetase deficiency 	ENSG00000130707	"445.1, 445.2"	MAM02579	MAM02579	m02579	nh4	increase
+ADA-related Adenosine deaminase deficiency 	ENSG00000196839	100.1	MAM01642	MAM01642	m01642	datp	increase
+DGUOK-related Mitochondrial deoxyguanosine kinase deficiency 	ENSG00000114956	"1716.5, 1716.1, 1716.4, 1716.2, 1716.3"	MAM01965	MAM01965	m01965	glc_D	decrease
+SHMT2-related Mitochondrial serine hydroxymethyltransferase deficiency 	ENSG00000182199	6472.1	MAM01115	MAM01115	m01115	5mthf	increase
+ADA-related Adenosine deaminase superactivity 	ENSG00000196839	100.1	MAM01285	MAM01285	m01285	adp	increase
+PNP-related Purine nucleoside phosphorylase deficiency 	ENSG00000198805	4860.1	MAM01671	MAM01671	m01671	din	increase
+ASL-related Argininosuccinate lyase deficiency 	ENSG00000126522	435.1	MAM02579	MAM02579	m02579	nh4	increase
+ARG1-related Arginase 1 deficiency 	ENSG00000118520	383.1	MAM02579	MAM02579	m02579	nh4	increase
+SLC6A6-related Taurine transporter deficiency 	ENSG00000131389	6533.1	MAM02961	MAM02961	m02961	taur	decrease
+SLC25A15-related Mitochondrial ornithine transporter deficiency 	ENSG00000102743	10166.1	MAM02579	MAM02579	m02579	nh4	increase
+OXCT1-related Succinyl-CoA:3-oxoacid CoA transferase deficiency 	ENSG00000083720	5019.1	MAM01965	MAM01965	m01965	glc_D	decrease
+MLYCD-related Malonyl-CoA decarboxylase deficiency 	ENSG00000103150	23417.1	MAM02443	MAM02443	c3dc	HC10859;c3dc	increase
+MLYCD-related Malonyl-CoA decarboxylase deficiency 	ENSG00000103150	23417.1	MAM03923	MAM03923	sebacid	sebacid	increase
+"SLC51A-related Cholestasis, progressive familial intrahepatic, 6 "	ENSG00000163959	200931.1	MAM01396	MAM01396	m01396	bilirub	increase
+SLC25A13-related Citrin deficiency 	ENSG00000004864	10165.1	MAM02471	MAM02471	m02471	met_L	increase
+SLC25A13-related Citrin deficiency 	ENSG00000004864	10165.1	MAM02579	MAM02579	m02579	nh4	increase
+SLC25A13-related Citrin deficiency 	ENSG00000004864	10165.1	MAM01396	MAM01396	m01396	bilirub	increase
+AKR1D1-related 4-3-Oxosteroid-5-reductase deficiency 	ENSG00000122787	6718.1	MAM01396	MAM01396	m01396	bilirub	increase
+FAH-related Fumarylacetoacetase deficiency 	ENSG00000103876	2184.1	MAM02471	MAM02471	m02471	met_L	increase
+FAH-related Fumarylacetoacetase deficiency 	ENSG00000103876	2184.1	MAM01074	MAM01074	m01074	5aop	increase
+POR-related Cytochrome P450 oxidoreductase deficiency 	ENSG00000127948	5447.1	MAM01615	MAM01615	m01615	crtsl	decrease
+POR-related Cytochrome P450 oxidoreductase deficiency 	ENSG00000127948	5447.1	MAM02969	MAM02969	m02969	tststerone	increase
+NDUFB7-related NADH dehydrogenase beta subcomplex subunit 8 deficiency 	ENSG00000099795	4713.1	MAM02532	MAM02532	m02532	Nacasp	increase
+UQCRH-related Ubiquinol-cytochrome C reductase hinge protein deficiency 	ENSG00000173660	7388.1	MAM02579	MAM02579	m02579	nh4	increase
+SLC13A1-related Na-sulfate cotransporter deficiency 	ENSG00000081800	6561.1	MAM02581	MAM02581	m02581	nmn	decrease
+KCNJ11-related ATP-sensitive potassium channel pore-forming subunit deficiency 	ENSG00000187486	3767.1	MAM01965	MAM01965	m01965	glc_D	decrease
+GGT1-related Gamma-glutamyl transpeptidase deficiency 	ENSG00000100031	"2678.1, 2678.3, 2678.2"	MAM02366	MAM02366	m02366	leuktrC4	increase
+GLYAT-related Glycine N-acyltransferase deficiency 	ENSG00000149124	10249.1	MAM01986	MAM01986	m01986	gly	increase
+DLAT-related Dihydrolipoyl transacetylase deficiency 	ENSG00000150768	1737.1	MAM02819	MAM02819	m02819	pyr	increase
+PDP1-related Pyruvate dehydrogenase phosphatase deficiency 	ENSG00000164951	54704.1	MAM02819	MAM02819	m02819	pyr	increase
+CPT1A-related Carnitine palmitoyltransferase 1A deficiency 	ENSG00000110090	1374.1	MAM02348	MAM02348	m02348	crn	increase
+SLC25A20-related Carnitine acylcarnitine translocase deficiency 	ENSG00000178537	788.1	MAM03923	MAM03923	sebacid	sebacid	increase
+HADHA-related Trifunctional protein subunit alpha deficiency 	ENSG00000084754	3030.1	MAM03923	MAM03923	sebacid	sebacid	increase
+HADHA-related Trifunctional protein subunit alpha deficiency 	ENSG00000084754	3030.1	MAM02579	MAM02579	m02579	nh4	increase
+HADHB-related Isolated deficiency of long-chain 3-ketoacyl CoA thiolase 	ENSG00000138029	3032.1	MAM03923	MAM03923	sebacid	sebacid	increase
+ACADS-related Short-chain acyl CoA dehydrogenase deficiency 	ENSG00000122971	35.1	MAM02635	MAM02635	m02635	c4crn	increase
+ACADS-related Short-chain acyl CoA dehydrogenase deficiency 	ENSG00000122971	35.1	MAM01965	MAM01965	m01965	glc_D	decrease
+ETFA-related Electron transfer flavoprotein subunit deficiency 	ENSG00000140374	2108.1	MAM03923	MAM03923	sebacid	sebacid	increase
+ETFDH-related Multiple acyl-CoA dehydrogenase deficiency 	ENSG00000171503	2110.1	MAM03923	MAM03923	sebacid	sebacid	increase
+AHCY-related S-adenosylhomocysteine hydrolase deficiency 	ENSG00000101444	191.1	MAM02877	MAM02877	m02877	amet	increase
+SLC17A5-related Sialin deficiency (severe) 	ENSG00000119899	26503.1	MAM02543	MAM02543	m02543	acnam	increase
+ACAT1-related Mitochondrial acetoacetyl-CoA thiolase deficiency 	ENSG00000075239	38.1	MAM02579	MAM02579	m02579	nh4	increase
+ACAT1-related Mitochondrial acetoacetyl-CoA thiolase deficiency 	ENSG00000075239	38.1	MAM02348	MAM02348	m02348	crn	decrease
+GALC-related Beta-galactosylceramidase deficiency 	ENSG00000054983	2581.1	MAM02658	MAM02658	m02658	orn	increase
+SUOX-related Isolated sulfite oxidase deficiency 	ENSG00000139531	6821.1	MAM03933	MAM03933	slfcys	slfcys	increase
+SUOX-related Isolated sulfite oxidase deficiency 	ENSG00000139531	6821.1	MAM02991	MAM02991	m02991	tsul	increase
+MTR-related Methionine synthase deficiency 	ENSG00000116984	4548.1	MAM02133	MAM02133	m02133	hcys_L	increase
+MTRR-related Methionine synthase reductase deficiency-cblE 	ENSG00000124275	4552.1	MAM02133	MAM02133	m02133	hcys_L	increase
+GLDC-related Nonketotic hyperglycinemia due to glycine decarboxylase deficiency 	ENSG00000178445	2731.1	MAM01986	MAM01986	m01986	gly	increase
+ABAT-related GABA transaminase deficiency 	ENSG00000183044	"18.1, 18.2"	MAM01383	MAM01383	m01383	ala_B	increase
+LCAT-related Familial lecithin cholesterol acyl transferase deficiency 	ENSG00000213398	3931.1	MAM01450	MAM01450	m01450	chsterol	increase
+SLC19A3-related Thiamine transporter 2 deficiency 	ENSG00000135917	80704.1	MAM02982	MAM02982	m02982	thm	decrease
+ACAD9-related Acyl-CoA Dehydrogenase 9 deficiency 	ENSG00000177646	28976.1	MAM03923	MAM03923	sebacid	sebacid	increase
+ACAD9-related Acyl-CoA Dehydrogenase 9 deficiency 	ENSG00000177646	28976.1	MAM02579	MAM02579	m02579	nh4	increase
+UROC1-related Urocanase deficiency 	ENSG00000159650	131669.1	MAM03124	MAM03124	m03124	urcan	increase
+FTCD-related Formimidoyltransferase cyclodeaminase deficiency 	ENSG00000160282	"10841.1, 10841.2"	MAM02574	MAM02574	m02574	forglu	increase
+GALT-related Galactose-1-phosphate uridyltransferase deficiency (CDG) 	ENSG00000213930	"2592.1, 2592.3, 2592.2"	MAM01909	MAM01909	m01909	galt	increase
+GALK1-related Galactokinase deficiency (CDG) 	ENSG00000108479	2584.1	MAM01909	MAM01909	m01909	galt	increase
+SLC5A2-related Sodium-glucose cotransporter 2 deficiency 	ENSG00000140675	6524.1	MAM01965	MAM01965	m01965	glc_D	increase
+SLC3A1-related Cystinuria type A 	ENSG00000138079	6519.1	MAM01629	MAM01629	m01629	Lcystin	increase
+SLC3A1-related Cystinuria type A 	ENSG00000138079	6519.1	MAM02658	MAM02658	m02658	orn	increase
+SLC2A1-related Glucose transporter 1 deficiency 	ENSG00000117394	6513.1	MAM01965	MAM01965	m01965	glc_D	decrease
+SLC2A2-related Glucose transporter 2 deficiency 	ENSG00000163581	6514.1	MAM01965	MAM01965	m01965	glc_D	increase
+SLC5A1-related Intestinal sodium-glucose cotransporter 1 deficiency 	ENSG00000100170	6523.1	MAM01965	MAM01965	m01965	glc_D	increase
+SLC1A1-related Dicarboxylic aminoaciduria 	ENSG00000106688	6505.1	MAM01974	MAM01974	m01974	glu_L	increase
+PFKM-related Muscle phosphofructokinase deficiency 	ENSG00000152556	5213.1	MAM01396	MAM01396	m01396	bilirub	increase
+QDPR-related Tetrahydrobiopterin deficiency (DHPR) 	ENSG00000151552	5860.1	MAM01103	MAM01103	m01103	5hoxindoa	decrease
+QDPR-related Tetrahydrobiopterin deficiency (DHPR) 	ENSG00000151552	5860.1	MAM02137	MAM02137	m02137	homoval	decrease
+ALDOA-related Aldolase A deficiency 	ENSG00000149925	"226.2, 226.3, 226.1"	MAM01396	MAM01396	m01396	bilirub	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM01986	MAM01986	m01986	gly	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM02658	MAM02658	m02658	orn	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM02579	MAM02579	m02579	nh4	increase
+PEPD-related Prolidase deficiency 	ENSG00000124299	5184.1	MAM02770	MAM02770	m02770	pro_L	increase
+SLC52A3-related Fazio-Londe syndrome 	ENSG00000101276	113278.1	MAM02348	MAM02348	m02348	crn	decrease
+BCKDHA-related Branched-chain ketoacid dehydrogenase E1 alpha deficiency 	ENSG00000248098	593.1	MAM02579	MAM02579	m02579	nh4	increase
+"MTHFD1-related 5,10-Methylene-tetrahydrofolate dehydrogenase deficiency "	ENSG00000100714	4522.1	MAM02133	MAM02133	m02133	hcys_L	increase
+ABCC2-related Canalicular bilirubin glucuronide transporter deficiency 	ENSG00000023839	1244.1	MAM01396	MAM01396	m01396	bilirub	increase
+IVD-related Isovaleryl-CoA dehydrogenase deficiency 	ENSG00000128928	3712.1	MAM02348	MAM02348	m02348	crn	increase
+IVD-related Isovaleryl-CoA dehydrogenase deficiency 	ENSG00000128928	3712.1	MAM02579	MAM02579	m02579	nh4	increase
+ALPL-related Tissue-nonspecific alkaline phosphatase deficiency 	ENSG00000162551	249.1	MAM02814	MAM02814	m02814	pydx5p	increase
+OAT-related Ornithine aminotransferase deficiency 	ENSG00000065154	4942.1	MAM02658	MAM02658	m02658	orn	increase
+OAT-related Ornithine aminotransferase deficiency 	ENSG00000065154	4942.1	MAM02579	MAM02579	m02579	nh4	increase
+ABCC8-related ATP-sensitive potassium channel regulatory subunit deficiency 	ENSG00000006071	6833.1	MAM01965	MAM01965	m01965	glc_D	decrease
+GLUD1-related Glutamate dehydrogenase superactivity 	ENSG00000148672	2746.1	MAM02579	MAM02579	m02579	nh4	increase
+SLC16A1-related Monocarboxylate transporter 1 superactivity 	ENSG00000155380	6566.1	MAM01965	MAM01965	m01965	glc_D	decrease
+"MTHFS-related 5,10-Methenyltetrahydrofolate synthetase deficiency "	ENSG00000136371	10588.1	MAM01115	MAM01115	m01115	5mthf	decrease
+HAO1-related Hydroxyacid oxidase 1 deficiency 	ENSG00000101323	54363.1	MAM01998	MAM01998	m01998	glyclt	increase
+PCBD1-related Tetrahydrobiopterin deficiency (PCD) 	ENSG00000166228	"5092.1, 5092.2"	MAM01965	MAM01965	m01965	glc_D	increase
+TDO2-related Hypertryptophanemia 	ENSG00000151790	6999.1	MAM03089	MAM03089	m03089	trp_L	increase
+TDO2-related Hypertryptophanemia 	ENSG00000151790	6999.1	MAM02897	MAM02897	m02897	srtn	increase
+ABCD3-related Congenital bile acid synthesis defect 	ENSG00000117528	5825.1	MAM00752	MAM00752	m00752	thcholstoic	increase
+"UQCRC2-related Mitochondrial complex III deficiency, nuclear type 5 "	ENSG00000140740	7385.1	MAM02579	MAM02579	m02579	nh4	increase
+PCCA-related Propionic acidemia 	ENSG00000175198	5095.1	MAM01986	MAM01986	m01986	gly	increase
+PCCA-related Propionic acidemia 	ENSG00000175198	5095.1	MAM00665	MAM00665	m00665	2mcit	increase
+MMUT-related Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency 	ENSG00000146085	4594.1	MAM01986	MAM01986	m01986	gly	increase
+MMUT-related Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency 	ENSG00000146085	4594.1	MAM02657	MAM02657	m02657	pcrn	increase
+MMUT-related Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency 	ENSG00000146085	4594.1	MAM00665	MAM00665	m00665	2mcit	increase
+MMUT-related Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency 	ENSG00000146085	4594.1	MAM02579	MAM02579	m02579	nh4	increase
+NDUFS4-related NADH dehydrogenase iron-sulfur protein 4 deficiency 	ENSG00000164258	4724.1	MAM01965	MAM01965	m01965	glc_D	decrease
+SLC46A1-related Proton-coupled folate transporter deficiency 	ENSG00000076351	113235.1	MAM02574	MAM02574	m02574	forglu	increase
+SLC46A1-related Proton-coupled folate transporter deficiency 	ENSG00000076351	113235.1	MAM01115	MAM01115	m01115	5mthf	decrease
+CYC1-related Mitochondrial cytochrome c1 deficiency 	ENSG00000179091	1537.1	MAM02579	MAM02579	m02579	nh4	increase
+PNPO-related Pyridox(am)ine 5-phosphate oxidase deficiency 	ENSG00000108439	55163.1	MAM02814	MAM02814	m02814	pydx5p	decrease
+HPGD-related 15-Hydroxy-prostaglandin dehydrogenase deficiency 	ENSG00000164120	3248.1	MAM02786	MAM02786	m02786	prostge2	increase
+SLCO2A1-related Prostaglandin transporter deficiency 	ENSG00000174640	6578.1	MAM02786	MAM02786	m02786	prostge2	increase
+MOCS1-related Molybdenum cofactor deficiency A 	ENSG00000124615	4337.1	MAM03933	MAM03933	slfcys	slfcys	increase
+MOCS2-related Molybdopterin synthase deficiency 	ENSG00000164172	4338.1	MAM03933	MAM03933	slfcys	slfcys	increase
+GPHN-related Molybdenum cofactor deficiency C 	ENSG00000171723	10243.1	MAM03933	MAM03933	slfcys	slfcys	increase
+SLC36A2-related Hyperglycinuria 	ENSG00000186335	153201.1	MAM01986	MAM01986	m01986	gly	increase
+CBLIF-related Intrinsic factor deficiency 	ENSG00000134812	2694.1	MAM02133	MAM02133	m02133	hcys_L	increase
+ACY1-related Aminoacylase 1 deficiency 	ENSG00000243989	95.1	MAM02536	MAM02536	m02536	acglu	increase
+PYCR2-related Pyrroline-5-carboxylate reductase 2 deficiency 	ENSG00000143811	29920.1	MAM02770	MAM02770	m02770	pro_L	decrease
+CUBN-related Cubilin deficiency 	ENSG00000107611	8029.1	MAM02133	MAM02133	m02133	hcys_L	increase
+ASNS-related Asparagine synthetase deficiency 	ENSG00000070669	"440.1, 440.3, 440.2"	MAM01369	MAM01369	m01369	asn_L	decrease
+SLC6A9-related Glycine transporter 1 deficiency 	ENSG00000196517	"6536.1, 6536.2"	MAM01986	MAM01986	m01986	gly	increase
+LIAS-related Lipoic acid synthase deficiency 	ENSG00000121897	11019.1	MAM01986	MAM01986	m01986	gly	increase
+LIPT1-related Lipoyltransferase 1 deficiency 	ENSG00000144182	51601.1	MAM01974	MAM01974	m01974	glu_L	increase
+SLC52A1-related Riboflavin transporter 1 deficiency 	ENSG00000132517	55065.1	MAM01965	MAM01965	m01965	glc_D	decrease
+NNT-related Nicotinamide nucleotide transhydrogenase deficiency 	ENSG00000112992	"23530.2, 23530.1"	MAM01965	MAM01965	m01965	glc_D	decrease
+NNT-related Nicotinamide nucleotide transhydrogenase deficiency 	ENSG00000112992	"23530.2, 23530.1"	MAM01309	MAM01309	m01309	aldstrn	decrease
+G6PD-related Glucose-6-phosphate dehydrogenase deficiency 	ENSG00000160211	2539.1	MAM01396	MAM01396	m01396	bilirub	increase
+SLC22A5-related Primary carnitine deficiency 	ENSG00000197375	6584.1	MAM02348	MAM02348	m02348	crn	decrease
+SLC22A5-related Primary carnitine deficiency 	ENSG00000197375	6584.1	MAM02348	MAM02348	m02348	crn	increase
+PCK1-related Cytosolic phosphoenolpyruvate carboxykinase deficiency 	ENSG00000124253	5105.1	MAM02579	MAM02579	m02579	nh4	increase
+PCK1-related Cytosolic phosphoenolpyruvate carboxykinase deficiency 	ENSG00000124253	5105.1	MAM01965	MAM01965	m01965	glc_D	decrease
+HK1-related Hemolytic anemia due to hexokinase 1 deficiency 	ENSG00000156515	"3098.3, 3098.2, 3098.1, 3098.4, 3098.5"	MAM01396	MAM01396	m01396	bilirub	increase
+GPI-related Glucose-6-phosphate isomerase deficiency 	ENSG00000105220	2821.1	MAM01279	MAM01279	m01279	ade	increase
+GPI-related Glucose-6-phosphate isomerase deficiency 	ENSG00000105220	2821.1	MAM03135	MAM03135	m03135	val_L	increase
+MPC1-related Mitochondrial pyruvate carrier deficiency 	ENSG00000060762	51660.1	MAM01965	MAM01965	m01965	glc_D	decrease
+MPC1-related Mitochondrial pyruvate carrier deficiency 	ENSG00000060762	51660.1	MAM02819	MAM02819	m02819	pyr	increase
+BTD-related Biotinidase deficiency 	ENSG00000169814	686.1	MAM00665	MAM00665	m00665	2mcit	increase
+"SDHD-related Succinate dehydrogenase subunit D deficiency, tumoral phenotype "	ENSG00000204370	6392.1	MAM02617	MAM02617	m02617	nrpphr	increase
+"SDHD-related Succinate dehydrogenase subunit D deficiency, tumoral phenotype "	ENSG00000204370	6392.1	MAM02622	MAM02622	m02622	normete_L	increase
+HLCS-related Holocarboxylase synthetase deficiency 	ENSG00000159267	3141.1	MAM00665	MAM00665	m00665	2mcit	increase
+SLC19A2-related Thiamine transporter 1 deficiency 	ENSG00000117479	10560.1	MAM01965	MAM01965	m01965	glc_D	increase
+TH-related Tyrosine hydroxylase deficiency 	ENSG00000180176	"7054.1, 7054.3, 7054.2"	MAM02137	MAM02137	m02137	homoval	decrease
+TH-related Tyrosine hydroxylase deficiency 	ENSG00000180176	"7054.1, 7054.3, 7054.2"	MAM02617	MAM02617	m02617	nrpphr	decrease
+PAH-related Phenylketonuria 	ENSG00000171759	5053.1	MAM02724	MAM02724	m02724	phe_L	increase
+PAH-related Phenylketonuria 	ENSG00000171759	5053.1	MAM02725	MAM02725	m02725	phpyr	increase
+AGK-related Acylglycerol kinase deficiency 	ENSG00000006530	55750.1	MAM01716	MAM01716	m01716	lac_D	increase
+PNPLA8-related Mitochondrial myopathy with lactic acidosis 	ENSG00000135241	50640.1	MAM01716	MAM01716	m01716	lac_D	increase
+PNPLA8-related Mitochondrial myopathy with lactic acidosis 	ENSG00000135241	50640.1	MAM02819	MAM02819	m02819	pyr	increase
+SLC6A3-related Dopamine transporter deficiency 	ENSG00000142319	6531.1	MAM01103	MAM01103	m01103	5hoxindoa	decrease
+SLC6A3-related Dopamine transporter deficiency 	ENSG00000142319	6531.1	MAM04072	MAM04072	vanillac	vanillac	decrease
+GAMT-related Guanidinoacetate methyltransferase deficiency 	ENSG00000130005	"2593.1, 2593.2"	MAM02036	MAM02036	m02036	gudac	increase
+MECR-related Mitochondrial enoyl-CoA reductase deficiency 	ENSG00000116353	51102.1	MAM01716	MAM01716	m01716	lac_D	increase
+GATM-related Arginine:glycine amidinotransferase deficiency 	ENSG00000171766	2628.1	MAM02036	MAM02036	m02036	gudac	decrease
+GATM-related Arginine:glycine amidinotransferase deficiency 	ENSG00000171766	2628.1	MAM01621	MAM01621	m01621	crtn	decrease
+SLC6A8-related Creatine transporter deficiency 	ENSG00000130821	6535.1	MAM01619	MAM01619	m01619	creat	increase
+SYNJ1-related Synaptojanin 1 deficiency 	ENSG00000159082	"8867.2, 8867.1"	MAM01716	MAM01716	m01716	lac_D	increase
+CPS1-related Carbamoyl phosphate synthetase I deficiency 	ENSG00000021826	"1373.1, 1373.2"	MAM01975	MAM01975	m01975	gln_L	increase
+SLC7A2-related Cationic amino acid transporter 2 deficiency 	ENSG00000003989	6542.1	MAM01365	MAM01365	m01365	arg_L	increase
+SLC7A2-related Cationic amino acid transporter 2 deficiency 	ENSG00000003989	6542.1	MAM02426	MAM02426	m02426	lys_L	increase
+SLC7A2-related Cationic amino acid transporter 2 deficiency 	ENSG00000003989	6542.1	MAM02036	MAM02036	m02036	gudac	increase
+KMO-related Kynurenine-3-hydroxylase deficiency 	ENSG00000117009	8564.1	MAM02319	MAM02319	m02319	Lkynr	increase
+CYP17A1-related 17-alpha-Hydroxylase deficiency 	ENSG00000148795	1586.1	MAM01615	MAM01615	m01615	crtsl	decrease
+HSD3B2-related 3-beta-Hydroxysteroid dehydrogenase deficiency 	ENSG00000203859	3284.1	MAM01615	MAM01615	m01615	crtsl	decrease
+PCK2-related Mitochondrial phosphoenolpyruvate carboxykinase deficiency 	ENSG00000100889	5106.1	MAM01716	MAM01716	m01716	lac_D	increase
+CYP21A2-related 21-Hydroxylase deficiency 	ENSG00000231852	1589.1	MAM01615	MAM01615	m01615	crtsl	decrease
+TXN2-related Mitochondrial thioredoxin 2 deficiency 	ENSG00000100348	25828.1	MAM01716	MAM01716	m01716	lac_D	increase
+NAGS-related N-Acetylglutamate synthase deficiency 	ENSG00000161653	162417.1	MAM01975	MAM01975	m01975	gln_L	increase
+TXNRD2-related Mitochondrial thioredoxin reductase 2 deficiency 	ENSG00000184470	"10587.1, 10587.3, 10587.2"	MAM01615	MAM01615	m01615	crtsl	decrease
+SLC7A9-related Cystinuria type B 	ENSG00000021488	11136.1	MAM01365	MAM01365	m01365	arg_L	increase
+SLC7A9-related Cystinuria type B 	ENSG00000021488	11136.1	MAM02426	MAM02426	m02426	lys_L	increase
+BCKDHB-related Branched-chain ketoacid dehydrogenase E1 beta deficiency 	ENSG00000083123	"594.1, 594.2"	MAM02360	MAM02360	m02360	leu_L	increase
+BCKDHB-related Branched-chain ketoacid dehydrogenase E1 beta deficiency 	ENSG00000083123	"594.1, 594.2"	MAM03135	MAM03135	m03135	val_L	increase
+DBT-related Dihydrolipoyl transacylase deficiency 	ENSG00000137992	1629.1	MAM02360	MAM02360	m02360	leu_L	increase
+DBT-related Dihydrolipoyl transacylase deficiency 	ENSG00000137992	1629.1	MAM03135	MAM03135	m03135	val_L	increase
+PCCB-related Propionic acidemia due to propionyl-CoA carboxylase subunit beta deficiency 	ENSG00000114054	5096.1	MAM02142	MAM02142	m02142	3hpp	increase
+PCCB-related Propionic acidemia due to propionyl-CoA carboxylase subunit beta deficiency 	ENSG00000114054	5096.1	MAM01716	MAM01716	m01716	lac_D	increase
+ETFB-related Electron transfer flavoprotein subunit deficiency 	ENSG00000105379	"2109.2, 2109.1"	MAM00664	MAM00664	m00664	CE4970	increase
+ETFB-related Electron transfer flavoprotein subunit deficiency 	ENSG00000105379	"2109.2, 2109.1"	MAM02880	MAM02880	m02880	sarcs	increase
+ETFB-related Electron transfer flavoprotein subunit deficiency 	ENSG00000105379	"2109.2, 2109.1"	MAM03954	MAM03954	subeac	subeac	increase
+"FH-related Fumarate hydratase deficiency, tumoral phenotype "	ENSG00000091483	2271.1	MAM01862	MAM01862	m01862	fum	increase
+"FH-related Fumarate hydratase deficiency, tumoral phenotype "	ENSG00000091483	2271.1	MAM01716	MAM01716	m01716	lac_D	increase
+MCCC2-related 3-Methylcrotonyl-CoA carboxylase 2 deficiency 	ENSG00000131844	64087.1	MAM03120	MAM03120	m03120	urate	increase
+OTC-related Ornithine transcarbamylase deficiency 	ENSG00000036473	5009.1	MAM01975	MAM01975	m01975	gln_L	increase
+OTC-related Ornithine transcarbamylase deficiency 	ENSG00000036473	5009.1	MAM02659	MAM02659	m02659	orot	increase
+NDUFA6-related NADH dehydrogenase alpha subcomplex subunit 6 deficiency 	ENSG00000184983	4700.1	MAM01716	MAM01716	m01716	lac_D	increase
+GPT2-related Glutamate pyruvate transaminase 2 deficiency 	ENSG00000166123	84706.1	MAM01638	MAM01638	m01638	ala_D	increase
+BCAT2-related Branched-chain aminotransferase 2 deficiency 	ENSG00000105552	587.1	MAM02360	MAM02360	m02360	leu_L	increase
+BCAT2-related Branched-chain aminotransferase 2 deficiency 	ENSG00000105552	587.1	MAM03135	MAM03135	m03135	val_L	increase
+BCAT2-related Branched-chain aminotransferase 2 deficiency 	ENSG00000105552	587.1	MAM01365	MAM01365	m01365	arg_L	increase
+NADH dehydrogenase betta subcomplex subunit 10 deficiency 	ENSG00000140990	4716.1	MAM01638	MAM01638	m01638	ala_D	increase
+NADH dehydrogenase betta subcomplex subunit 10 deficiency 	ENSG00000140990	4716.1	MAM02770	MAM02770	m02770	pro_L	increase
+NADH dehydrogenase betta subcomplex subunit 10 deficiency 	ENSG00000140990	4716.1	MAM01716	MAM01716	m01716	lac_D	increase
+GALM-related Galactose mutarotase deficiency (CDG) 	ENSG00000143891	130589.1	MAM01910	MAM01910	m01910	gal	increase
+GLS-related Glutaminase deficiency 	ENSG00000115419	2744.1	MAM01975	MAM01975	m01975	gln_L	increase
+SLC25A4-related Adenine nucleotide translocator-related disorder 	ENSG00000151729	291.1	MAM01716	MAM01716	m01716	lac_D	increase
+DPEP1-related Dipeptidase deficiency 	ENSG00000015413	1800.1	MAM01629	MAM01629	m01629	Lcystin	increase
+HS6ST2-related Heparan sulfate 6-O-sulfotransferase 2 deficiency (CDG) 	ENSG00000171004	"90161.2, 90161.1"	MAM01638	MAM01638	m01638	ala_D	increase
+HS6ST2-related Heparan sulfate 6-O-sulfotransferase 2 deficiency (CDG) 	ENSG00000171004	"90161.2, 90161.1"	MAM01716	MAM01716	m01716	lac_D	increase
+MMACHC; PRDX1-related Epi-cblC deficiency 	ENSG00000117450	"5052.3, 5052.2, 5052.1"	MAM02142	MAM02142	m02142	3hpp	increase
+ASS1-related Argininosuccinate synthetase deficiency 	ENSG00000130707	"445.1, 445.2"	MAM01975	MAM01975	m01975	gln_L	increase
+ASS1-related Argininosuccinate synthetase deficiency 	ENSG00000130707	"445.1, 445.2"	MAM02659	MAM02659	m02659	orot	increase
+ASS1-related Argininosuccinate synthetase deficiency 	ENSG00000130707	"445.1, 445.2"	MAM01365	MAM01365	m01365	arg_L	decrease
+DGUOK-related Mitochondrial deoxyguanosine kinase deficiency 	ENSG00000114956	"1716.5, 1716.1, 1716.4, 1716.2, 1716.3"	MAM01716	MAM01716	m01716	lac_D	increase
+HPRT1-related Hypoxanthine guanine phosphoribosyltransferase deficiency 	ENSG00000165704	3251.1	MAM03148	MAM03148	m03148	xan	increase
+HPRT1-related Hypoxanthine guanine phosphoribosyltransferase deficiency 	ENSG00000165704	3251.1	MAM03120	MAM03120	m03120	urate	increase
+APRT-related Adenine phosphoribosyl transferase deficiency 	ENSG00000198931	353.1	MAM01279	MAM01279	m01279	ade	increase
+PI4K2A-related Phosphatidylinositol 4 kinase type 2 alpha deficiency 	ENSG00000155252	55361.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC19A1-related Folate transporter 1 deficiency 	ENSG00000173638	"6573.1, 6573.2"	MAM02133	MAM02133	m02133	hcys_L	increase
+DTYMK-related Deoxythymidylate kinase deficiency 	ENSG00000168393	1841.1	MAM01638	MAM01638	m01638	ala_D	increase
+DTYMK-related Deoxythymidylate kinase deficiency 	ENSG00000168393	1841.1	MAM01716	MAM01716	m01716	lac_D	increase
+PNP-related Purine nucleoside phosphorylase deficiency 	ENSG00000198805	4860.1	MAM03120	MAM03120	m03120	urate	decrease
+RRM2B-related Mitochondrial ribonucelotide reductase subunit 2 deficiency 	ENSG00000048392	50484.1	MAM01716	MAM01716	m01716	lac_D	increase
+DHODH-related Dihydroorotate dehydrogenase deficiency 	ENSG00000102967	1723.1	MAM02659	MAM02659	m02659	orot	increase
+NT5C3A-related Pyrimidine 5â€?nucleotidase superactivity 	ENSG00000122643	51251.1	MAM03120	MAM03120	m03120	urate	decrease
+TK2-related Mitochondrial thymidine kinase 2 deficiency 	ENSG00000166548	7084.1	MAM01716	MAM01716	m01716	lac_D	increase
+ARG1-related Arginase 1 deficiency 	ENSG00000118520	383.1	MAM01365	MAM01365	m01365	arg_L	increase
+ARG1-related Arginase 1 deficiency 	ENSG00000118520	383.1	MAM01975	MAM01975	m01975	gln_L	increase
+"UQCRFS1-related Mitochondrial complex III deficiency, nuclear type 10 "	ENSG00000169021	7386.1	MAM01638	MAM01638	m01638	ala_D	increase
+SLC25A15-related Mitochondrial ornithine transporter deficiency 	ENSG00000102743	10166.1	MAM01975	MAM01975	m01975	gln_L	increase
+SLC25A15-related Mitochondrial ornithine transporter deficiency 	ENSG00000102743	10166.1	MAM02659	MAM02659	m02659	orot	increase
+TKFC-related Triokinase/FMN cyclase deficiency 	ENSG00000149476	26007.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFA8-related NADH dehydrogenase alpha subcomplex subunit 8 deficiency 	ENSG00000119421	4702.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFC2-related NADH dehydrogenase subunit C2 deficiency 	ENSG00000151366	4718.1	MAM01638	MAM01638	m01638	ala_D	increase
+NDUFC2-related NADH dehydrogenase subunit C2 deficiency 	ENSG00000151366	4718.1	MAM01862	MAM01862	m01862	fum	increase
+NDUFC2-related NADH dehydrogenase subunit C2 deficiency 	ENSG00000151366	4718.1	MAM01716	MAM01716	m01716	lac_D	increase
+FH-related Fumarate hydratase deficiency 	ENSG00000091483	2271.1	MAM01862	MAM01862	m01862	fum	increase
+FH-related Fumarate hydratase deficiency 	ENSG00000091483	2271.1	MAM01716	MAM01716	m01716	lac_D	increase
+MLYCD-related Malonyl-CoA decarboxylase deficiency 	ENSG00000103150	23417.1	MAM01862	MAM01862	m01862	fum	increase
+MLYCD-related Malonyl-CoA decarboxylase deficiency 	ENSG00000103150	23417.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC25A13-related Citrin deficiency 	ENSG00000004864	10165.1	MAM01910	MAM01910	m01910	gal	increase
+SLC16A2-related Monocarboxylate transporter 8 deficiency 	ENSG00000147100	6567.1	MAM01716	MAM01716	m01716	lac_D	increase
+"FBP2-related Leukodystrophy, childhood-onset, remitting "	ENSG00000130957	8789.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC31A1-related High-affinity copper transporter (CTR1) deficiency 	ENSG00000136868	1317.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFB7-related NADH dehydrogenase beta subcomplex subunit 8 deficiency 	ENSG00000099795	4713.1	MAM01716	MAM01716	m01716	lac_D	increase
+PYURF-related S-adenosylmethionine-dependent methyltransferase chaperone deficiency 	ENSG00000145337	100996939.1	MAM01716	MAM01716	m01716	lac_D	increase
+PPCDC-related Phosphopantothenoylcysteine decarboxylase deficiency 	ENSG00000138621	60490.1	MAM01716	MAM01716	m01716	lac_D	increase
+PDHA1-related Pyruvate dehydrogenase E1 alpha deficiency 	ENSG00000131828	5160.1	MAM01638	MAM01638	m01638	ala_D	increase
+PDHA1-related Pyruvate dehydrogenase E1 alpha deficiency 	ENSG00000131828	5160.1	MAM01716	MAM01716	m01716	lac_D	increase
+PDHB-related Pyruvate dehydrogenase E1 beta deficiency 	ENSG00000168291	5162.1	MAM01638	MAM01638	m01638	ala_D	increase
+DLAT-related Dihydrolipoyl transacetylase deficiency 	ENSG00000150768	1737.1	MAM01716	MAM01716	m01716	lac_D	increase
+DLD-related Dihydrolipoyl dehydrogenase deficiency 	ENSG00000091140	1738.1	MAM02360	MAM02360	m02360	leu_L	increase
+DLD-related Dihydrolipoyl dehydrogenase deficiency 	ENSG00000091140	1738.1	MAM03135	MAM03135	m03135	val_L	increase
+DLD-related Dihydrolipoyl dehydrogenase deficiency 	ENSG00000091140	1738.1	MAM01716	MAM01716	m01716	lac_D	increase
+PDHX-related Pyruvate dehydrogenase E3-binding protein deficiency 	ENSG00000110435	8050.1	MAM01638	MAM01638	m01638	ala_D	increase
+PDHX-related Pyruvate dehydrogenase E3-binding protein deficiency 	ENSG00000110435	8050.1	MAM01716	MAM01716	m01716	lac_D	increase
+PDP1-related Pyruvate dehydrogenase phosphatase deficiency 	ENSG00000164951	54704.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC25A20-related Carnitine acylcarnitine translocase deficiency 	ENSG00000178537	788.1	MAM01716	MAM01716	m01716	lac_D	increase
+HADHA-related Trifunctional protein subunit alpha deficiency 	ENSG00000084754	3030.1	MAM01716	MAM01716	m01716	lac_D	increase
+HADHB-related Isolated deficiency of long-chain 3-ketoacyl CoA thiolase 	ENSG00000138029	3032.1	MAM01716	MAM01716	m01716	lac_D	increase
+ETFA-related Electron transfer flavoprotein subunit deficiency 	ENSG00000140374	2108.1	MAM00664	MAM00664	m00664	CE4970	increase
+ETFA-related Electron transfer flavoprotein subunit deficiency 	ENSG00000140374	2108.1	MAM02880	MAM02880	m02880	sarcs	increase
+ETFDH-related Multiple acyl-CoA dehydrogenase deficiency 	ENSG00000171503	2110.1	MAM00664	MAM00664	m00664	CE4970	increase
+ETFDH-related Multiple acyl-CoA dehydrogenase deficiency 	ENSG00000171503	2110.1	MAM02880	MAM02880	m02880	sarcs	increase
+CBS-related Cystathionine beta-synthase deficiency 	ENSG00000160200	875.1	MAM02880	MAM02880	m02880	sarcs	increase
+ABAT-related GABA transaminase deficiency 	ENSG00000183044	"18.1, 18.2"	MAM00970	MAM00970	m00970	4abut	increase
+"ST3GAL5-related Lactosylceramide alpha-2,3-sialyltransferase deficiency (CDG) "	ENSG00000115525	8869.1	MAM01716	MAM01716	m01716	lac_D	increase
+XDH-related Xanthine oxidase deficiency 	ENSG00000158125	7498.1	MAM03120	MAM03120	m03120	urate	decrease
+LIPC-related Hepatic lipase deficiency 	ENSG00000166035	3990.1	MAM01450	MAM01450	m01450	chsterol	increase
+SCARB1-related Scavenger receptor B1 deficiency 	ENSG00000073060	949.1	MAM01450	MAM01450	m01450	chsterol	increase
+ABCA1-related Tangier disease 	ENSG00000165029	19.1	MAM01450	MAM01450	m01450	chsterol	decrease
+LPL-related Lipoprotein lipase deficiency 	ENSG00000175445	4023.1	MAM01450	MAM01450	m01450	chsterol	increase
+ALG11-related Mannosyltransferase 4-5 deficiency (CDG) 	ENSG00000253710	440138.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC19A3-related Thiamine transporter 2 deficiency 	ENSG00000135917	80704.1	MAM01716	MAM01716	m01716	lac_D	increase
+PRODH-related Proline dehydrogenase deficiency 	ENSG00000100033	5625.1	MAM02770	MAM02770	m02770	pro_L	increase
+AASS-related Alpha-aminoadipic semialdehyde synthase deficiency 	ENSG00000008311	10157.1	MAM02426	MAM02426	m02426	lys_L	increase
+ACAD9-related Acyl-CoA Dehydrogenase 9 deficiency 	ENSG00000177646	28976.1	MAM01638	MAM01638	m01638	ala_D	increase
+ACAD9-related Acyl-CoA Dehydrogenase 9 deficiency 	ENSG00000177646	28976.1	MAM01716	MAM01716	m01716	lac_D	increase
+PUS1-related Pseudouridine synthase 1 deficiency 	ENSG00000177192	80324.1	MAM01716	MAM01716	m01716	lac_D	increase
+SDHA-related Succinate dehydrogenase subunit A deficiency 	ENSG00000073578	6389.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC25A3-related Mitochondrial phosphate carrier deficiency 	ENSG00000075415	"5250.4, 5250.1, 5250.3, 5250.2"	MAM01716	MAM01716	m01716	lac_D	increase
+GALT-related Galactose-1-phosphate uridyltransferase deficiency (CDG) 	ENSG00000213930	"2592.1, 2592.3, 2592.2"	MAM01910	MAM01910	m01910	gal	increase
+GALK1-related Galactokinase deficiency (CDG) 	ENSG00000108479	2584.1	MAM01910	MAM01910	m01910	gal	increase
+SLC3A1-related Cystinuria type A 	ENSG00000138079	6519.1	MAM01365	MAM01365	m01365	arg_L	increase
+SLC3A1-related Cystinuria type A 	ENSG00000138079	6519.1	MAM02426	MAM02426	m02426	lys_L	increase
+SLC2A2-related Glucose transporter 2 deficiency 	ENSG00000163581	6514.1	MAM03120	MAM03120	m03120	urate	increase
+"FBP1-related Fructose-1,6-bisphosphatase deficiency "	ENSG00000165140	2203.1	MAM01716	MAM01716	m01716	lac_D	increase
+"FBP1-related Fructose-1,6-bisphosphatase deficiency "	ENSG00000165140	2203.1	MAM03120	MAM03120	m03120	urate	increase
+"FBP1-related Fructose-1,6-bisphosphatase deficiency "	ENSG00000165140	2203.1	MAM01983	MAM01983	m01983	glyc	increase
+"AGL-related Amylo-1,6-glucosidase (debrancher) deficiency "	ENSG00000162688	"178.4, 178.5, 178.1, 178.3, 178.2, 178.6"	MAM01450	MAM01450	m01450	chsterol	increase
+PYGM-related Muscle glycogen phosphorylase deficiency 	ENSG00000068976	5837.1	MAM03120	MAM03120	m03120	urate	increase
+PFKM-related Muscle phosphofructokinase deficiency 	ENSG00000152556	5213.1	MAM01716	MAM01716	m01716	lac_D	decrease
+PFKM-related Muscle phosphofructokinase deficiency 	ENSG00000152556	5213.1	MAM03120	MAM03120	m03120	urate	increase
+PHKA2-related Hepatic phosphorylase kinase 2 subunit deficiency 	ENSG00000044446	5256.1	MAM01450	MAM01450	m01450	chsterol	increase
+SUCLA2-related ATP-specific succinyl-CoA synthetase ligase beta subunit deficiency 	ENSG00000136143	8803.1	MAM01716	MAM01716	m01716	lac_D	increase
+APOC2-related Apolipoprotein C-II deficiency 	ENSG00000234906	344.1	MAM01450	MAM01450	m01450	chsterol	increase
+APOE-related Apolipoprotein E deficiency 	ENSG00000130203	348.1	MAM01450	MAM01450	m01450	chsterol	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM01638	MAM01638	m01638	ala_D	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM01365	MAM01365	m01365	arg_L	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM01975	MAM01975	m01975	gln_L	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM02426	MAM02426	m02426	lys_L	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM02770	MAM02770	m02770	pro_L	increase
+SLC7A7-related Lysinuric protein intolerance 	ENSG00000155465	9056.1	MAM02659	MAM02659	m02659	orot	increase
+SLC25A12-related Mitochondrial aspartate-glutamate carrier isoform 1 deficiency 	ENSG00000115840	8604.1	MAM01716	MAM01716	m01716	lac_D	increase
+LCAT-related Familial Lecithin cholesterol acyl transferase deficiency (partial) 	ENSG00000213398	3931.1	MAM01450	MAM01450	m01450	chsterol	increase
+"GKD-related Glycerol kinase deficiency, isolated "	ENSG00000198814	"2710.2, 2710.1"	MAM01983	MAM01983	m01983	glyc	increase
+BCKDHA-related Branched-chain ketoacid dehydrogenase E1 alpha deficiency 	ENSG00000248098	593.1	MAM02360	MAM02360	m02360	leu_L	increase
+BCKDHA-related Branched-chain ketoacid dehydrogenase E1 alpha deficiency 	ENSG00000248098	593.1	MAM03135	MAM03135	m03135	val_L	increase
+IVD-related Isovaleryl-CoA dehydrogenase deficiency 	ENSG00000128928	3712.1	MAM03120	MAM03120	m03120	urate	increase
+OAT-related Ornithine aminotransferase deficiency 	ENSG00000065154	4942.1	MAM02036	MAM02036	m02036	gudac	decrease
+PHKA1-related Muscle phosphorylase kinase deficiency 	ENSG00000067177	5255.1	MAM03120	MAM03120	m03120	urate	increase
+SUCLG1-related GTP-specific succinyl-CoA synthetase ligase alpha subunit deficiency 	ENSG00000163541	8802.1	MAM01716	MAM01716	m01716	lac_D	increase
+CAD-related Trifunctional protein deficiency (CDG) 	ENSG00000084774	790.1	MAM02659	MAM02659	m02659	orot	decrease
+ACADSB-related 2-Methylbutyryl-CoA dehydrogenase deficiency 	ENSG00000196177	36.1	MAM00664	MAM00664	m00664	CE4970	increase
+BCKDK-related Branched-chain ketoacid dehydrogenase kinase deficiency 	ENSG00000103507	10295.1	MAM02360	MAM02360	m02360	leu_L	decrease
+BCKDK-related Branched-chain ketoacid dehydrogenase kinase deficiency 	ENSG00000103507	10295.1	MAM03135	MAM03135	m03135	val_L	decrease
+PCCA-related Propionic acidemia 	ENSG00000175198	5095.1	MAM02142	MAM02142	m02142	3hpp	increase
+PCCA-related Propionic acidemia 	ENSG00000175198	5095.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFS1-related NADH dehydrogenase iron-sulfur protein 1 deficiency 	ENSG00000023228	4719.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFS2-related NADH dehydrogenase iron-sulfur protein 2 deficiency 	ENSG00000158864	4720.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFS3-related NADH dehydrogenase iron-sulfur protein 3 deficiency 	ENSG00000213619	4722.1	MAM01716	MAM01716	m01716	lac_D	increase
+MMUT-related Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency 	ENSG00000146085	4594.1	MAM02142	MAM02142	m02142	3hpp	increase
+MMUT-related Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency 	ENSG00000146085	4594.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFS4-related NADH dehydrogenase iron-sulfur protein 4 deficiency 	ENSG00000164258	4724.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFS6-related NADH dehydrogenase iron-sulfur protein 6 deficiency 	ENSG00000145494	4726.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFS7-related NADH dehydrogenase iron-sulfur protein 7 deficiency 	ENSG00000115286	374291.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFA1-related NADH dehydrogenase alpha subcomplex subunit 1 deficiency 	ENSG00000125356	4694.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFA2-related NADH dehydrogenase alpha subcomplex subunit 2 deficiency 	ENSG00000131495	4695.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFA9-related NADH dehydrogenase alpha subcomplex subunit 9 deficiency 	ENSG00000139180	4704.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFA10-related NADH dehydrogenase alpha subcomplex subunit 10 deficiency 	ENSG00000130414	4705.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFA11-related NADH dehydrogenase alpha subcomplex subunit 11 deficiency 	ENSG00000174886	126328.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC46A1-related Proton-coupled folate transporter deficiency 	ENSG00000076351	113235.1	MAM02133	MAM02133	m02133	hcys_L	increase
+SLC46A1-related Proton-coupled folate transporter deficiency 	ENSG00000076351	113235.1	MAM01830	MAM01830	m01830	fol	decrease
+NDUFA13-related NADH dehydrogenase alpha subcomplex subunit 13 deficiency 	ENSG00000186010	51079.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFB3-related NADH dehydrogenase beta subcomplex subunit 3 deficiency 	ENSG00000119013	4709.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFB9-related NADH dehydrogenase beta subcomplex subunit 9 deficiency 	ENSG00000147684	4715.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFB11-related NADH dehydrogenase beta subcomplex subunit 11 deficiency 	ENSG00000147123	54539.1	MAM01716	MAM01716	m01716	lac_D	increase
+MT-ND2-related NADH dehydrogenase core subunit 2 deficiency 	ENSG00000198763	4536.1	MAM01716	MAM01716	m01716	lac_D	increase
+MT-ND3-related NADH dehydrogenase core subunit 3 deficiency 	ENSG00000198840	4537.1	MAM01716	MAM01716	m01716	lac_D	increase
+MT-ND4-related NADH dehydrogenase core subunit 4 deficiency 	ENSG00000198886	4538.1	MAM01716	MAM01716	m01716	lac_D	increase
+MT-ND5-related NADH dehydrogenase core subunit 5 deficiency 	ENSG00000198786	4540.1	MAM01716	MAM01716	m01716	lac_D	increase
+MT-ND6-related NADH dehydrogenase core subunit 6 deficiency 	ENSG00000198695	4541.1	MAM01716	MAM01716	m01716	lac_D	increase
+"MTHFR-related 5,10-methylenetetrahydrofolate reductase deficiency "	ENSG00000177000	4524.1	MAM02133	MAM02133	m02133	hcys_L	increase
+PLIN1-related Perilipin 1 deficiency 	ENSG00000166819	5346.1	MAM01450	MAM01450	m01450	chsterol	increase
+MOCS1-related Molybdenum cofactor deficiency A 	ENSG00000124615	4337.1	MAM03148	MAM03148	m03148	xan	increase
+MOCS1-related Molybdenum cofactor deficiency A 	ENSG00000124615	4337.1	MAM03120	MAM03120	m03120	urate	decrease
+MOCS2-related Molybdopterin synthase deficiency 	ENSG00000164172	4338.1	MAM03148	MAM03148	m03148	xan	increase
+MOCS2-related Molybdopterin synthase deficiency 	ENSG00000164172	4338.1	MAM01629	MAM01629	m01629	Lcystin	decrease
+MOCS2-related Molybdopterin synthase deficiency 	ENSG00000164172	4338.1	MAM03120	MAM03120	m03120	urate	decrease
+GPHN-related Molybdenum cofactor deficiency C 	ENSG00000171723	10243.1	MAM03148	MAM03148	m03148	xan	increase
+SLC22A12-related Urate transporter 1 deficiency 	ENSG00000197891	116085.1	MAM03120	MAM03120	m03120	urate	decrease
+SLC2A9-related Urate voltage-driven efflux transporter 1 deficiency 	ENSG00000109667	"56606.1, 56606.2"	MAM03120	MAM03120	m03120	urate	decrease
+LIPT2-related Lipoyltransferase 2 deficiency 	ENSG00000175536	387787.1	MAM01716	MAM01716	m01716	lac_D	increase
+LIAS-related Lipoic acid synthase deficiency 	ENSG00000121897	11019.1	MAM01716	MAM01716	m01716	lac_D	increase
+LIPT1-related Lipoyltransferase 1 deficiency 	ENSG00000144182	51601.1	MAM01638	MAM01638	m01638	ala_D	increase
+LIPT1-related Lipoyltransferase 1 deficiency 	ENSG00000144182	51601.1	MAM02770	MAM02770	m02770	pro_L	increase
+LIPT1-related Lipoyltransferase 1 deficiency 	ENSG00000144182	51601.1	MAM01716	MAM01716	m01716	lac_D	increase
+PCK1-related Cytosolic phosphoenolpyruvate carboxykinase deficiency 	ENSG00000124253	5105.1	MAM01975	MAM01975	m01975	gln_L	increase
+PCK1-related Cytosolic phosphoenolpyruvate carboxykinase deficiency 	ENSG00000124253	5105.1	MAM01716	MAM01716	m01716	lac_D	increase
+MPC1-related Mitochondrial pyruvate carrier deficiency 	ENSG00000060762	51660.1	MAM01716	MAM01716	m01716	lac_D	increase
+ACO2-related Mitochondrial aconitase deficiency 	ENSG00000100412	50.1	MAM01716	MAM01716	m01716	lac_D	increase
+MDH2-related Mitochondrial malate dehydrogenase deficiency 	ENSG00000146701	4191.1	MAM01716	MAM01716	m01716	lac_D	increase
+SLC25A4-related Adenine nucleotide translocator deficiency AR 	ENSG00000151729	291.1	MAM01716	MAM01716	m01716	lac_D	increase
+NDUFB8-related NADH dehydrogenase beta subcomplex subunit 8 deficiency 	ENSG00000166136	4714.1	MAM01716	MAM01716	m01716	lac_D	increase
+BTD-related Biotinidase deficiency 	ENSG00000169814	686.1	MAM02142	MAM02142	m02142	3hpp	increase
+BTD-related Biotinidase deficiency 	ENSG00000169814	686.1	MAM01716	MAM01716	m01716	lac_D	increase
+HLCS-related Holocarboxylase synthetase deficiency 	ENSG00000159267	3141.1	MAM02142	MAM02142	m02142	3hpp	increase
+HLCS-related Holocarboxylase synthetase deficiency 	ENSG00000159267	3141.1	MAM01716	MAM01716	m01716	lac_D	increase
+HMBS-related Porphobilinogen deaminase deficiency 	ENSG00000256269	3145.1	MAM02756	MAM02756	m02756	ppbng	increase
+UGT1A1-related UDP-glucuronosyltransferase A1 deficiency 	ENSG00000241635	54658.1	MAM01396	MAM01396	m01396	bilirub	increase
+CA5A-related Carbonic anhydrase VA deficiency 	ENSG00000174990	763.1	MAM02579	MAM02579	m02579	nh4	increase
+PGM1-related Phosphoglucomutase 1 deficiency (CDG) 	ENSG00000079739	5236.1	MAM02579	MAM02579	m02579	nh4	increase
+ACOX1-related Peroxisomal straight-chain acyl-CoA oxidase deficiency 	ENSG00000161533	"51.1, 51.2"	MAM01396	MAM01396	m01396	bilirub	increase
+ACOX1-related Peroxisomal straight-chain acyl-CoA oxidase deficiency 	ENSG00000161533	"51.1, 51.2"	MAM01689	MAM01689	m01689	crvnc	increase
